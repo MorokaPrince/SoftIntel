@@ -9,16 +9,11 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "http://localhost:3006/api/$1"
+      "dest": "/api/$1"
     }
   ],
   "env": {
     "NEXT_PUBLIC_API_URL": "https://your-backend-domain.vercel.app"
-  },
-  "functions": {
-    "src/pages/api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
   },
   "outputDirectory": ".next",
   "installCommand": "npm install",
