@@ -35,188 +35,136 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Enhanced Professional Hero Section */}
-      <section className="relative bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-16 md:pt-20 pb-12 md:pb-16 overflow-hidden">
-        <AnimatedBackground
-          variant="hero"
-          theme="blue"
-          backgroundImage="/neural-network"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-
+      {/* Clean Hero Section - So Interactive Style */}
+      <section className="relative bg-white pt-24 md:pt-32 pb-20 md:pb-28 overflow-hidden">
         <div className="container-safe relative z-10">
-          <div className="text-center content-wrapper">
-            {/* Professional Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8"
-            >
-              <CheckCircle className="w-4 h-4 mr-2 text-accent-400" />
-              SOUTH AFRICA'S DIGITAL TRANSFORMATION PARTNER
-            </motion.div>
-
-            {/* Main Headline */}
+          <div className="text-center max-w-4xl mx-auto">
+            {/* Main Headline - Clean & Bold */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="heading-hero text-white mb-6"
+              transition={{ duration: 0.8 }}
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight"
             >
-              Transform Your Business with{" "}
-              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-                Professional Digital Solutions
-              </span>
+              We craft{" "}
+              <span className="text-primary-600 relative">
+                digital experiences
+                <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 6C20 2, 40 2, 58 6C76 10, 96 10, 98 6" stroke="#E89F4C" strokeWidth="3" strokeLinecap="round"/>
+                </svg>
+              </span>{" "}
+              that drive results
             </motion.h1>
 
-            {/* Subtitle */}
+            {/* Clean Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-professional text-lg md:text-xl text-slate-300 mb-6 max-w-3xl mx-auto leading-relaxed"
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-xl md:text-2xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto"
             >
-              Moroka & Associates empowers South African businesses with cutting-edge digital transformation, custom software development, and strategic consulting that drives sustainable growth and competitive advantage.
+              Moroka & Associates partners with ambitious South African businesses to create innovative digital solutions that transform operations and accelerate growth across Africa.
             </motion.p>
 
-            {/* Value Proposition Points */}
+            {/* Clean CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
-              className="flex flex-wrap justify-center gap-6 mb-10 text-sm md:text-base"
-            >
-              <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
-                <Target className="w-4 h-4 mr-2 text-primary-400" />
-                <span className="text-slate-300">Tailored Solutions</span>
-              </div>
-              <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
-                <Award className="w-4 h-4 mr-2 text-accent-400" />
-                <span className="text-slate-300">Expert Team</span>
-              </div>
-              <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
-                <TrendingUp className="w-4 h-4 mr-2 text-primary-400" />
-                <span className="text-slate-300">Proven Results</span>
-              </div>
-            </motion.div>
-
-            {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <Button
                 onClick={handleGetQuote}
-                className="btn-professional-primary btn-hover-scale btn-hover-glow"
+                className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 transform hover:-translate-y-0.5"
               >
-                Start Your Digital Transformation
+                Start Your Project
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button
                 variant="outline"
                 onClick={handleWhatsAppClick}
-                className="btn-professional-secondary btn-hover-scale"
+                className="border-2 border-neutral-300 text-neutral-700 hover:border-primary-600 hover:text-primary-600 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                Chat with Our Experts
+                Let's Talk
               </Button>
             </motion.div>
           </div>
         </div>
+
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-accent-50"></div>
+        </div>
       </section>
 
-      {/* Services Section */}
-      <section className="section-professional bg-gradient-to-br from-background-secondary via-background to-background-secondary relative overflow-hidden py-20">
-        <AnimatedBackground
-          variant="section"
-          theme="dark"
-          backgroundImage="/circuit-board"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-        <div className="container mx-auto px-6 relative z-10">
+      {/* Clean Services Section - So Interactive Style */}
+      <section className="py-20 md:py-28 bg-neutral-50">
+        <div className="container-safe">
           <div className="text-center mb-16">
-            <motion.div
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-6"
+              viewport={{ once: true }}
+              className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6"
             >
-              <Target className="w-5 h-5 mr-2 text-primary-400" />
-              SPECIALIZED DIGITAL SOLUTIONS
-            </motion.div>
-            <h2 className="heading-display text-3xl md:text-4xl text-white mb-6">
-              Enterprise-Grade Digital Solutions
-            </h2>
-            <p className="text-professional text-lg text-slate-300 max-w-2xl mx-auto">
-              From system integration to cloud infrastructure, we deliver tailored technology solutions that drive real business results
-            </p>
+              What We Do
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
+            >
+              We partner with South African businesses to solve complex challenges through intelligent digital solutions that drive measurable results.
+            </motion.p>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {/* Clean Services Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                icon: <Settings className="w-10 h-10" />,
-                title: "System Integration & Automation",
-                description: "Streamline your business processes with intelligent automation and seamless system integration",
-                features: ["Workflow Automation", "Legacy System Integration", "Process Optimization", "Custom APIs"],
-                caseStudy: "Automated invoicing system saving 30 hours/week",
+                icon: <Settings className="w-8 h-8" />,
+                title: "System Integration",
+                description: "Seamlessly connect your existing systems and automate workflows to eliminate inefficiencies and reduce manual work.",
+                features: ["Legacy System Integration", "Workflow Automation", "Process Optimization", "Custom API Development"],
               },
               {
-                icon: <BarChart3 className="w-10 h-10" />,
-                title: "Business Intelligence & Analytics",
-                description: "Transform your data into actionable insights with advanced analytics and reporting solutions",
+                icon: <BarChart3 className="w-8 h-8" />,
+                title: "Business Intelligence",
+                description: "Transform raw data into strategic insights with advanced analytics platforms that inform better decision-making.",
                 features: ["Real-time Dashboards", "Predictive Analytics", "Data Warehousing", "Performance Monitoring"],
-                caseStudy: "Improved forecasting accuracy by 65%",
               },
               {
-                icon: <Globe className="w-10 h-10" />,
-                title: "Cloud Solutions & Infrastructure",
-                description: "Modernize your IT infrastructure with scalable cloud solutions and robust hosting",
-                features: ["Cloud Migration", "DevOps Implementation", "24/7 Monitoring", "Disaster Recovery"],
-                caseStudy: "Reduced infrastructure costs by 40%",
+                icon: <Globe className="w-8 h-8" />,
+                title: "Cloud Infrastructure",
+                description: "Modernize your IT foundation with scalable cloud solutions that ensure reliability, security, and cost-effectiveness.",
+                features: ["Cloud Migration Strategy", "Infrastructure Management", "24/7 Monitoring", "Disaster Recovery"],
               },
             ].map((service, index) => (
               <motion.div
                 key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-neutral-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-neutral-800/50 transition-all duration-300 hover:border-primary-500/30 hover:shadow-2xl hover:shadow-primary-500/10 group"
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 group hover:border-primary-200"
               >
-                <motion.div
-                  className="w-16 h-16 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl flex items-center justify-center text-primary-400 mb-6"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  transition={{ duration: 0.3 }}
-                >
+                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center text-primary-600 mb-6 group-hover:bg-primary-200 transition-colors">
                   {service.icon}
-                </motion.div>
-                <h3 className="heading-sans text-xl text-white mb-3">
+                </div>
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                   {service.title}
                 </h3>
-                <p className="text-professional text-slate-300 mb-4">
+                <p className="text-neutral-600 leading-relaxed mb-6">
                   {service.description}
                 </p>
-
-                {/* Case Study Highlight */}
-                <div className="bg-primary-500/10 border border-primary-500/20 rounded-lg p-3 mb-4">
-                  <p className="text-primary-300 text-sm font-medium">💼 Case Study</p>
-                  <p className="text-slate-300 text-sm">{service.caseStudy}</p>
-                </div>
-
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-professional-sm text-slate-400">
-                      <CheckCircle className="w-4 h-4 text-primary-400 mr-2 flex-shrink-0" />
+                    <li key={feature} className="flex items-center text-neutral-700">
+                      <div className="w-2 h-2 bg-primary-600 rounded-full mr-3 flex-shrink-0"></div>
                       {feature}
                     </li>
                   ))}
@@ -225,14 +173,20 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-center mt-16"
+          >
             <Link href="/services">
-              <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25">
+              <Button className="bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-4 text-lg font-semibold transition-all duration-300">
                 View All Services
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
