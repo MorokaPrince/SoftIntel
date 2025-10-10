@@ -48,12 +48,12 @@
   --dark-900: #cccccc;
 
   /* Accent Colors - Harmonized with Blue Theme */
-  --accent: #06b6d4;
-  --accent-light: #22d3ee;
-  --accent-dark: #0891b2;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
+  --accent: var(--theme-accent, #06b6d4);
+  --accent-light: var(--theme-accent-light, #22d3ee);
+  --accent-dark: var(--theme-accent-dark, #0891b2);
+  --success: var(--theme-success, #10b981);
+  --warning: var(--theme-warning, #f59e0b);
+  --error: var(--theme-error, #ef4444);
 
   /* Professional Typography */
   --font-inter: 'Inter', sans-serif;
