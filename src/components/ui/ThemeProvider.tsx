@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
@@ -82,3 +81,94 @@ const themeColors: Record<Theme, ThemeColors> = {
   forest: {
     background: '#228B22',
     backgroundSecondary: '#32CD32',
+    backgroundTertiary: '#90EE90',
+    foreground: '#FFFFFF',
+    primary: '#228B22',
+    primaryLight: '#32CD32',
+    primaryDark: '#006400',
+    accent: '#8B4513',
+    accentLight: '#D2691E',
+    accentDark: '#654321',
+    success: '#32CD32',
+    warning: '#F0E68C',
+    error: '#DC143C',
+    silver: '#F5DEB3',
+    silverLight: '#FFF8DC',
+    silverDark: '#DEB887',
+  },
+};
+
+interface ThemeContextType {
+  theme: Theme;
+  setTheme: (theme: Theme) => void;
+  toggleAutoRotate: () => void;
+  isAutoRotating: boolean;
+  themeColors: ThemeColors;
+}
+
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (context === undefined) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return context;
+};
+
+interface ThemeProviderProps {
+  children: React.ReactNode;
+}
+
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+  const [theme, setThemeState] = useState<Theme>('light');
+  const [isAutoRotating, setIsAutoRotating] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('softintel-theme') as Theme;
+    if (savedTheme && Object.keys(themeColors).includes(savedTheme)) {
+      setThemeState(savedTheme);
+    }
+  }, []);
+
+  const setTheme = (newTheme: Theme) => {
+    setThemeState(newTheme);
+    localStorage.setItem('softintel-theme', newTheme);
+    setIsAutoRotating(false);
+  };
+
+  const toggleAutoRotate = () => {
+    setIsAutoRotating(!isAutoRotating);
+  };
+
+  useEffect(() => {
+    if (isAutoRotating) {
+      const themes: Theme[] = ['light', 'ocean', 'sunset', 'forest'];
+      const interval = setInterval(() => {
+        setThemeState((currentTheme) => {
+          const currentIndex = themes.indexOf(currentTheme);
+          const nextIndex = (currentIndex + 1) % themes.length;
+          const nextTheme = themes[nextIndex];
+          localStorage.setItem('softintel-theme', nextTheme);
+          return nextTheme;
+        });
+      }, 30000); // 30 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [isAutoRotating]);
+
+  const value: ThemeContextType = {
+    theme,
+    setTheme,
+    toggleAutoRotate,
+    isAutoRotating,
+    themeColors: themeColors[theme],
+  };
+
+  return (
+    <ThemeContext.Provider value={value}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout/Layout";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -105,9 +106,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        <Layout>
-          {children}
-        </Layout>
+        <ThemeProvider>
+          <Layout>
+            {children}
+          </Layout>
+        </ThemeProvider>
       </body>
     </html>
   );

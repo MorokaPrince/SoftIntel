@@ -12,6 +12,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { NavigationItem } from "@/types";
+import ThemeSelector from "@/components/ui/ThemeSelector";
 
 const navigationItems: NavigationItem[] = [
    { id: "home", label: "Home", href: "/" },
