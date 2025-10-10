@@ -3,17 +3,11 @@
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  CheckCircle,
   Globe,
   MessageCircle,
-  Phone,
-  Mail,
   Settings,
-  Smartphone,
   BarChart3,
-  TrendingUp,
   Award,
-  Users,
   Target,
 } from "lucide-react";
 import Button from "@/components/ui/Button";
