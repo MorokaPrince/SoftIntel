@@ -64,15 +64,24 @@ Potential Client
   };
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-black/95 backdrop-blur-md shadow-lg border-b border-white/10"
-          : "bg-transparent"
-      }`}
-    >
+    <>
+      {/* Skip Link for Accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-md focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
+
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-black/95 backdrop-blur-md shadow-lg border-b border-white/10"
+            : "bg-transparent"
+        }`}
+      >
       {/* Top Bar - Black Theme - Responsive height */}
       <div className={`bg-neutral-900 text-white ${isScrolled ? 'py-2' : 'py-3'} border-b border-white/10 transition-all duration-300`}>
         <div className="container mx-auto px-4">
@@ -242,8 +251,10 @@ Potential Client
             <button
               type="button"
               onClick={toggleMenu}
-              className="lg:hidden p-2 rounded-lg hover:bg-neutral-800 transition-colors text-white"
-              aria-label="Toggle menu"
+              className="lg:hidden p-2 rounded-lg hover:bg-neutral-800 transition-colors text-white focus:outline-none focus:ring-2 focus:ring-primary"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen ? true : false}
+              aria-controls="mobile-menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -255,10 +266,13 @@ Potential Client
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden bg-black border-t border-white/10"
+            role="navigation"
+            aria-label="Mobile navigation"
           >
             <div className="container mx-auto px-4 py-4">
               <nav className="space-y-4">
@@ -295,6 +309,7 @@ Potential Client
         )}
       </AnimatePresence>
     </motion.header>
+    </>
   );
 };
 
