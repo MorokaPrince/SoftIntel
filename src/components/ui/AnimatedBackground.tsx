@@ -118,6 +118,14 @@ const AnimatedBackground: React.FC<AnimatedBackgroundProps> = ({
               backgroundImage?.includes('plexus-scifi-background_280538-7858') ? 'bg-tech-plexus' :
               backgroundImage?.includes('ict-information-communications-technology-concept-server-room-background_161452-7815') ? 'bg-tech-ict-concept' :
               backgroundImage?.includes('ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091') ? 'bg-tech-ict-modern' :
+              backgroundImage?.includes('neural-network') ? 'bg-neural-network' :
+              backgroundImage?.includes('circuit-board') ? 'bg-circuit-board' :
+              backgroundImage?.includes('data-center') ? 'bg-data-center' :
+              backgroundImage?.includes('ai-brain') ? 'bg-ai-brain' :
+              backgroundImage?.includes('cyber-security') ? 'bg-cyber-security' :
+              backgroundImage?.includes('cloud-computing') ? 'bg-cloud-computing' :
+              backgroundImage?.includes('blockchain') ? 'bg-blockchain' :
+              backgroundImage?.includes('quantum-computing') ? 'bg-quantum-computing' :
               'bg-tech-default'
             }`}
           />

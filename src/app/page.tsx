@@ -35,14 +35,14 @@ export default function Home() {
       {/* Enhanced Professional Hero Section - Responsive padding */}
       <section className="relative bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-16 md:pt-20 pb-12 md:pb-16 overflow-hidden">
         <AnimatedBackground
-          variant="hero"
-          theme="blue"
-          backgroundImage="/ict-information-communications-technology-concept-server-room-background_161452-7815.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
+           variant="hero"
+           theme="blue"
+           backgroundImage="/neural-network"
+           includeParticles={true}
+           includeLogos={true}
+           includeGrid={true}
+           includeGradient={true}
+         />
 
         <div className="container-safe relative z-10">
           <div className="text-center content-wrapper">
@@ -152,14 +152,14 @@ export default function Home() {
       {/* Enhanced Professional Services Section - Horizontal Layout */}
       <section className="section-professional bg-gradient-to-br from-background-secondary via-background to-background-secondary relative overflow-hidden py-20">
         <AnimatedBackground
-          variant="section"
-          theme="dark"
-          backgroundImage="/plexus-scifi-background_280538-7858.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
+           variant="section"
+           theme="dark"
+           backgroundImage="/circuit-board"
+           includeParticles={true}
+           includeLogos={true}
+           includeGrid={true}
+           includeGradient={true}
+         />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <motion.div
@@ -247,14 +247,14 @@ export default function Home() {
       {/* Enhanced Professional CTA Section */}
       <section className="section-professional bg-gradient-to-br from-background via-background-secondary to-background relative overflow-hidden">
         <AnimatedBackground
-          variant="intense"
-          theme="dark"
-          backgroundImage="/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
+           variant="intense"
+           theme="dark"
+           backgroundImage="/data-center"
+           includeParticles={true}
+           includeLogos={true}
+           includeGrid={true}
+           includeGradient={true}
+         />
 
         <div className="container mx-auto px-6 text-center relative z-10">
           <motion.div

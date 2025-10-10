@@ -153,14 +153,14 @@ export default function AboutPage() {
       {/* Enhanced Professional Hero Section - Responsive padding */}
       <section className="relative bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-16 md:pt-20 pb-12 md:pb-16 overflow-hidden">
         <AnimatedBackground
-          variant="hero"
-          theme="indigo"
-          backgroundImage="/ict-information-communications-technology-concept-server-room-background_161452-7815.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
+           variant="hero"
+           theme="indigo"
+           backgroundImage="/ai-brain"
+           includeParticles={true}
+           includeLogos={true}
+           includeGrid={true}
+           includeGradient={true}
+         />
 
 
         <div className="container-safe relative z-10">
