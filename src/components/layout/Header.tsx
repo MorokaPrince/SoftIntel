@@ -88,24 +88,26 @@ Potential Client
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-4">
-              <span className="text-slate-300">Follow us:</span>
-              <div className="flex space-x-3">
-                <a
-                  href="#"
-                  className="text-slate-300 hover:text-blue-400 transition-colors font-medium"
-                  aria-label="LinkedIn"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  href="#"
-                  className="text-slate-300 hover:text-blue-400 transition-colors font-medium"
-                  aria-label="Twitter"
-                >
-                  Twitter
-                </a>
-              </div>
-            </div>
+               <span className="text-slate-300">Follow us:</span>
+               <div className="flex space-x-3">
+                 <a
+                   href="#"
+                   className="text-slate-300 hover:text-blue-400 transition-colors font-medium"
+                   aria-label="LinkedIn"
+                 >
+                   LinkedIn
+                 </a>
+                 <a
+                   href="#"
+                   className="text-slate-300 hover:text-blue-400 transition-colors font-medium"
+                   aria-label="Twitter"
+                 >
+                   Twitter
+                 </a>
+               </div>
+               <div className="border-l border-white/20 h-6 mx-2"></div>
+               <ThemeSelector />
+             </div>
           </div>
         </div>
       </div>

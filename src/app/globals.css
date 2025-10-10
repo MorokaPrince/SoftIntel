@@ -6,17 +6,17 @@
 
 :root {
   /* Enhanced Professional Dark Theme Color System */
-  --background: #0a0a0a;
-  --background-secondary: #111111;
-  --background-tertiary: #1a1a1a;
-  --foreground: #ffffff;
+  --background: var(--theme-background, #0a0a0a);
+  --background-secondary: var(--theme-background-secondary, #111111);
+  --background-tertiary: var(--theme-background-tertiary, #1a1a1a);
+  --foreground: var(--theme-foreground, #ffffff);
 
   /* Professional Blue & Silver Brand Colors */
-  --primary: #2563eb;
-  --primary-light: #3b82f6;
-  --primary-dark: #1d4ed8;
-  --primary-gradient-start: #1e40af;
-  --primary-gradient-end: #2563eb;
+  --primary: var(--theme-primary, #2563eb);
+  --primary-light: var(--theme-primary-light, #3b82f6);
+  --primary-dark: var(--theme-primary-dark, #1d4ed8);
+  --primary-gradient-start: var(--theme-primary-dark, #1e40af);
+  --primary-gradient-end: var(--theme-primary, #2563eb);
 
   /* Professional Silver Colors */
   --silver: #64748b;
@@ -76,6 +76,24 @@
   --radius-lg: 1rem;
   --radius-xl: 1.5rem;
   --radius-2xl: 2rem;
+
+  /* Theme Colors - Dynamic */
+  --theme-background: #0a0a0a;
+  --theme-background-secondary: #111111;
+  --theme-background-tertiary: #1a1a1a;
+  --theme-foreground: #ffffff;
+  --theme-primary: #2563eb;
+  --theme-primary-light: #3b82f6;
+  --theme-primary-dark: #1d4ed8;
+  --theme-accent: #06b6d4;
+  --theme-accent-light: #22d3ee;
+  --theme-accent-dark: #0891b2;
+  --theme-success: #10b981;
+  --theme-warning: #f59e0b;
+  --theme-error: #ef4444;
+  --theme-silver: #64748b;
+  --theme-silver-light: #94a3b8;
+  --theme-silver-dark: #475569;
 }
 
 body {
