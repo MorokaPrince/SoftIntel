@@ -358,7 +358,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4 text-center">The Beginning</h3>
                 <p className="text-slate-300 text-sm leading-relaxed text-center">
-                  May & Moroka Digital Solutions was born from a vision to democratize access to world-class software engineering expertise across Africa.
+                  SoftIntel was born from a vision to democratize access to world-class software engineering expertise across Africa.
                 </p>
               </motion.div>
 
@@ -373,7 +373,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4 text-center">Growth Journey</h3>
                 <p className="text-slate-300 text-sm leading-relaxed text-center">
-                  Starting as a one-person operation in Limpopo, South Africa, MMDS quickly grew into a trusted partner for digital transformation.
+                  Starting as a one-person operation in Limpopo, South Africa, SoftIntel quickly grew into a trusted partner for digital transformation.
                 </p>
               </motion.div>
 
@@ -696,7 +696,7 @@ export default function AboutPage() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-              Join the growing number of African businesses that trust MMDS
+              Join the growing number of African businesses that trust SoftIntel
               to deliver exceptional software solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

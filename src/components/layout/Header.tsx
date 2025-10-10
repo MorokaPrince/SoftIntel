@@ -83,7 +83,7 @@ Potential Client
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={14} className="text-blue-400" />
-                <span>itsolutions@morokaandassociates.com</span>
+                <span>info@softintel.co.za</span>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-4">

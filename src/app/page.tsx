@@ -139,7 +139,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center space-x-3 bg-neutral-800/50 rounded-lg p-4 hover:bg-neutral-700/50 transition-colors">
               <Mail className="w-5 h-5 text-blue-400" />
-              <span className="text-sm font-medium">itsolutions@morokaandassociates.com</span>
+              <span className="text-sm font-medium">info@softintel.co.za</span>
             </div>
             <div className="flex items-center justify-center space-x-3 bg-neutral-800/50 rounded-lg p-4 hover:bg-neutral-700/50 transition-colors">
               <Globe className="w-5 h-5 text-blue-400" />

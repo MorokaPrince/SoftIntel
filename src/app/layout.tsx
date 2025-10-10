@@ -44,30 +44,30 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://maymoroka.co.za"),
+  metadataBase: new URL("https://www.morokaandassociates.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    url: "https://maymoroka.co.za",
-    title: "SoftIntel - Intelligent Software Solutions for Tomorrow",
-    description: "Engineering intelligent software solutions for tomorrow. We design cutting-edge software, web applications, and business solutions that help companies innovate, grow, and scale globally.",
+    url: "https://www.morokaandassociates.com",
+    title: "SoftIntel | Professional Consulting Services",
+    description: "SoftIntel provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
     siteName: "SoftIntel",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "May & Moroka Digital Solutions",
+        alt: "SoftIntel - Professional Consulting Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SoftIntel - Intelligent Software Solutions for Tomorrow",
-    description: "Engineering intelligent software solutions for tomorrow. We design cutting-edge software, web applications, and business solutions that help companies innovate, grow, and scale globally.",
+    title: "SoftIntel | Professional Consulting Services",
+    description: "SoftIntel provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -93,6 +93,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SoftIntel | Professional Consulting Services</title>
+        <meta name="description" content="SoftIntel provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise." />
+        <meta name="keywords" content="SoftIntel, Consulting, Business Advisory, Digital Solutions, Professional Services" />
+        <meta name="author" content="SoftIntel" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.morokaandassociates.com/" />
+      </head>
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
