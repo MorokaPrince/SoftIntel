@@ -20,27 +20,30 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
    title: {
-     default: "SoftIntel - Intelligent Software Solutions for Tomorrow",
-     template: "%s | SoftIntel",
+     default: "Moroka & Associates - Professional Digital Business Solutions",
+     template: "%s | Moroka & Associates",
    },
-   description: "Engineering intelligent software solutions for tomorrow. We design cutting-edge software, web applications, and business solutions that help companies innovate, grow, and scale globally.",
+   description: "South Africa's leading digital transformation partner. We provide professional business solutions, custom software development, system integration, and cloud infrastructure services that drive sustainable growth across Africa.",
   keywords: [
-    "software development",
-    "web design",
-    "mobile apps",
-    "business software",
-    "artificial intelligence",
-    "intelligent solutions",
     "digital transformation",
-    "compliance software",
-    "IT consulting",
-    "cloud solutions",
-    "innovative technology",
-    "software intelligence",
+    "business solutions",
+    "custom software development",
+    "system integration",
+    "cloud infrastructure",
+    "business intelligence",
+    "South Africa",
+    "African businesses",
+    "digital consulting",
+    "enterprise solutions",
+    "process automation",
+    "technology consulting",
+    "business process optimization",
+    "digital strategy",
+    "enterprise software",
   ],
-  authors: [{ name: "SoftIntel" }],
-  creator: "SoftIntel",
-  publisher: "SoftIntel",
+  authors: [{ name: "Moroka & Associates" }],
+  creator: "Moroka & Associates",
+  publisher: "Moroka & Associates",
   formatDetection: {
     email: false,
     address: false,
@@ -54,22 +57,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_ZA",
     url: "https://www.morokaandassociates.com",
-    title: "Moroka & Associates | Professional Business Solutions",
-    description: "Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
+    title: "Moroka & Associates - Professional Digital Business Solutions",
+    description: "South Africa's leading digital transformation partner. We provide professional business solutions, custom software development, system integration, and cloud infrastructure services.",
     siteName: "Moroka & Associates",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Moroka & Associates - Professional Business Solutions",
+        alt: "Moroka & Associates - Professional Digital Business Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moroka & Associates | Professional Business Solutions",
-    description: "Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
+    title: "Moroka & Associates - Professional Digital Business Solutions",
+    description: "South Africa's leading digital transformation partner. We provide professional business solutions, custom software development, system integration, and cloud infrastructure services.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -118,7 +121,7 @@ export default function RootLayout({
                 "name": "Moroka & Associates",
                 "url": "https://www.morokaandassociates.com",
                 "logo": "https://www.morokaandassociates.com/logo.svg",
-                "description": "Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
+                "description": "South Africa's leading digital transformation partner providing professional business solutions, custom software development, system integration, and cloud infrastructure services.",
                 "foundingDate": "2024",
                 "contactPoint": {
                   "@type": "ContactPoint",
@@ -136,17 +139,27 @@ export default function RootLayout({
                   "https://www.linkedin.com/company/moroka-associates"
                 ],
                 "serviceType": [
-                  "Business Consulting",
-                  "Digital Solutions",
-                  "Professional Services",
-                  "Web Development",
-                  "Mobile Applications",
-                  "Digital Marketing"
+                  "Digital Transformation",
+                  "Custom Software Development",
+                  "System Integration",
+                  "Business Intelligence",
+                  "Cloud Infrastructure",
+                  "Process Automation",
+                  "Technology Consulting",
+                  "Enterprise Solutions"
                 ],
                 "areaServed": {
                   "@type": "Country",
                   "name": "South Africa"
-                }
+                },
+                "knowsAbout": [
+                  "Digital Transformation",
+                  "Business Process Optimization",
+                  "Cloud Computing",
+                  "Enterprise Software",
+                  "Business Intelligence",
+                  "System Integration"
+                ]
               })
             }}
           />

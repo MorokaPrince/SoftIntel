@@ -78,7 +78,7 @@ Potential Client
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-black/95 backdrop-blur-md shadow-lg border-b border-white/10"
+            ? "bg-neutral-900/95 backdrop-blur-md shadow-lg border-b border-primary-500/20"
             : "bg-transparent"
         }`}
       >
@@ -253,7 +253,7 @@ Potential Client
               onClick={toggleMenu}
               className="lg:hidden p-2 rounded-lg hover:bg-neutral-800 transition-colors text-white focus:outline-none focus:ring-2 focus:ring-primary"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMenuOpen ? true : false}
+              aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

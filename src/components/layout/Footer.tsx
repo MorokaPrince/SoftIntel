@@ -78,7 +78,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-primary-600 via-primary-700 to-accent-700 text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-black/5"></div>
       <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
@@ -106,16 +106,16 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="heading-sans text-2xl text-white">
-                  SoftIntel
+                  Moroka & Associates
                 </h3>
-                <p className="text-blue-100 text-base font-medium">
-                  Intelligence Solutions
+                <p className="text-primary-100 text-base font-medium">
+                  Digital Business Solutions
                 </p>
               </div>
             </div>
             <p className="text-primary-100 leading-relaxed">
-              Engineering intelligent software solutions for modern businesses.
-              We empower companies with cutting-edge technology and innovative solutions.
+              Professional digital transformation partner for South African businesses.
+              We deliver innovative technology solutions that drive sustainable growth across Africa.
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((social) => {
@@ -247,7 +247,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-100 text-sm">
-              © {currentYear} SoftIntel Intelligence Solutions. All rights reserved.
+              © {currentYear} Moroka & Associates Digital Solutions. All rights reserved.
             </div>
             <div className="flex items-center space-x-6 text-sm text-primary-100">
               <Link href="/privacy" className="hover:text-white transition-colors">
