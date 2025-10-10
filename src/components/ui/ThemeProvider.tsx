@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-export type Theme = 'light' | 'ocean' | 'sunset' | 'forest';
+export type Theme = 'light-vibrant' | 'warm-professional' | 'modern-teal-coral';
 
 interface ThemeColors {
   background: string;
@@ -24,77 +24,59 @@ interface ThemeColors {
 }
 
 const themeColors: Record<Theme, ThemeColors> = {
-  light: {
-    background: '#F8F9FA',
-    backgroundSecondary: '#E9ECEF',
-    backgroundTertiary: '#DEE2E6',
-    foreground: '#212529',
-    primary: '#6C757D',
-    primaryLight: '#ADB5BD',
-    primaryDark: '#495057',
-    accent: '#20C997',
-    accentLight: '#51CF66',
-    accentDark: '#17A085',
-    success: '#28A745',
-    warning: '#FFC107',
-    error: '#DC3545',
-    silver: '#6C757D',
-    silverLight: '#ADB5BD',
-    silverDark: '#495057',
+  'light-vibrant': {
+    background: '#F8FAFC',
+    backgroundSecondary: '#F1F5F9',
+    backgroundTertiary: '#E2E8F0',
+    foreground: '#1E293B',
+    primary: '#FF6B35',
+    primaryLight: '#FF8C66',
+    primaryDark: '#E85A2B',
+    accent: '#00B4D8',
+    accentLight: '#33C7E6',
+    accentDark: '#0096B8',
+    success: '#10B981',
+    warning: '#F59E0B',
+    error: '#EF4444',
+    silver: '#6B7280',
+    silverLight: '#9CA3AF',
+    silverDark: '#4B5563',
   },
-  ocean: {
-    background: '#003366',
-    backgroundSecondary: '#004080',
-    backgroundTertiary: '#0066CC',
-    foreground: '#FFFFFF',
-    primary: '#0066CC',
-    primaryLight: '#4A90E2',
-    primaryDark: '#003366',
-    accent: '#20B2AA',
-    accentLight: '#48D1CC',
-    accentDark: '#008B8B',
-    success: '#32CD32',
-    warning: '#FFD700',
-    error: '#FF6347',
-    silver: '#B0C4DE',
-    silverLight: '#E0FFFF',
-    silverDark: '#708090',
+  'warm-professional': {
+    background: '#FEF9F3',
+    backgroundSecondary: '#FDF4E6',
+    backgroundTertiary: '#FCEBD3',
+    foreground: '#2D1810',
+    primary: '#E89F4C',
+    primaryLight: '#F4B266',
+    primaryDark: '#D4943F',
+    accent: '#2F6F4E',
+    accentLight: '#4A8B6B',
+    accentDark: '#1F4A33',
+    success: '#059669',
+    warning: '#D97706',
+    error: '#DC2626',
+    silver: '#8B7355',
+    silverLight: '#B8997A',
+    silverDark: '#6B5B47',
   },
-  sunset: {
-    background: '#FF4500',
-    backgroundSecondary: '#FF6347',
-    backgroundTertiary: '#FFD700',
-    foreground: '#FFFFFF',
-    primary: '#FF4500',
-    primaryLight: '#FF6347',
-    primaryDark: '#B22222',
-    accent: '#9370DB',
-    accentLight: '#BA55D3',
-    accentDark: '#663399',
-    success: '#32CD32',
-    warning: '#FFD700',
-    error: '#DC143C',
-    silver: '#F0E68C',
-    silverLight: '#FFFACD',
-    silverDark: '#DAA520',
-  },
-  forest: {
-    background: '#228B22',
-    backgroundSecondary: '#32CD32',
-    backgroundTertiary: '#90EE90',
-    foreground: '#FFFFFF',
-    primary: '#228B22',
-    primaryLight: '#32CD32',
-    primaryDark: '#006400',
-    accent: '#8B4513',
-    accentLight: '#D2691E',
-    accentDark: '#654321',
-    success: '#32CD32',
-    warning: '#F0E68C',
-    error: '#DC143C',
-    silver: '#F5DEB3',
-    silverLight: '#FFF8DC',
-    silverDark: '#DEB887',
+  'modern-teal-coral': {
+    background: '#FCFBF9',
+    backgroundSecondary: '#F7F6F3',
+    backgroundTertiary: '#F0EDE4',
+    foreground: '#2D3748',
+    primary: '#FF7A59',
+    primaryLight: '#FF9A7F',
+    primaryDark: '#E86A4A',
+    accent: '#0ABAB5',
+    accentLight: '#3ACDC7',
+    accentDark: '#08A19C',
+    success: '#38B2AC',
+    warning: '#ED8936',
+    error: '#E53E3E',
+    silver: '#718096',
+    silverLight: '#A0AEC0',
+    silverDark: '#4A5568',
   },
 };
 
@@ -121,7 +103,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setThemeState] = useState<Theme>('light');
+  const [theme, setThemeState] = useState<Theme>('warm-professional');
   const [isAutoRotating, setIsAutoRotating] = useState(false);
 
   useEffect(() => {
@@ -143,7 +125,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   useEffect(() => {
     if (isAutoRotating) {
-      const themes: Theme[] = ['light', 'ocean', 'sunset', 'forest'];
+      const themes: Theme[] = ['light-vibrant', 'warm-professional', 'modern-teal-coral'];
       const interval = setInterval(() => {
         setThemeState((currentTheme) => {
           const currentIndex = themes.indexOf(currentTheme);

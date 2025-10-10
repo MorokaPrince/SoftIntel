@@ -5,18 +5,18 @@
 @tailwind utilities;
 
 :root {
-  /* Enhanced Professional Dark Theme Color System */
-  --background: var(--theme-background, #0a0a0a);
-  --background-secondary: var(--theme-background-secondary, #111111);
-  --background-tertiary: var(--theme-background-tertiary, #1a1a1a);
-  --foreground: var(--theme-foreground, #ffffff);
+  /* Modern Moroka & Associates Color System */
+  --background: var(--theme-background, #F8FAFC);
+  --background-secondary: var(--theme-background-secondary, #F1F5F9);
+  --background-tertiary: var(--theme-background-tertiary, #E2E8F0);
+  --foreground: var(--theme-foreground, #1E293B);
 
-  /* Professional Blue & Silver Brand Colors */
-  --primary: var(--theme-primary, #2563eb);
-  --primary-light: var(--theme-primary-light, #3b82f6);
-  --primary-dark: var(--theme-primary-dark, #1d4ed8);
-  --primary-gradient-start: var(--theme-primary-dark, #1e40af);
-  --primary-gradient-end: var(--theme-primary, #2563eb);
+  /* Modern Brand Colors - Warm Professional Theme (Default) */
+  --primary: var(--theme-primary, #E89F4C);
+  --primary-light: var(--theme-primary-light, #F4B266);
+  --primary-dark: var(--theme-primary-dark, #D4943F);
+  --primary-gradient-start: var(--theme-primary-dark, #2F6F4E);
+  --primary-gradient-end: var(--theme-primary, #E89F4C);
 
   /* Professional Silver Colors */
   --silver: #64748b;
@@ -47,12 +47,12 @@
   --dark-800: #b3b3b3;
   --dark-900: #cccccc;
 
-  /* Accent Colors - Harmonized with Blue Theme */
-  --accent: var(--theme-accent, #06b6d4);
-  --accent-light: var(--theme-accent-light, #22d3ee);
-  --accent-dark: var(--theme-accent-dark, #0891b2);
+  /* Modern Accent Colors - Warm Professional Theme */
+  --accent: var(--theme-accent, #2F6F4E);
+  --accent-light: var(--theme-accent-light, #4A8B6B);
+  --accent-dark: var(--theme-accent-dark, #1F4A33);
   --success: var(--theme-success, #10b981);
-  --warning: var(--theme-warning, #f59e0b);
+  --warning: var(--theme-warning, #E89F4C);
   --error: var(--theme-error, #ef4444);
 
   /* Professional Typography */

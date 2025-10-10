@@ -54,22 +54,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_ZA",
     url: "https://www.morokaandassociates.com",
-    title: "SoftIntel | Professional Consulting Services",
-    description: "SoftIntel provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
-    siteName: "SoftIntel",
+    title: "Moroka & Associates | Professional Business Solutions",
+    description: "Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
+    siteName: "Moroka & Associates",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "SoftIntel - Professional Consulting Services",
+        alt: "Moroka & Associates - Professional Business Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SoftIntel | Professional Consulting Services",
-    description: "SoftIntel provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
+    title: "Moroka & Associates | Professional Business Solutions",
+    description: "Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -97,10 +97,10 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SoftIntel | Professional Consulting Services</title>
-        <meta name="description" content="SoftIntel provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise." />
-        <meta name="keywords" content="SoftIntel, Consulting, Business Advisory, Digital Solutions, Professional Services" />
-        <meta name="author" content="SoftIntel" />
+        <title>Moroka & Associates | Professional Business Solutions</title>
+        <meta name="description" content="Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise." />
+        <meta name="keywords" content="Moroka & Associates, Consulting, Business Advisory, Digital Solutions, Professional Services" />
+        <meta name="author" content="Moroka & Associates" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.morokaandassociates.com/" />
       </head>
@@ -109,6 +109,47 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <ThemeScript />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Moroka & Associates",
+                "url": "https://www.morokaandassociates.com",
+                "logo": "https://www.morokaandassociates.com/logo.svg",
+                "description": "Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise.",
+                "foundingDate": "2024",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+27-79-448-4159",
+                  "contactType": "customer service",
+                  "email": "itsolutions@morokaandassociates.com",
+                  "areaServed": "ZA",
+                  "availableLanguage": "English"
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressCountry": "ZA"
+                },
+                "sameAs": [
+                  "https://www.linkedin.com/company/moroka-associates"
+                ],
+                "serviceType": [
+                  "Business Consulting",
+                  "Digital Solutions",
+                  "Professional Services",
+                  "Web Development",
+                  "Mobile Applications",
+                  "Digital Marketing"
+                ],
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "South Africa"
+                }
+              })
+            }}
+          />
           <Layout>
             {children}
           </Layout>

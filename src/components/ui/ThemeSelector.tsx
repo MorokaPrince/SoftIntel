@@ -14,24 +14,19 @@ const ThemeSelector: React.FC<ThemeSelectorProps> = ({ className = '' }) => {
 
   const themes: { key: Theme; name: string; colors: string[] }[] = [
     {
-      key: 'light',
-      name: 'Light',
-      colors: ['#F8F9FA', '#E9ECEF', '#6C757D', '#20C997'],
+      key: 'light-vibrant',
+      name: 'Light & Vibrant',
+      colors: ['#F8FAFC', '#FF6B35', '#00B4D8', '#1E293B'],
     },
     {
-      key: 'ocean',
-      name: 'Ocean Depths',
-      colors: ['#003366', '#0066CC', '#20B2AA', '#4A90E2'],
+      key: 'warm-professional',
+      name: 'Warm Professional',
+      colors: ['#FEF9F3', '#E89F4C', '#2F6F4E', '#2D1810'],
     },
     {
-      key: 'sunset',
-      name: 'Sunset Horizon',
-      colors: ['#FF4500', '#FFD700', '#9370DB', '#FF6347'],
-    },
-    {
-      key: 'forest',
-      name: 'Forest Whisper',
-      colors: ['#228B22', '#90EE90', '#8B4513', '#32CD32'],
+      key: 'modern-teal-coral',
+      name: 'Modern Teal & Coral',
+      colors: ['#FCFBF9', '#FF7A59', '#0ABAB5', '#2D3748'],
     },
   ];
 

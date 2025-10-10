@@ -84,7 +84,7 @@ Potential Client
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={14} className="text-blue-400" />
-                <span>info@softintel.co.za</span>
+                <span>itsolutions@morokaandassociates.com</span>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-4">
@@ -143,11 +143,11 @@ Potential Client
                     className="relative z-10"
                   >
                     <Image
-                      src="/SoftIntel3.gif"
-                      alt="SoftIntel - Intelligent Software Solutions"
+                      src="/logo.svg"
+                      alt="Moroka & Associates - Professional Business Solutions"
                       width={isScrolled ? 32 : 48}
                       height={isScrolled ? 32 : 48}
-                      className="object-contain rounded-lg md:rounded-xl drop-shadow-lg brightness-110 contrast-105"
+                      className="object-contain drop-shadow-lg brightness-110 contrast-105"
                     />
                   </motion.div>
 
@@ -174,7 +174,7 @@ Potential Client
                   transition={{ duration: 0.2 }}
                 >
                   <span className="font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-                    SoftIntel
+                    Moroka & Associates
                   </span>
                 </motion.h1>
                 <motion.div
@@ -182,7 +182,7 @@ Potential Client
                   whileHover={{ scale: 1.02, x: 2 }}
                   transition={{ duration: 0.2 }}
                 >
-                  Intelligence Solutions
+                  Business Solutions
                 </motion.div>
                 <motion.p
                   initial={{ opacity: 0.8 }}
@@ -199,9 +199,9 @@ Potential Client
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="text-professional-sm text-slate-400 mt-1 italic font-medium hidden lg:block"
+                  className="text-professional-sm text-slate-400 mt-1 font-medium hidden lg:block"
                 >
-                  Driven by Innovation, Defined by Intelligence
+                  Professional • Innovative • Trusted
                 </motion.p>
               </div>
             </Link>
