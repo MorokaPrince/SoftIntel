@@ -32,8 +32,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Enhanced Professional Hero Section */}
-      <section className="relative bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-20 pb-16 overflow-hidden">
+      {/* Enhanced Professional Hero Section - Responsive padding */}
+      <section className="relative bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-16 md:pt-20 pb-12 md:pb-16 overflow-hidden">
         <AnimatedBackground
           variant="hero"
           theme="blue"

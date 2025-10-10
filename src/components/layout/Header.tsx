@@ -73,8 +73,8 @@ Potential Client
           : "bg-transparent"
       }`}
     >
-      {/* Top Bar - Black Theme */}
-      <div className="bg-neutral-900 text-white py-3 border-b border-white/10">
+      {/* Top Bar - Black Theme - Responsive height */}
+      <div className={`bg-neutral-900 text-white ${isScrolled ? 'py-2' : 'py-3'} border-b border-white/10 transition-all duration-300`}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-6">
@@ -112,16 +112,18 @@ Potential Client
         </div>
       </div>
 
-      {/* Main Navigation - Black Theme */}
-      <div className="bg-black">
+      {/* Main Navigation - Black Theme - Responsive height */}
+      <div className={`${isScrolled ? 'py-2' : 'py-3 md:py-4'} bg-black transition-all duration-300`}>
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
-            {/* Professional Logo */}
-            <Link href="/" className="flex items-center space-x-6 group">
+          <div className="flex justify-between items-center">
+            {/* Professional Logo - Responsive sizing */}
+            <Link href="/" className="flex items-center space-x-3 md:space-x-4 group">
               <div className="relative">
-                {/* Professional logo container - Blue & Silver Theme */}
+                {/* Professional logo container - Responsive sizing */}
                 <motion.div
-                  className="w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg bg-gradient-to-br from-primary-600/10 to-primary-800/10 border border-primary-400/30 relative overflow-hidden backdrop-blur-sm"
+                  className={`${
+                    isScrolled ? 'w-10 h-10 md:w-12 md:h-12' : 'w-12 h-12 md:w-16 md:h-16'
+                  } rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg bg-gradient-to-br from-primary-600/10 to-primary-800/10 border border-primary-400/30 relative overflow-hidden backdrop-blur-sm transition-all duration-300`}
                   whileHover={{ scale: 1.05, y: -2 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -143,15 +145,15 @@ Potential Client
                     <Image
                       src="/SoftIntel3.gif"
                       alt="SoftIntel - Intelligent Software Solutions"
-                      width={64}
-                      height={64}
-                      className="object-contain rounded-xl drop-shadow-lg brightness-110 contrast-105"
+                      width={isScrolled ? 32 : 48}
+                      height={isScrolled ? 32 : 48}
+                      className="object-contain rounded-lg md:rounded-xl drop-shadow-lg brightness-110 contrast-105"
                     />
                   </motion.div>
 
                   {/* Subtle glow effect */}
                   <motion.div
-                    className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary-400/20 to-primary-600/20"
+                    className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-br from-primary-400/20 to-primary-600/20"
                     animate={{
                       opacity: [0.3, 0.5, 0.3],
                     }}
@@ -164,9 +166,10 @@ Potential Client
                 </motion.div>
               </div>
 
-              <div className="text-left">
+              {/* Hide text branding when scrolled on mobile */}
+              <div className={`text-left ${isScrolled && 'hidden md:block'} transition-all duration-300`}>
                 <motion.h1
-                  className="heading-sans text-2xl md:text-3xl text-white leading-tight cursor-pointer"
+                  className="heading-sans text-lg md:text-2xl lg:text-3xl text-white leading-tight cursor-pointer"
                   whileHover={{ scale: 1.02, x: 3 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -175,7 +178,7 @@ Potential Client
                   </span>
                 </motion.h1>
                 <motion.div
-                  className="text-professional-md text-slate-300 leading-tight"
+                  className="text-professional-sm md:text-professional-md text-slate-300 leading-tight"
                   whileHover={{ scale: 1.02, x: 2 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -196,7 +199,7 @@ Potential Client
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="text-professional-sm text-slate-400 mt-1 italic font-medium"
+                  className="text-professional-sm text-slate-400 mt-1 italic font-medium hidden lg:block"
                 >
                   Driven by Innovation, Defined by Intelligence
                 </motion.p>
