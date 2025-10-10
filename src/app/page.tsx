@@ -56,8 +56,8 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8"
             >
-              <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
-              PROFESSIONAL BUSINESS SOLUTIONS
+              <CheckCircle className="w-4 h-4 mr-2 text-accent-400" />
+              SOUTH AFRICA'S DIGITAL TRANSFORMATION PARTNER
             </motion.div>
 
             {/* Main Headline */}
@@ -67,11 +67,10 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="heading-hero text-white mb-6"
             >
-              Professional{" "}
+              Transform Your Business with{" "}
               <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-                Business Solutions
-              </span>{" "}
-              for Modern Enterprises
+                Professional Digital Solutions
+              </span>
             </motion.h1>
 
             {/* Subtitle */}
@@ -79,10 +78,31 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-professional text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+              className="text-professional text-lg md:text-xl text-slate-300 mb-6 max-w-3xl mx-auto leading-relaxed"
             >
-              Moroka & Associates delivers innovative consulting and business advisory services, specializing in digital solutions and professional expertise that drive sustainable growth across Africa.
+              Moroka & Associates empowers South African businesses with cutting-edge digital transformation, custom software development, and strategic consulting that drives sustainable growth and competitive advantage.
             </motion.p>
+
+            {/* Value Proposition Points */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="flex flex-wrap justify-center gap-6 mb-10 text-sm md:text-base"
+            >
+              <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
+                <Target className="w-4 h-4 mr-2 text-primary-400" />
+                <span className="text-slate-300">Tailored Solutions</span>
+              </div>
+              <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
+                <Award className="w-4 h-4 mr-2 text-accent-400" />
+                <span className="text-slate-300">Expert Team</span>
+              </div>
+              <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
+                <TrendingUp className="w-4 h-4 mr-2 text-primary-400" />
+                <span className="text-slate-300">Proven Results</span>
+              </div>
+            </motion.div>
 
             {/* CTA Buttons */}
             <motion.div

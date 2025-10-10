@@ -11,12 +11,17 @@
   --background-tertiary: var(--theme-background-tertiary, #E2E8F0);
   --foreground: var(--theme-foreground, #1E293B);
 
-  /* Modern Brand Colors - Warm Professional Theme (Default) */
+  /* Moroka & Associates Brand Colors - Palette Option 1: Warm Earth Tones */
   --primary: var(--theme-primary, #E89F4C);
   --primary-light: var(--theme-primary-light, #F4B266);
   --primary-dark: var(--theme-primary-dark, #D4943F);
-  --primary-gradient-start: var(--theme-primary-dark, #2F6F4E);
+  --primary-gradient-start: var(--theme-primary-dark, #8B5A3C);
   --primary-gradient-end: var(--theme-primary, #E89F4C);
+
+  /* Accent Colors - Warm Earth Palette */
+  --accent: var(--theme-accent, #2F6F4E);
+  --accent-light: var(--theme-accent-light, #4A8B6B);
+  --accent-dark: var(--theme-accent-dark, #1F4A33);
 
   /* Professional Silver Colors */
   --silver: #64748b;
@@ -82,12 +87,24 @@
   --theme-background-secondary: #111111;
   --theme-background-tertiary: #1a1a1a;
   --theme-foreground: #ffffff;
-  --theme-primary: #2563eb;
-  --theme-primary-light: #3b82f6;
-  --theme-primary-dark: #1d4ed8;
-  --theme-accent: #06b6d4;
-  --theme-accent-light: #22d3ee;
-  --theme-accent-dark: #0891b2;
+
+  /* Palette 1: Warm Earth Tones (Default) */
+  --theme-primary: #E89F4C;
+  --theme-primary-light: #F4B266;
+  --theme-primary-dark: #D4943F;
+  --theme-accent: #2F6F4E;
+  --theme-accent-light: #4A8B6B;
+  --theme-accent-dark: #1F4A33;
+
+  /* Palette 2: Vibrant Modern (Alternative) */
+  --theme-primary-alt: #FF6B35;
+  --theme-primary-light-alt: #FF8C66;
+  --theme-primary-dark-alt: #E55A2B;
+  --theme-accent-alt: #4ECDC4;
+  --theme-accent-light-alt: #7EDDD6;
+  --theme-accent-dark-alt: #35B5AB;
+
+  /* Shared Colors */
   --theme-success: #10b981;
   --theme-warning: #f59e0b;
   --theme-error: #ef4444;
