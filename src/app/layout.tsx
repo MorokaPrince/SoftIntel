@@ -19,31 +19,32 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-   title: {
-     default: "Moroka & Associates - Professional Digital Business Solutions",
-     template: "%s | Moroka & Associates",
-   },
-   description: "South Africa's leading digital transformation partner. We provide professional business solutions, custom software development, system integration, and cloud infrastructure services that drive sustainable growth across Africa.",
-  keywords: [
-    "digital transformation",
-    "business solutions",
-    "custom software development",
-    "system integration",
-    "cloud infrastructure",
-    "business intelligence",
-    "South Africa",
-    "African businesses",
-    "digital consulting",
-    "enterprise solutions",
-    "process automation",
-    "technology consulting",
-    "business process optimization",
-    "digital strategy",
-    "enterprise software",
-  ],
-  authors: [{ name: "Moroka & Associates" }],
-  creator: "Moroka & Associates",
-  publisher: "Moroka & Associates",
+    title: {
+      default: "NovaTek - Advanced Technology Solutions",
+      template: "%s | NovaTek",
+    },
+    description: "South Africa's premier technology partner specializing in innovative digital solutions, cloud infrastructure, custom software development, and business transformation services that drive growth across Africa.",
+   keywords: [
+     "NovaTek",
+     "technology solutions",
+     "digital transformation",
+     "cloud infrastructure",
+     "custom software development",
+     "system integration",
+     "business intelligence",
+     "South Africa",
+     "African businesses",
+     "technology consulting",
+     "enterprise solutions",
+     "process automation",
+     "digital strategy",
+     "enterprise software",
+     "innovation",
+     "technology partner",
+   ],
+   authors: [{ name: "NovaTek" }],
+   creator: "NovaTek",
+   publisher: "NovaTek",
   formatDetection: {
     email: false,
     address: false,
@@ -57,23 +58,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_ZA",
     url: "https://www.morokaandassociates.com",
-    title: "Moroka & Associates - Professional Digital Business Solutions",
-    description: "South Africa's leading digital transformation partner. We provide professional business solutions, custom software development, system integration, and cloud infrastructure services.",
-    siteName: "Moroka & Associates",
+    title: "NovaTek - Advanced Technology Solutions",
+    description: "South Africa's premier technology partner specializing in innovative digital solutions, cloud infrastructure, custom software development, and business transformation services.",
+    siteName: "NovaTek",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image-novatek.jpg",
         width: 1200,
         height: 630,
-        alt: "Moroka & Associates - Professional Digital Business Solutions",
+        alt: "NovaTek - Advanced Technology Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moroka & Associates - Professional Digital Business Solutions",
-    description: "South Africa's leading digital transformation partner. We provide professional business solutions, custom software development, system integration, and cloud infrastructure services.",
-    images: ["/og-image.jpg"],
+    title: "NovaTek - Advanced Technology Solutions",
+    description: "South Africa's premier technology partner specializing in innovative digital solutions, cloud infrastructure, custom software development, and business transformation services.",
+    images: ["/og-image-novatek.jpg"],
   },
   robots: {
     index: true,
@@ -118,16 +119,16 @@ export default function RootLayout({
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "Organization",
-                "name": "Moroka & Associates",
+                "name": "NovaTek",
                 "url": "https://www.morokaandassociates.com",
-                "logo": "https://www.morokaandassociates.com/logo.svg",
-                "description": "South Africa's leading digital transformation partner providing professional business solutions, custom software development, system integration, and cloud infrastructure services.",
+                "logo": "https://www.morokaandassociates.com/logo-novatek.svg",
+                "description": "South Africa's premier technology partner specializing in innovative digital solutions, cloud infrastructure, custom software development, and business transformation services that drive growth across Africa.",
                 "foundingDate": "2024",
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "telephone": "+27-79-448-4159",
                   "contactType": "customer service",
-                  "email": "itsolutions@morokaandassociates.com",
+                  "email": "info@novatek.co.za",
                   "areaServed": "ZA",
                   "availableLanguage": "English"
                 },
@@ -136,14 +137,15 @@ export default function RootLayout({
                   "addressCountry": "ZA"
                 },
                 "sameAs": [
-                  "https://www.linkedin.com/company/moroka-associates"
+                  "https://www.linkedin.com/company/novatek-south-africa"
                 ],
                 "serviceType": [
+                  "Technology Solutions",
                   "Digital Transformation",
                   "Custom Software Development",
+                  "Cloud Infrastructure",
                   "System Integration",
                   "Business Intelligence",
-                  "Cloud Infrastructure",
                   "Process Automation",
                   "Technology Consulting",
                   "Enterprise Solutions"
@@ -154,11 +156,12 @@ export default function RootLayout({
                 },
                 "knowsAbout": [
                   "Digital Transformation",
-                  "Business Process Optimization",
                   "Cloud Computing",
                   "Enterprise Software",
                   "Business Intelligence",
-                  "System Integration"
+                  "System Integration",
+                  "Technology Innovation",
+                  "Business Process Optimization"
                 ]
               })
             }}

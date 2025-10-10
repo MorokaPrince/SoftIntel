@@ -5,23 +5,23 @@
 @tailwind utilities;
 
 :root {
-  /* Modern Moroka & Associates Color System */
-  --background: var(--theme-background, #F8FAFC);
-  --background-secondary: var(--theme-background-secondary, #F1F5F9);
-  --background-tertiary: var(--theme-background-tertiary, #E2E8F0);
-  --foreground: var(--theme-foreground, #1E293B);
+   /* NovaTek Color System */
+   --background: var(--theme-background, #F8F8F8);
+   --background-secondary: var(--theme-background-secondary, #F1F5F9);
+   --background-tertiary: var(--theme-background-tertiary, #E2E8F0);
+   --foreground: var(--theme-foreground, #1A202C);
 
-  /* Moroka & Associates Brand Colors - Palette Option 1: Warm Earth Tones */
-  --primary: var(--theme-primary, #E89F4C);
-  --primary-light: var(--theme-primary-light, #F4B266);
-  --primary-dark: var(--theme-primary-dark, #D4943F);
-  --primary-gradient-start: var(--theme-primary-dark, #8B5A3C);
-  --primary-gradient-end: var(--theme-primary, #E89F4C);
+   /* NovaTek Brand Colors - Tech-Focused Palette */
+   --primary: var(--theme-primary, #1A202C);
+   --primary-light: var(--theme-primary-light, #2D3748);
+   --primary-dark: var(--theme-primary-dark, #171923);
+   --primary-gradient-start: var(--theme-primary-dark, #171923);
+   --primary-gradient-end: var(--theme-primary, #1A202C);
 
-  /* Accent Colors - Warm Earth Palette */
-  --accent: var(--theme-accent, #2F6F4E);
-  --accent-light: var(--theme-accent-light, #4A8B6B);
-  --accent-dark: var(--theme-accent-dark, #1F4A33);
+   /* Accent Colors - Tech Cyan Palette */
+   --accent: var(--theme-accent, #00CFFF);
+   --accent-light: var(--theme-accent-light, #33D6FF);
+   --accent-dark: var(--theme-accent-dark, #00B4DB);
 
   /* Professional Silver Colors */
   --silver: #64748b;
@@ -88,21 +88,21 @@
   --theme-background-tertiary: #1a1a1a;
   --theme-foreground: #ffffff;
 
-  /* Palette 1: Warm Earth Tones (Default) */
-  --theme-primary: #E89F4C;
-  --theme-primary-light: #F4B266;
-  --theme-primary-dark: #D4943F;
-  --theme-accent: #2F6F4E;
-  --theme-accent-light: #4A8B6B;
-  --theme-accent-dark: #1F4A33;
+  /* NovaTek Palette 1: Tech-Focused (Default) */
+  --theme-primary: #1A202C;
+  --theme-primary-light: #2D3748;
+  --theme-primary-dark: #171923;
+  --theme-accent: #00CFFF;
+  --theme-accent-light: #33D6FF;
+  --theme-accent-dark: #00B4DB;
 
-  /* Palette 2: Vibrant Modern (Alternative) */
-  --theme-primary-alt: #FF6B35;
-  --theme-primary-light-alt: #FF8C66;
-  --theme-primary-dark-alt: #E55A2B;
-  --theme-accent-alt: #4ECDC4;
-  --theme-accent-light-alt: #7EDDD6;
-  --theme-accent-dark-alt: #35B5AB;
+  /* Palette 2: NovaTek Alternative (Alternative) */
+  --theme-primary-alt: #1A202C;
+  --theme-primary-light-alt: #2D3748;
+  --theme-primary-dark-alt: #171923;
+  --theme-accent-alt: #00CFFF;
+  --theme-accent-light-alt: #33D6FF;
+  --theme-accent-dark-alt: #00B4DB;
 
   /* Shared Colors */
   --theme-success: #10b981;
