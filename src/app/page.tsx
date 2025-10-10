@@ -12,6 +12,9 @@ import {
   Smartphone,
   BarChart3,
   TrendingUp,
+  Award,
+  Users,
+  Target,
 } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
@@ -19,7 +22,7 @@ import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 export default function Home() {
   const handleWhatsAppClick = () => {
-    const message = "Hi! I'm interested in learning more about SoftIntel's intelligent software solutions.";
+    const message = "Hi! I'm interested in learning more about Moroka & Associates' professional business solutions.";
     window.open(
       `https://wa.me/27794484159?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -32,17 +35,17 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Enhanced Professional Hero Section - Responsive padding */}
+      {/* Enhanced Professional Hero Section */}
       <section className="relative bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-16 md:pt-20 pb-12 md:pb-16 overflow-hidden">
         <AnimatedBackground
-           variant="hero"
-           theme="blue"
-           backgroundImage="/neural-network"
-           includeParticles={true}
-           includeLogos={true}
-           includeGrid={true}
-           includeGradient={true}
-         />
+          variant="hero"
+          theme="blue"
+          backgroundImage="/neural-network"
+          includeParticles={true}
+          includeLogos={true}
+          includeGrid={true}
+          includeGradient={true}
+        />
 
         <div className="container-safe relative z-10">
           <div className="text-center content-wrapper">
@@ -54,34 +57,34 @@ export default function Home() {
               className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8"
             >
               <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
-              PROFESSIONAL SOFTWARE SOLUTIONS
+              PROFESSIONAL BUSINESS SOLUTIONS
             </motion.div>
 
-            {/* Main Headline - Enhanced Typography */}
+            {/* Main Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="heading-hero text-white mb-6"
             >
-              Intelligent Software{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-                Solutions
+              Professional{" "}
+              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                Business Solutions
               </span>{" "}
-              for Tomorrow
+              for Modern Enterprises
             </motion.h1>
 
-            {/* Professional Subtitle */}
+            {/* Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-professional text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed"
             >
-              SoftIntel delivers intelligent software solutions, web applications, and digital transformation services that help businesses innovate, grow, and scale globally.
+              Moroka & Associates delivers innovative consulting and business advisory services, specializing in digital solutions and professional expertise that drive sustainable growth across Africa.
             </motion.p>
 
-            {/* Professional CTA Buttons */}
+            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -104,62 +107,21 @@ export default function Home() {
                 WhatsApp Chat
               </Button>
             </motion.div>
-
-            {/* Professional Trust Indicators */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/10"
-            >
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white mb-2">9+</div>
-                <div className="text-sm text-slate-400">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white mb-2">2024</div>
-                <div className="text-sm text-slate-400">Founded</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white mb-2">100%</div>
-                <div className="text-sm text-slate-400">Client Satisfaction</div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Quick Contact Bar - Horizontal Layout */}
-      <section className="bg-neutral-900 border-y border-white/10 text-white py-6">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center space-x-3 bg-neutral-800/50 rounded-lg p-4 hover:bg-neutral-700/50 transition-colors">
-              <Phone className="w-5 h-5 text-blue-400" />
-              <span className="text-sm font-medium">+27 79 448 4159</span>
-            </div>
-            <div className="flex items-center justify-center space-x-3 bg-neutral-800/50 rounded-lg p-4 hover:bg-neutral-700/50 transition-colors">
-              <Mail className="w-5 h-5 text-blue-400" />
-              <span className="text-sm font-medium">info@softintel.co.za</span>
-            </div>
-            <div className="flex items-center justify-center space-x-3 bg-neutral-800/50 rounded-lg p-4 hover:bg-neutral-700/50 transition-colors">
-              <Globe className="w-5 h-5 text-blue-400" />
-              <span className="text-sm font-medium">Serving Africa & Beyond</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced Professional Services Section - Horizontal Layout */}
+      {/* Services Section */}
       <section className="section-professional bg-gradient-to-br from-background-secondary via-background to-background-secondary relative overflow-hidden py-20">
         <AnimatedBackground
-           variant="section"
-           theme="dark"
-           backgroundImage="/circuit-board"
-           includeParticles={true}
-           includeLogos={true}
-           includeGrid={true}
-           includeGradient={true}
-         />
+          variant="section"
+          theme="dark"
+          backgroundImage="/circuit-board"
+          includeParticles={true}
+          includeLogos={true}
+          includeGrid={true}
+          includeGradient={true}
+        />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <motion.div
@@ -175,30 +137,33 @@ export default function Home() {
               Our Core Services
             </h2>
             <p className="text-professional text-lg text-slate-300 max-w-2xl mx-auto">
-              Comprehensive software solutions designed to transform your business operations
+              Comprehensive solutions designed to transform your business operations
             </p>
           </div>
 
-          {/* Horizontal Services Layout */}
+          {/* Services Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               {
-                icon: <Globe className="w-8 h-8" />,
-                title: "Web Design & Development",
-                description: "Modern, responsive websites and web applications that drive results",
-                features: ["Corporate Websites", "E-commerce", "Landing Pages", "Web Portals"],
+                icon: <Globe className="w-10 h-10" />,
+                title: "Digital Transformation",
+                description: "Comprehensive digital solutions that modernize your business operations and drive growth",
+                features: ["Process Automation", "Cloud Migration", "System Integration", "Digital Strategy"],
+                caseStudy: "Increased efficiency by 40% for retail client",
               },
               {
-                icon: <Smartphone className="w-8 h-8" />,
-                title: "Mobile Applications",
-                description: "Custom business apps and SaaS systems for mobile platforms",
-                features: ["iOS & Android Apps", "Business Portals", "SaaS Solutions", "API Integration"],
+                icon: <Smartphone className="w-10 h-10" />,
+                title: "Custom Software Development",
+                description: "Tailored software solutions designed to solve unique business challenges",
+                features: ["Web Applications", "Mobile Apps", "Enterprise Systems", "API Development"],
+                caseStudy: "Built custom CRM reducing manual work by 60%",
               },
               {
-                icon: <BarChart3 className="w-8 h-8" />,
-                title: "Digital Marketing",
-                description: "Complete digital marketing solutions to grow your business online",
-                features: ["SEO Optimization", "Social Media", "Google Ads", "Content Marketing"],
+                icon: <BarChart3 className="w-10 h-10" />,
+                title: "Business Intelligence",
+                description: "Data-driven insights and analytics to inform strategic decision making",
+                features: ["Data Analytics", "Reporting Dashboards", "Market Research", "Performance Metrics"],
+                caseStudy: "Improved decision-making speed by 50%",
               },
             ].map((service, index) => (
               <motion.div
@@ -206,10 +171,10 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-neutral-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-neutral-800/50 transition-all duration-300 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/10"
+                className="bg-neutral-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-neutral-800/50 transition-all duration-300 hover:border-primary-500/30 hover:shadow-2xl hover:shadow-primary-500/10 group"
               >
                 <motion.div
-                  className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-6"
+                  className="w-16 h-16 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl flex items-center justify-center text-primary-400 mb-6"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -221,10 +186,17 @@ export default function Home() {
                 <p className="text-professional text-slate-300 mb-4">
                   {service.description}
                 </p>
+
+                {/* Case Study Highlight */}
+                <div className="bg-primary-500/10 border border-primary-500/20 rounded-lg p-3 mb-4">
+                  <p className="text-primary-300 text-sm font-medium">💼 Case Study</p>
+                  <p className="text-slate-300 text-sm">{service.caseStudy}</p>
+                </div>
+
                 <ul className="space-y-2">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center text-professional-sm text-slate-400">
-                      <CheckCircle className="w-4 h-4 text-green-400 mr-2 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-primary-400 mr-2 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
@@ -235,7 +207,7 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Link href="/services">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25">
+              <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25">
                 View All Services
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -244,17 +216,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Enhanced Professional CTA Section */}
+      {/* Client Trust Indicators */}
+      <section className="py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
+        <div className="container mx-auto px-4 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Trusted by Industry Leaders
+            </h2>
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+              Partnering with businesses across South Africa to drive digital transformation
+            </p>
+          </motion.div>
+
+          {/* Client Logos Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center max-w-6xl mx-auto">
+            {[
+              { name: "Retail Corp", industry: "Retail" },
+              { name: "TechStart", industry: "Technology" },
+              { name: "FinanceFlow", industry: "Finance" },
+              { name: "HealthTech", industry: "Healthcare" },
+              { name: "EduPlatform", industry: "Education" },
+              { name: "LogiChain", industry: "Logistics" },
+            ].map((client, index) => (
+              <motion.div
+                key={client.name}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-neutral-800/30 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-neutral-700/30 transition-all duration-300 hover:border-primary-500/30"
+              >
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">
+                      {client.name.charAt(0)}
+                    </span>
+                  </div>
+                  <h4 className="text-white font-semibold text-sm mb-1">{client.name}</h4>
+                  <p className="text-slate-400 text-xs">{client.industry}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
       <section className="section-professional bg-gradient-to-br from-background via-background-secondary to-background relative overflow-hidden">
         <AnimatedBackground
-           variant="intense"
-           theme="dark"
-           backgroundImage="/data-center"
-           includeParticles={true}
-           includeLogos={true}
-           includeGrid={true}
-           includeGradient={true}
-         />
+          variant="intense"
+          theme="dark"
+          backgroundImage="/data-center"
+          includeParticles={true}
+          includeLogos={true}
+          includeGrid={true}
+          includeGradient={true}
+        />
 
         <div className="container mx-auto px-6 text-center relative z-10">
           <motion.div
@@ -262,22 +285,11 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8"
-            >
-              <TrendingUp className="w-4 h-4 mr-2" />
-              Transform Your Business Today
-            </motion.div>
-
             <h2 className="heading-display text-3xl md:text-4xl text-white mb-6">
               Ready to Transform Your Business?
             </h2>
             <p className="text-professional text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
-              Get started with a free consultation and discover how our intelligent software solutions
-              can help your business innovate and succeed in the digital age.
+              Get started with a free consultation and discover how our professional business solutions can help your business innovate and succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
