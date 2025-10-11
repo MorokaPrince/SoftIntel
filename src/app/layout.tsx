@@ -101,11 +101,12 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Moroka & Associates | Professional Business Solutions</title>
-        <meta name="description" content="Moroka & Associates provides innovative consulting and business advisory services, specializing in digital solutions and professional expertise." />
-        <meta name="keywords" content="Moroka & Associates, Consulting, Business Advisory, Digital Solutions, Professional Services" />
-        <meta name="author" content="Moroka & Associates" />
+        <title>NovaTek | Advanced Technology Solutions</title>
+        <meta name="description" content="NovaTek provides innovative technology solutions and digital transformation services, specializing in cloud infrastructure, custom software development, and business optimization." />
+        <meta name="keywords" content="NovaTek, Technology Solutions, Digital Transformation, Cloud Infrastructure, Custom Software Development, Business Innovation" />
+        <meta name="author" content="NovaTek" />
         <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/svg+xml" href="/favicon-novatek.svg" />
         <link rel="canonical" href="https://www.morokaandassociates.com/" />
       </head>
       <body

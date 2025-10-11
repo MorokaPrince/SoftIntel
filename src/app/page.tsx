@@ -16,7 +16,7 @@ import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 export default function Home() {
   const handleWhatsAppClick = () => {
-    const message = "Hi! I'm interested in learning more about Moroka & Associates' professional business solutions.";
+    const message = "Hi! I'm interested in learning more about NovaTek's advanced technology solutions.";
     window.open(
       `https://wa.me/27794484159?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -57,7 +57,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl md:text-2xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto"
             >
-              Moroka & Associates partners with ambitious South African businesses to create innovative digital solutions that transform operations and accelerate growth across Africa.
+              NovaTek partners with ambitious South African businesses to create innovative technology solutions that transform operations and accelerate growth across Africa.
             </motion.p>
 
             {/* Clean CTA Buttons */}
@@ -240,7 +240,7 @@ export default function Home() {
                 name: "Thabo Mthembu",
                 role: "CEO",
                 company: "AfriTech Solutions",
-                content: "Moroka & Associates transformed our entire IT infrastructure. Their cloud migration saved us 40% in operational costs while improving our system reliability.",
+                content: "NovaTek transformed our entire IT infrastructure. Their technology solutions saved us 40% in operational costs while improving our system reliability.",
                 rating: 5
               },
               {

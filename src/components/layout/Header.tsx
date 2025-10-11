@@ -38,9 +38,9 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const handleWhatsAppClick = () => {
-    const message = `🚀 Welcome to May & Moroka Digital Solutions! 🚀
+    const message = `🚀 Welcome to NovaTek! 🚀
 
-I'm interested in your professional digital solutions and would like to discuss:
+I'm interested in your advanced technology solutions and would like to discuss:
 
 📋 Service Requirements: General inquiry about your services
 💼 Company: Not specified
@@ -49,13 +49,13 @@ I'm interested in your professional digital solutions and would like to discuss:
 💰 Budget Range: To be discussed
 ⏰ Timeline: Flexible
 
-I'm ready to grow my business with your professional technology solutions!
+I'm ready to grow my business with your innovative technology solutions!
 
 Best regards,
 Potential Client
 
 ---
-💬 This inquiry was sent from the SoftIntel website header`;
+💬 This inquiry was sent from the NovaTek website header`;
 
     window.open(
       `https://wa.me/27794484159?text=${encodeURIComponent(message)}`,
@@ -93,7 +93,7 @@ Potential Client
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={14} className="text-primary-600" />
-                <span className="text-neutral-700">itsolutions@morokaandassociates.com</span>
+                <span className="text-neutral-700">info@novatek.co.za</span>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-4">
@@ -134,8 +134,8 @@ Potential Client
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/logo.svg"
-                    alt="Moroka & Associates"
+                    src="/logo-novatek.svg"
+                    alt="NovaTek"
                     width={isScrolled ? 24 : 32}
                     height={isScrolled ? 24 : 32}
                     className="object-contain"
@@ -149,14 +149,14 @@ Potential Client
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  Moroka & Associates
+                  NovaTek
                 </motion.h1>
                 <motion.div
                   className="text-sm text-neutral-600 leading-tight"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  Digital Business Solutions
+                  Advanced Technology Solutions
                 </motion.div>
               </div>
             </Link>

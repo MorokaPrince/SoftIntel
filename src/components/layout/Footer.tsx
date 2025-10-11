@@ -66,7 +66,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const handleWhatsAppClick = () => {
-    const message = "Hi! I'm interested in learning more about SoftIntel's intelligent software solutions.";
+    const message = "Hi! I'm interested in learning more about NovaTek's advanced technology solutions.";
     window.open(
       `https://wa.me/27794484159?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -90,8 +90,8 @@ const Footer = () => {
               <div className="relative">
                 <div className="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center">
                   <Image
-                    src="/logo.svg"
-                    alt="Moroka & Associates"
+                    src="/logo-novatek.svg"
+                    alt="NovaTek"
                     width={40}
                     height={40}
                     className="object-contain"
@@ -100,15 +100,15 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-neutral-900">
-                  Moroka & Associates
+                  NovaTek
                 </h3>
                 <p className="text-neutral-600 text-sm font-medium">
-                  Digital Business Solutions
+                  Advanced Technology Solutions
                 </p>
               </div>
             </div>
             <p className="text-neutral-600 leading-relaxed">
-              Professional digital transformation partner for South African businesses.
+              Premier technology partner for South African businesses.
               We deliver innovative technology solutions that drive sustainable growth across Africa.
             </p>
             <div className="flex space-x-3">
@@ -218,10 +218,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-primary-600" />
                 <a
-                  href="mailto:itsolutions@morokaandassociates.com"
+                  href="mailto:info@novatek.co.za"
                   className="text-neutral-700 hover:text-primary-600 transition-colors"
                 >
-                  itsolutions@morokaandassociates.com
+                  info@novatek.co.za
                 </a>
               </div>
               <button
@@ -241,7 +241,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-neutral-600 text-sm">
-              © {currentYear} Moroka & Associates Digital Solutions. All rights reserved.
+              © {currentYear} NovaTek. All rights reserved.
             </div>
             <div className="flex items-center space-x-6 text-sm text-neutral-600">
               <Link href="/privacy" className="hover:text-primary-600 transition-colors">
