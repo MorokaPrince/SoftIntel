@@ -29,38 +29,38 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Clean Hero Section - So Interactive Style */}
-      <section className="relative bg-white pt-24 md:pt-32 pb-20 md:pb-28 overflow-hidden">
+      {/* So Interactive Hero Section - Warm & Professional */}
+      <section className="relative bg-gradient-to-br from-orange-50 via-white to-green-50 pt-24 md:pt-32 pb-20 md:pb-28 overflow-hidden">
         <div className="container-safe relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            {/* Main Headline - Clean & Bold */}
+          <div className="text-center max-w-5xl mx-auto">
+            {/* Main Headline - Warm & Bold */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight"
             >
-              We craft{" "}
+              Professional{" "}
               <span className="text-primary-600 relative">
-                digital experiences
+                business solutions
                 <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 6C20 2, 40 2, 58 6C76 10, 96 10, 98 6" stroke="#E89F4C" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>{" "}
-              that drive results
+              for South African businesses
             </motion.h1>
 
-            {/* Clean Subtitle */}
+            {/* Warm Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl md:text-2xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto"
+              className="text-xl md:text-2xl text-neutral-700 mb-12 leading-relaxed max-w-4xl mx-auto"
             >
-              NovaTek partners with ambitious South African businesses to create innovative technology solutions that transform operations and accelerate growth across Africa.
+              NovaTek delivers innovative digital transformation services that help South African businesses thrive in the modern economy. From cloud infrastructure to custom software development, we turn your vision into reality.
             </motion.p>
 
-            {/* Clean CTA Buttons */}
+            {/* Professional CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -69,15 +69,15 @@ export default function Home() {
             >
               <Button
                 onClick={handleGetQuote}
-                className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 transform hover:-translate-y-0.5"
+                className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 transform hover:-translate-y-0.5"
               >
-                Start Your Project
+                Get Free Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button
                 variant="outline"
                 onClick={handleWhatsAppClick}
-                className="border-2 border-neutral-300 text-neutral-700 hover:border-primary-600 hover:text-primary-600 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                className="border-2 border-primary-600 text-primary-700 hover:bg-primary-600 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Let's Talk
@@ -86,9 +86,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Subtle Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-accent-50"></div>
+        {/* Warm Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-100 via-accent-100 to-primary-50"></div>
         </div>
       </section>
 
