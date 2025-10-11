@@ -82,116 +82,65 @@ Potential Client
             : "bg-transparent"
         }`}
       >
-      {/* Clean Top Bar */}
-      <div className={`${isScrolled ? 'py-2' : 'py-3'} bg-white border-b border-neutral-100 transition-all duration-300`}>
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <Phone size={14} className="text-primary-600" />
-                <span className="text-neutral-700">+27 79 448 4159</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail size={14} className="text-primary-600" />
-                <span className="text-neutral-700">info@novatek.co.za</span>
-              </div>
-            </div>
-            <div className="hidden md:flex items-center space-x-4">
-                <span className="text-neutral-600">Follow us:</span>
-                <div className="flex space-x-3">
-                  <a
-                    href="#"
-                    className="text-neutral-600 hover:text-primary-600 transition-colors font-medium"
-                    aria-label="LinkedIn"
-                  >
-                    LinkedIn
-                  </a>
-                  <a
-                    href="#"
-                    className="text-neutral-600 hover:text-primary-600 transition-colors font-medium"
-                    aria-label="Twitter"
-                  >
-                    Twitter
-                  </a>
-                </div>
-              </div>
-           </div>
-         </div>
-       </div>
 
-       {/* Clean Main Navigation */}
+       {/* Main Navigation */}
        <div className={`${isScrolled ? 'py-3' : 'py-4'} bg-white transition-all duration-300`}>
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            {/* Clean Logo */}
-            <Link href="/" className="flex items-center space-x-4 group">
-              <div className="relative">
-                <motion.div
-                  className={`${
-                    isScrolled ? 'w-10 h-10' : 'w-12 h-12'
-                  } rounded-lg flex items-center justify-center bg-primary-600 transition-all duration-300`}
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <Image
-                    src="/logo-novatek.svg"
-                    alt="NovaTek"
-                    width={isScrolled ? 24 : 32}
-                    height={isScrolled ? 24 : 32}
-                    className="object-contain"
-                  />
-                </motion.div>
-              </div>
+       <div className="container mx-auto px-4">
+         <div className="flex justify-between items-center">
+           {/* Logo */}
+           <Link href="/" className="flex items-center space-x-4 group">
+             <div className="relative">
+               <motion.div
+                 className={`${
+                   isScrolled ? 'w-8 h-8' : 'w-10 h-10'
+                 } rounded-lg flex items-center justify-center bg-primary transition-all duration-300`}
+                 whileHover={{ scale: 1.05 }}
+                 transition={{ duration: 0.3 }}
+               >
+                 <Image
+                   src="/logo-novatek.svg"
+                   alt="NovaTek"
+                   width={isScrolled ? 20 : 28}
+                   height={isScrolled ? 20 : 28}
+                   className="object-contain"
+                 />
+               </motion.div>
+             </div>
 
-              <div className={`text-left ${isScrolled && 'hidden md:block'} transition-all duration-300`}>
-                <motion.h1
-                  className="text-xl md:text-2xl font-bold text-neutral-900 leading-tight"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  NovaTek
-                </motion.h1>
-                <motion.div
-                  className="text-sm text-neutral-600 leading-tight"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  Advanced Technology Solutions
-                </motion.div>
-              </div>
-            </Link>
+             <div className={`text-left ${isScrolled && 'hidden md:block'} transition-all duration-300`}>
+               <motion.h1
+                 className="text-xl md:text-2xl font-bold text-primary leading-tight"
+                 whileHover={{ scale: 1.02 }}
+                 transition={{ duration: 0.2 }}
+               >
+                 NovaTek
+               </motion.h1>
+             </div>
+           </Link>
 
-            {/* Clean Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.id}
-                  href={item.href}
-                  className="text-neutral-700 hover:text-primary-600 font-medium transition-colors relative group"
-                >
-                  {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              ))}
-            </nav>
+           {/* Desktop Navigation */}
+           <nav className="hidden lg:flex items-center space-x-8">
+             {navigationItems.map((item) => (
+               <Link
+                 key={item.id}
+                 href={item.href}
+                 className="text-neutral-700 hover:text-primary font-medium transition-colors relative group"
+               >
+                 {item.label}
+                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+               </Link>
+             ))}
+           </nav>
 
-            {/* Clean CTA Buttons */}
-            <div className="hidden lg:flex items-center space-x-4">
-              <button
-                type="button"
-                onClick={handleWhatsAppClick}
-                className="flex items-center space-x-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium"
-              >
-                <MessageCircle size={18} />
-                <span>Let's Talk</span>
-              </button>
-              <Link
-                href="/contact"
-                className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium"
-              >
-                Get Started
-              </Link>
-            </div>
+           {/* CTA Button */}
+           <div className="hidden lg:flex items-center">
+             <Link
+               href="/contact"
+               className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium"
+             >
+               Contact Us
+             </Link>
+           </div>
 
             {/* Clean Mobile Menu Button */}
             <button
@@ -199,8 +148,6 @@ Potential Client
               onClick={toggleMenu}
               className="lg:hidden p-2 rounded-lg hover:bg-neutral-100 transition-colors text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-600"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMenuOpen}
-              aria-controls="mobile-menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

@@ -5,23 +5,23 @@
 @tailwind utilities;
 
 :root {
-   /* NovaTek Color System */
-   --background: var(--theme-background, #F8F8F8);
-   --background-secondary: var(--theme-background-secondary, #F1F5F9);
-   --background-tertiary: var(--theme-background-tertiary, #E2E8F0);
-   --foreground: var(--theme-foreground, #1A202C);
+    /* NovaTek Color System - So Interactive Inspired */
+    --background: var(--theme-background, #FFFFFF);
+    --background-secondary: var(--theme-background-secondary, #F8F9FA);
+    --background-tertiary: var(--theme-background-tertiary, #F1F3F4);
+    --foreground: var(--theme-foreground, #1A1A1A);
 
-   /* NovaTek Brand Colors - Tech-Focused Palette */
-   --primary: var(--theme-primary, #1A202C);
-   --primary-light: var(--theme-primary-light, #2D3748);
-   --primary-dark: var(--theme-primary-dark, #171923);
-   --primary-gradient-start: var(--theme-primary-dark, #171923);
-   --primary-gradient-end: var(--theme-primary, #1A202C);
+    /* NovaTek Brand Colors - Sophisticated Palette */
+    --primary: var(--theme-primary, #1A1A1A);
+    --primary-light: var(--theme-primary-light, #4A4A4A);
+    --primary-dark: var(--theme-primary-dark, #000000);
+    --primary-gradient-start: var(--theme-primary-dark, #000000);
+    --primary-gradient-end: var(--theme-primary, #1A1A1A);
 
-   /* Accent Colors - Tech Cyan Palette */
-   --accent: var(--theme-accent, #00CFFF);
-   --accent-light: var(--theme-accent-light, #33D6FF);
-   --accent-dark: var(--theme-accent-dark, #00B4DB);
+    /* Accent Colors - Professional Gold Palette */
+    --accent: var(--theme-accent, #B8860B);
+    --accent-light: var(--theme-accent-light, #DAA520);
+    --accent-dark: var(--theme-accent-dark, #8B6914);
 
   /* Professional Silver Colors */
   --silver: #64748b;
@@ -83,18 +83,18 @@
   --radius-2xl: 2rem;
 
   /* Theme Colors - Dynamic */
-  --theme-background: #0a0a0a;
-  --theme-background-secondary: #111111;
-  --theme-background-tertiary: #1a1a1a;
-  --theme-foreground: #ffffff;
+  --theme-background: #FFFFFF;
+  --theme-background-secondary: #F8F9FA;
+  --theme-background-tertiary: #F1F3F4;
+  --theme-foreground: #1A1A1A;
 
-  /* NovaTek Palette 1: Tech-Focused (Default) */
-  --theme-primary: #1A202C;
-  --theme-primary-light: #2D3748;
-  --theme-primary-dark: #171923;
-  --theme-accent: #00CFFF;
-  --theme-accent-light: #33D6FF;
-  --theme-accent-dark: #00B4DB;
+  /* NovaTek Palette 1: Sophisticated (Default) */
+  --theme-primary: #1A1A1A;
+  --theme-primary-light: #4A4A4A;
+  --theme-primary-dark: #000000;
+  --theme-accent: #B8860B;
+  --theme-accent-light: #DAA520;
+  --theme-accent-dark: #8B6914;
 
   /* Palette 2: NovaTek Alternative (Alternative) */
   --theme-primary-alt: #1A202C;
