@@ -290,7 +290,7 @@ Potential Client
   };
 
   const handleServiceInquiry = (service: Service) => {
-    const message = `🚀 Hi! I'm interested in ${service.title} from SoftIntel.
+    const message = `🚀 Hi! I'm interested in ${service.title} from NovaTek.
 
 📋 Service: ${service.title}
 💰 Starting Price: ${service.startingPrice || 'Custom quote'}
