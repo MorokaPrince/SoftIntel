@@ -7,12 +7,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
   X,
-  Phone,
-  Mail,
   MessageCircle,
 } from "lucide-react";
 import { NavigationItem } from "@/types";
-import ThemeSelector from "@/components/ui/ThemeSelector";
 
 const navigationItems: NavigationItem[] = [
    { id: "home", label: "Home", href: "/" },
@@ -186,7 +183,7 @@ Potential Client
                     className="w-full flex items-center justify-center space-x-2 bg-primary-500 hover:bg-primary-600 text-white px-4 py-3 rounded-lg transition-all duration-300 font-medium shadow-novatek"
                   >
                     <MessageCircle size={18} />
-                    <span>Let's Talk</span>
+                    <span>Let&apos;s Talk</span>
                   </button>
                   <Link
                     href="/contact"

@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { NavigationItem, SocialLink } from "@/types";
-import ScatteredLogo from "@/components/ui/ScatteredLogo";
 
 const navigationItems: NavigationItem[] = [
    { id: "home", label: "Home", href: "/" },

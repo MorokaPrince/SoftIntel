@@ -80,7 +80,7 @@ export default function Home() {
                 className="border-2 border-primary-600 text-primary-700 hover:bg-primary-600 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                Let's Talk
+                Let&apos;s Talk
               </Button>
             </motion.div>
           </div>
@@ -199,7 +199,7 @@ export default function Home() {
               Trusted by South African Businesses
             </h2>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              See how we've helped businesses across South Africa achieve their digital transformation goals
+              See how we&apos;ve helped businesses across South Africa achieve their digital transformation goals
             </p>
           </motion.div>
 
@@ -269,7 +269,7 @@ export default function Home() {
                     <p className="text-slate-400 text-sm">{testimonial.role}, {testimonial.company}</p>
                   </div>
                 </div>
-                <p className="text-slate-300 mb-4 leading-relaxed">"{testimonial.content}"</p>
+                <p className="text-slate-300 mb-4 leading-relaxed">&ldquo;{testimonial.content}&rdquo;</p>
                 <div className="flex text-primary-400">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <span key={i} className="text-lg">★</span>
@@ -376,7 +376,7 @@ export default function Home() {
           >
             <div className="bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 rounded-2xl p-8 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold text-white mb-4">Ready to Start Your Digital Journey?</h3>
-              <p className="text-slate-300 mb-6">Every successful project begins with a conversation. Let's discuss how we can transform your business.</p>
+              <p className="text-slate-300 mb-6">Every successful project begins with a conversation. Let&apos;s discuss how we can transform your business.</p>
               <Button className="bg-gradient-to-r from-primary-600 to-accent-600 hover:from-primary-700 hover:to-accent-700 text-white px-8 py-3 rounded-lg transition-all duration-300">
                 Schedule Free Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
