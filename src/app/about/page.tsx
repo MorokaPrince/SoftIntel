@@ -183,9 +183,9 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="heading-hero text-white mb-6"
             >
-              About SoftIntel{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-                Intelligence Solutions
+              About NovaTek{" "}
+              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                Technology Solutions
               </span>
             </motion.h1>
 
