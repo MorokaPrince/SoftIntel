@@ -38,9 +38,9 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: "itsolutions@morokaandassociates.com",
+    details: "info@novatek.co.za",
     description: "Send us an email anytime",
-    action: "mailto:itsolutions@morokaandassociates.com",
+    action: "mailto:info@novatek.co.za",
   },
   {
     icon: MapPin,
