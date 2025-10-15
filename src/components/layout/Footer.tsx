@@ -225,11 +225,12 @@ const Footer = () => {
                 </a>
               </div>
               <button
+                type="button"
                 onClick={handleWhatsAppClick}
-                className="flex items-center space-x-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg transition-all duration-300 w-full justify-center font-medium"
+                className="flex items-center space-x-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg transition-all duration-300 w-full justify-center font-medium shadow-novatek"
               >
                 <MessageCircle size={18} />
-                <span>Let's Talk</span>
+                <span>Let&apos;s Talk</span>
               </button>
             </div>
           </div>
