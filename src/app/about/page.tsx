@@ -197,7 +197,7 @@ export default function AboutPage() {
               className="body-large text-slate-300 mb-10 text-container"
             >
               Learn more about our company history, values, and the passionate team behind
-              SoftIntel&apos;s intelligent software solutions for businesses worldwide.
+              NovaTek&apos;s innovative technology solutions for businesses across Africa.
             </motion.p>
 
             {/* Professional CTA Buttons - Identical to Home */}
@@ -358,7 +358,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4 text-center">The Beginning</h3>
                 <p className="text-slate-300 text-sm leading-relaxed text-center">
-                  SoftIntel was born from a vision to democratize access to world-class software engineering expertise across Africa.
+                  NovaTek was born from a vision to democratize access to world-class technology solutions across Africa.
                 </p>
               </motion.div>
 
@@ -373,7 +373,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4 text-center">Growth Journey</h3>
                 <p className="text-slate-300 text-sm leading-relaxed text-center">
-                  Starting as a one-person operation in Limpopo, South Africa, SoftIntel quickly grew into a trusted partner for digital transformation.
+                  Starting as a one-person operation in Limpopo, South Africa, NovaTek quickly grew into a trusted partner for digital transformation.
                 </p>
               </motion.div>
 
@@ -696,8 +696,8 @@ export default function AboutPage() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-              Join the growing number of African businesses that trust SoftIntel
-              to deliver exceptional software solutions.
+              Join the growing number of African businesses that trust NovaTek
+              to deliver exceptional technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button

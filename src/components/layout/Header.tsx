@@ -78,13 +78,13 @@ Potential Client
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-neutral-200"
+            ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-primary-500/20"
             : "bg-transparent"
         }`}
       >
 
        {/* Main Navigation */}
-       <div className={`${isScrolled ? 'py-3' : 'py-4'} bg-white transition-all duration-300`}>
+       <div className={`${isScrolled ? 'py-3' : 'py-4'} bg-background/95 backdrop-blur-md transition-all duration-300`}>
        <div className="container mx-auto px-4">
          <div className="flex justify-between items-center">
            {/* Logo */}

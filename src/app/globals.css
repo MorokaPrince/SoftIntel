@@ -5,60 +5,28 @@
 @tailwind utilities;
 
 :root {
-     /* NovaTek Dark Theme - So Interactive Inspired */
-     --background: var(--theme-background, #05101A);
-     --background-secondary: var(--theme-background-secondary, #0B132B);
-     --background-tertiary: var(--theme-background-tertiary, #1A2F4F);
-     --foreground: var(--theme-foreground, #FFFFFF);
+     /* NovaTek Dark Theme - SoInteractive Inspired */
+     --background: #0A0A0A;
+     --background-secondary: #1C1C1C;
+     --background-tertiary: #2A2A2A;
+     --foreground: #FFFFFF;
 
-     /* NovaTek Brand Colors - Electric Cyan & Navy */
-     --primary: var(--theme-primary, #00E6FF);
-     --primary-light: var(--theme-primary-light, #33EFFF);
-     --primary-dark: var(--theme-primary-dark, #00B8CC);
-     --primary-gradient-start: var(--theme-primary-dark, #00B8CC);
-     --primary-gradient-end: var(--theme-primary, #00E6FF);
+     /* NovaTek Brand Colors - Electric Cyan */
+     --primary: #00E6FF;
+     --primary-light: #33EFFF;
+     --primary-dark: #00C4FF;
+     --primary-gradient-start: #00C4FF;
+     --primary-gradient-end: #00E6FF;
 
-     /* Accent Colors - NovaTek Navy Palette */
-     --accent: var(--theme-accent, #0B132B);
-     --accent-light: var(--theme-accent-light, #1A2F4F);
-     --accent-dark: var(--theme-accent-dark, #05101A);
+     /* NovaTek Accent Colors - Dark Charcoal */
+     --accent: #666666;
+     --accent-light: #999999;
+     --accent-dark: #333333;
 
-  /* Professional Silver Colors */
-  --silver: #64748b;
-  --silver-light: #94a3b8;
-  --silver-dark: #475569;
-
-  /* Professional Neutral Scale - Dark Theme */
-  --neutral-50: #0F172A;
-  --neutral-100: #1E293B;
-  --neutral-200: #334155;
-  --neutral-300: #475569;
-  --neutral-400: #64748B;
-  --neutral-500: #94A3B8;
-  --neutral-600: #CBD5E1;
-  --neutral-700: #E2E8F0;
-  --neutral-800: #F1F5F9;
-  --neutral-900: #F8FAFC;
-
-  /* Light Theme Specific Neutrals (Fallback) */
-  --dark-50: #0F172A;
-  --dark-100: #1E293B;
-  --dark-200: #334155;
-  --dark-300: #475569;
-  --dark-400: #64748B;
-  --dark-500: #94A3B8;
-  --dark-600: #CBD5E1;
-  --dark-700: #E2E8F0;
-  --dark-800: #F1F5F9;
-  --dark-900: #F8FAFC;
-
-  /* Modern Accent Colors - Warm Professional Theme */
-  --accent: var(--theme-accent, #2F6F4E);
-  --accent-light: var(--theme-accent-light, #4A8B6B);
-  --accent-dark: var(--theme-accent-dark, #1F4A33);
-  --success: var(--theme-success, #10b981);
-  --warning: var(--theme-warning, #E89F4C);
-  --error: var(--theme-error, #ef4444);
+  /* NovaTek Utility Colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
 
   /* Professional Typography */
   --font-inter: 'Inter', sans-serif;
@@ -82,22 +50,7 @@
   --radius-xl: 1.5rem;
   --radius-2xl: 2rem;
 
-  /* Theme Colors - Dynamic Dark Theme */
-  --theme-background: #05101A;
-  --theme-background-secondary: #0B132B;
-  --theme-background-tertiary: #1A2F4F;
-  --theme-foreground: #FFFFFF;
 
-  /* NovaTek Dark Palette 1: Electric Cyan & Navy (Default) */
-  --theme-primary: #00E6FF;
-  --theme-primary-light: #33EFFF;
-  --theme-primary-dark: #00B8CC;
-  --theme-accent: #0B132B;
-  --theme-accent-light: #1A2F4F;
-  --theme-accent-dark: #05101A;
-
-  /* Palette 2: Vibrant Modern (Alternative) */
-  --theme-primary-alt: #FF6B35;
   --theme-primary-light-alt: #FF8C66;
   --theme-primary-dark-alt: #E55A2B;
   --theme-accent-alt: #4ECDC4;
@@ -145,7 +98,7 @@ body {
    background-image: url('/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg');
  }
 
- /* Enhanced Tech Backgrounds for SoftIntel */
+ /* Enhanced Tech Backgrounds for NovaTek */
  .bg-neural-network {
    background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
  }
