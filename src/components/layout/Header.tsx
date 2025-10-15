@@ -109,7 +109,7 @@ Potential Client
 
              <div className={`text-left ${isScrolled && 'hidden md:block'} transition-all duration-300`}>
                <motion.h1
-                 className="text-xl md:text-2xl font-bold text-primary leading-tight"
+                 className="text-xl md:text-2xl font-bold text-white leading-tight"
                  whileHover={{ scale: 1.02 }}
                  transition={{ duration: 0.2 }}
                >
@@ -124,10 +124,10 @@ Potential Client
                <Link
                  key={item.id}
                  href={item.href}
-                 className="text-neutral-700 hover:text-primary font-medium transition-colors relative group"
+                 className="text-white hover:text-primary-500 font-medium transition-colors relative group"
                >
                  {item.label}
-                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
                </Link>
              ))}
            </nav>
@@ -136,7 +136,7 @@ Potential Client
            <div className="hidden lg:flex items-center">
              <Link
                href="/contact"
-               className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium"
+               className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium shadow-novatek"
              >
                Contact Us
              </Link>
@@ -146,7 +146,7 @@ Potential Client
             <button
               type="button"
               onClick={toggleMenu}
-              className="lg:hidden p-2 rounded-lg hover:bg-neutral-100 transition-colors text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-600"
+              className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors text-white focus:outline-none focus:ring-2 focus:ring-primary-500"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -163,7 +163,7 @@ Potential Client
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-neutral-200 shadow-lg"
+            className="lg:hidden bg-background/95 backdrop-blur-md border-t border-primary-500/20 shadow-lg"
             role="navigation"
             aria-label="Mobile navigation"
           >
@@ -173,7 +173,7 @@ Potential Client
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="block text-neutral-700 hover:text-primary-600 font-medium transition-colors py-3 text-lg"
+                    className="block text-white hover:text-primary-500 font-medium transition-colors py-3 text-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
@@ -183,14 +183,14 @@ Potential Client
                   <button
                     type="button"
                     onClick={handleWhatsAppClick}
-                    className="w-full flex items-center justify-center space-x-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-3 rounded-lg transition-all duration-300 font-medium"
+                    className="w-full flex items-center justify-center space-x-2 bg-primary-500 hover:bg-primary-600 text-white px-4 py-3 rounded-lg transition-all duration-300 font-medium shadow-novatek"
                   >
                     <MessageCircle size={18} />
                     <span>Let's Talk</span>
                   </button>
                   <Link
                     href="/contact"
-                    className="w-full block text-center bg-neutral-900 hover:bg-neutral-800 text-white px-4 py-3 rounded-lg transition-all duration-300 font-medium"
+                    className="w-full block text-center bg-accent-800 hover:bg-accent-700 text-white px-4 py-3 rounded-lg transition-all duration-300 font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Get Started

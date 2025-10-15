@@ -78,9 +78,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white border-t border-neutral-200 relative">
+    <footer className="bg-background border-t border-primary-500/20 relative">
       {/* Subtle Background Pattern */}
-      <div className="absolute inset-0 bg-neutral-50/50"></div>
+      <div className="absolute inset-0 bg-novatek-gradient opacity-50"></div>
       {/* Clean Main Footer Content */}
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -88,7 +88,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
               <div className="relative">
-                <div className="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-primary-500 rounded-xl flex items-center justify-center shadow-novatek">
                   <Image
                     src="/logo-novatek.svg"
                     alt="NovaTek"
@@ -99,15 +99,15 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-neutral-900">
+                <h3 className="text-xl font-bold text-white">
                   NovaTek
                 </h3>
-                <p className="text-neutral-600 text-sm font-medium">
+                <p className="text-primary-400 text-sm font-medium">
                   Advanced Technology Solutions
                 </p>
               </div>
             </div>
-            <p className="text-neutral-600 leading-relaxed">
+            <p className="text-slate-300 leading-relaxed">
               Premier technology partner for South African businesses.
               We deliver innovative technology solutions that drive sustainable growth across Africa.
             </p>
@@ -127,7 +127,7 @@ const Footer = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-primary-600 hover:bg-primary-700 rounded-lg flex items-center justify-center transition-colors"
+                      className="w-10 h-10 bg-primary-500 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors text-white shadow-novatek"
                       aria-label={social.name}
                     >
                       <IconComponent size={18} />
@@ -138,11 +138,11 @@ const Footer = () => {
                 return (
                   <div
                     key={social.id}
-                    className="relative w-10 h-10 bg-neutral-300 rounded-lg flex items-center justify-center opacity-60 cursor-not-allowed"
+                    className="relative w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center opacity-60 cursor-not-allowed text-slate-400"
                     title={`${social.name} - Coming Soon`}
                   >
                     <IconComponent size={18} />
-                    <div className="absolute -top-2 -right-2 bg-primary-600 text-white text-xs px-1 py-0.5 rounded-full font-bold text-[8px]">
+                    <div className="absolute -top-2 -right-2 bg-primary-500 text-white text-xs px-1 py-0.5 rounded-full font-bold text-[8px]">
                       Soon
                     </div>
                   </div>
@@ -153,7 +153,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-neutral-900">
+            <h4 className="font-semibold text-lg mb-4 text-white">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -161,7 +161,7 @@ const Footer = () => {
                 <li key={item.id}>
                   <Link
                     href={item.href}
-                    className="text-neutral-600 hover:text-primary-600 transition-colors"
+                    className="text-slate-300 hover:text-primary-400 transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -172,7 +172,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-neutral-900">
+            <h4 className="font-semibold text-lg mb-4 text-white">
               Our Services
             </h4>
             <ul className="space-y-3">
@@ -180,7 +180,7 @@ const Footer = () => {
                 <li key={service.id}>
                   <Link
                     href={service.href}
-                    className="text-neutral-600 hover:text-primary-600 transition-colors"
+                    className="text-slate-300 hover:text-primary-400 transition-colors"
                   >
                     {service.label}
                   </Link>
@@ -191,35 +191,35 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-neutral-900">
+            <h4 className="font-semibold text-lg mb-4 text-white">
               Get in Touch
             </h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin size={18} className="text-primary-600 mt-1 flex-shrink-0" />
+                <MapPin size={18} className="text-primary-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-neutral-700">
+                  <p className="text-white">
                     Limpopo, South Africa
                   </p>
-                  <p className="text-neutral-600 text-sm">
+                  <p className="text-slate-300 text-sm">
                     Serving clients across Africa
                   </p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={18} className="text-primary-600" />
+                <Phone size={18} className="text-primary-400" />
                 <a
                   href="tel:+27794484159"
-                  className="text-neutral-700 hover:text-primary-600 transition-colors"
+                  className="text-white hover:text-primary-400 transition-colors"
                 >
                   +27 79 448 4159
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail size={18} className="text-primary-600" />
+                <Mail size={18} className="text-primary-400" />
                 <a
                   href="mailto:info@novatek.co.za"
-                  className="text-neutral-700 hover:text-primary-600 transition-colors"
+                  className="text-white hover:text-primary-400 transition-colors"
                 >
                   info@novatek.co.za
                 </a>
