@@ -238,20 +238,20 @@ const Footer = () => {
       </div>
 
       {/* Clean Bottom Bar */}
-      <div className="border-t border-neutral-200">
+      <div className="border-t border-primary-500/20">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-neutral-600 text-sm">
+            <div className="text-slate-300 text-sm">
               © {currentYear} NovaTek. All rights reserved.
             </div>
-            <div className="flex items-center space-x-6 text-sm text-neutral-600">
-              <Link href="/privacy" className="hover:text-primary-600 transition-colors">
+            <div className="flex items-center space-x-6 text-sm text-slate-300">
+              <Link href="/privacy" className="hover:text-primary-400 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-primary-600 transition-colors">
+              <Link href="/terms" className="hover:text-primary-400 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/cookies" className="hover:text-primary-600 transition-colors">
+              <Link href="/cookies" className="hover:text-primary-400 transition-colors">
                 Cookie Policy
               </Link>
             </div>
@@ -261,8 +261,9 @@ const Footer = () => {
 
       {/* Clean Back to Top Button */}
       <button
+        type="button"
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-14 h-14 bg-primary-600 hover:bg-primary-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-40"
+        className="fixed bottom-8 right-8 w-14 h-14 bg-primary-500 hover:bg-primary-600 text-white rounded-full flex items-center justify-center shadow-novatek-lg transition-all duration-300 hover:scale-110 z-40"
         aria-label="Back to top"
       >
         <ArrowUp size={20} />
