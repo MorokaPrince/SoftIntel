@@ -29,35 +29,35 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* So Interactive Hero Section - Warm & Professional */}
-      <section className="relative bg-gradient-to-br from-orange-50 via-white to-green-50 pt-24 md:pt-32 pb-20 md:pb-28 overflow-hidden">
+      {/* NovaTek Hero Section - Dark Professional Theme */}
+      <section className="relative bg-gradient-to-br from-background via-background-secondary to-background pt-24 md:pt-32 pb-20 md:pb-28 overflow-hidden">
         <div className="container-safe relative z-10">
           <div className="text-center max-w-5xl mx-auto">
-            {/* Main Headline - Warm & Bold */}
+            {/* Main Headline - NovaTek Style */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
             >
-              Professional{" "}
-              <span className="text-primary-600 relative">
-                business solutions
+              Building{" "}
+              <span className="text-primary-400 relative">
+                Smart Digital
                 <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 6C20 2, 40 2, 58 6C76 10, 96 10, 98 6" stroke="#E89F4C" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M2 6C20 2, 40 2, 58 6C76 10, 96 10, 98 6" stroke="#00E6FF" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>{" "}
-              for South African businesses
+              Experiences
             </motion.h1>
 
-            {/* Warm Subtitle */}
+            {/* NovaTek Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl md:text-2xl text-neutral-700 mb-12 leading-relaxed max-w-4xl mx-auto"
+              className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-4xl mx-auto"
             >
-              NovaTek delivers innovative digital transformation services that help South African businesses thrive in the modern economy. From cloud infrastructure to custom software development, we turn your vision into reality.
+              NovaTek is a forward-thinking digital transformation company that helps clients harness the power of technology. We design, develop, and integrate digital platforms that connect people, data, and ideas for the modern enterprise.
             </motion.p>
 
             {/* Professional CTA Buttons */}
