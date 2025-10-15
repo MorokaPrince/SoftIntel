@@ -92,16 +92,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clean Services Section - So Interactive Style */}
-      <section className="py-20 md:py-28 bg-neutral-50">
-        <div className="container-safe">
+      {/* Clean Services Section - NovaTek Dark Style */}
+      <section className="py-20 md:py-28 bg-background-secondary relative">
+        <div className="absolute inset-0 bg-novatek-gradient opacity-30"></div>
+        <div className="container-safe relative z-10">
           <div className="text-center mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6"
+              className="text-4xl md:text-5xl font-bold text-white mb-6"
             >
               What We Do
             </motion.h2>
@@ -110,7 +111,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed"
             >
               We partner with South African businesses to solve complex challenges through intelligent digital solutions that drive measurable results.
             </motion.p>
@@ -144,21 +145,21 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 group hover:border-primary-200"
+                className="bg-background/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-novatek transition-all duration-300 border border-primary-500/20 group hover:border-primary-500/40"
               >
-                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center text-primary-600 mb-6 group-hover:bg-primary-200 transition-colors">
+                <div className="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center text-primary-400 mb-6 group-hover:bg-primary-500/30 transition-colors">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   {service.title}
                 </h3>
-                <p className="text-neutral-600 leading-relaxed mb-6">
+                <p className="text-slate-300 leading-relaxed mb-6">
                   {service.description}
                 </p>
                 <ul className="space-y-3">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-neutral-700">
-                      <div className="w-2 h-2 bg-primary-600 rounded-full mr-3 flex-shrink-0"></div>
+                    <li key={feature} className="flex items-center text-slate-300">
+                      <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
                       {feature}
                     </li>
                   ))}
@@ -175,7 +176,7 @@ export default function Home() {
             className="text-center mt-16"
           >
             <Link href="/services">
-              <Button className="bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-4 text-lg font-semibold transition-all duration-300">
+              <Button className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-novatek">
                 View All Services
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
