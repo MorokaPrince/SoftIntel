@@ -446,10 +446,7 @@ Potential Client
 
         {/* Animated Grid */}
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(120,119,198,0.15) 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
-          }}></div>
+          <div className="absolute inset-0 services-grid-pattern"></div>
         </div>
 
         {/* Floating Orbs */}
@@ -763,10 +760,7 @@ Potential Client
 
         {/* Animated Circuit Pattern */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.3) 1px, transparent 0)`,
-            backgroundSize: '60px 60px'
-          }}></div>
+          <div className="absolute inset-0 process-circuit-pattern"></div>
         </div>
 
         {/* Connection Lines - Animated */}
@@ -1031,10 +1025,7 @@ Potential Client
 
         {/* Animated Grid Pattern */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(120,119,198,0.1) 1px, transparent 0)`,
-            backgroundSize: '50px 50px'
-          }}></div>
+          <div className="absolute inset-0 cta-grid-pattern"></div>
         </div>
 
         {/* Floating Elements */}
