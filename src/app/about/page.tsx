@@ -13,12 +13,9 @@ import {
   CheckCircle,
   MessageCircle,
   ArrowRight,
-  Handshake,
-  Building,
   TrendingUp,
   Lightbulb,
   Rocket,
-  Star,
 } from "lucide-react";
 import Image from "next/image";
 import { CompanyValue, TeamMember } from "@/types";
