@@ -1,8 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* ================= MODULAR CSS ARCHITECTURE ================= */
+/* Import modular CSS files for better maintainability and performance */
 
+/* Core CSS Variables & Theme */
+@import '../styles/variables.css';
+
+/* Base Styles & Typography */
+@import '../styles/base.css';
+
+/* Component Styles */
+@import '../styles/components.css';
+
+/* Animations & Keyframes */
+@import '../styles/animations.css';
+
+/* Utility Classes & Responsive Design */
+@import '../styles/utilities.css';
+
+/* Tailwind CSS (keep for component library compatibility) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ================= ADDITIONAL GLOBAL STYLES ================= */
+/* Only styles that don't fit into modular structure go here */
+
+/* Legacy Support - Keep minimal styles for backward compatibility */
+.btn-novatek {
+  @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg transition-all duration-300 font-semibold shadow-lg;
+}
+
+.shadow-novatek {
+  box-shadow: 0 4px 15px rgba(0, 230, 255, 0.3);
+}
+
+/* Enhanced Logo Background Classes for AnimatedBackground Component */
+.bg-logo-1 { background-image: url('/SoftIntel Logo 1.gif'); }
+.bg-logo-2 { background-image: url('/SoftIntel Logo 2.gif'); }
+.bg-logo-4 { background-image: url('/SoftIntel Logo 4.gif'); }
+.bg-server-room { background-image: url('/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg'); }
+.bg-plexus { background-image: url('/plexus-scifi-background_280538-7858.jpg'); }
+
+/* Tech Backgrounds with Overlays */
+.tech-bg-primary {
+  background:
+    linear-gradient(135deg, rgba(10, 10, 10, 0.8) 0%, rgba(17, 17, 17, 0.9) 100%),
+    url("/tech-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.novatek-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
 
 :root {
      /* NovaTek Dark Theme - SoInteractive Inspired */

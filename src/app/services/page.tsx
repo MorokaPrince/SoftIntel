@@ -318,8 +318,8 @@ Potential Client
 
   return (
     <div className="min-h-screen">
-      {/* Enhanced Hero Section - Black Theme */}
-      <section className="relative bg-black pt-20 pb-16 overflow-hidden">
+      {/* Modern Hero Section - Enhanced Design */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 pt-24 pb-20 overflow-hidden">
         <AnimatedBackground
           variant="hero"
           theme="dark"
@@ -330,119 +330,161 @@ Potential Client
           includeGradient={true}
         />
 
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-cyan-400/20 to-blue-400/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full blur-lg animate-bounce delay-500"></div>
+
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center max-w-6xl mx-auto">
-            {/* Professional Badge */}
+          <div className="text-center max-w-7xl mx-auto">
+            {/* Premium Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8"
+              className="inline-flex items-center bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full text-sm font-semibold mb-12 shadow-2xl"
             >
-              <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
-              PROFESSIONAL IT SOLUTIONS
+              <div className="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
+              PREMIUM DIGITAL SOLUTIONS • INNOVATIVE TECHNOLOGY • PROVEN RESULTS
             </motion.div>
 
-            {/* Main Headline - Much Larger & More Impactful */}
+            {/* Main Headline - Ultra Modern Typography */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="heading-hero font-black text-white mb-6 leading-[0.9]"
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[0.85] tracking-tight"
             >
-              COMPREHENSIVE DIGITAL SOLUTIONS FOR{" "}
-              <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent animate-pulse">
-                MODERN BUSINESSES
+              TRANSFORM YOUR{" "}
+              <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
+                DIGITAL FUTURE
+              </span>
+              <span className="text-4xl md:text-6xl lg:text-7xl block mt-2 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+                TODAY
               </span>
             </motion.h1>
 
-            {/* Professional Subtitle - Concise & Impactful */}
+            {/* Enhanced Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-4xl mx-auto font-medium"
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-xl md:text-2xl lg:text-3xl text-blue-100 mb-12 leading-relaxed max-w-5xl mx-auto font-light"
             >
-              Professional digital solutions that transform businesses and drive growth across Africa.
+              Cutting-edge digital solutions that propel businesses into the future with{" "}
+              <span className="font-semibold text-white">AI-powered innovation</span>,{" "}
+              <span className="font-semibold text-cyan-300">seamless automation</span>, and{" "}
+              <span className="font-semibold text-purple-300">unparalleled performance</span>.
             </motion.p>
 
-            {/* Professional CTA Buttons - More Vibrant */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-            >
-              <motion.button
-                whileHover={{ scale: 1.05, y: -3 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-12 py-6 rounded-xl font-bold text-xl transition-all duration-300 shadow-2xl hover:shadow-green-500/50 flex items-center justify-center min-w-[280px]"
-              >
-                <MessageCircle className="w-7 h-7 mr-3" />
-                START WHATSAPP CHAT
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05, y: -3 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-12 py-6 rounded-xl font-bold text-xl transition-all duration-300 shadow-2xl hover:shadow-orange-500/50 flex items-center justify-center min-w-[280px]"
-              >
-                <ArrowRight className="w-7 h-7 mr-3" />
-                SCHEDULE CONSULTATION
-              </motion.button>
-            </motion.div>
-
-            {/* Trust Indicators - More Prominent */}
+            {/* Enhanced CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-12 flex flex-wrap justify-center items-center gap-12 text-lg text-blue-200 font-semibold"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
             >
-              <div className="flex items-center">
-                <Shield className="w-6 h-6 mr-3 text-green-400" />
-                TRUSTED BY 50+ BUSINESSES
+              <motion.button
+                whileHover={{ scale: 1.05, y: -5, rotateX: 5 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white px-16 py-8 rounded-2xl font-bold text-2xl transition-all duration-500 shadow-2xl hover:shadow-emerald-500/50 flex items-center justify-center min-w-[320px] overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                <MessageCircle className="w-8 h-8 mr-4" />
+                START YOUR JOURNEY
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05, y: -5, rotateX: 5 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white px-16 py-8 rounded-2xl font-bold text-2xl transition-all duration-500 shadow-2xl hover:shadow-orange-500/50 flex items-center justify-center min-w-[320px] overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                <ArrowRight className="w-8 h-8 mr-4" />
+                BOOK CONSULTATION
+              </motion.button>
+            </motion.div>
+
+            {/* Enhanced Trust Indicators */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+            >
+              <div className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-400 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-white mb-2">50+</div>
+                <div className="text-blue-200 font-medium">Trusted Businesses</div>
               </div>
-              <div className="flex items-center">
-                <Users className="w-6 h-6 mr-3 text-blue-400" />
-                5+ YEARS EXPERIENCE
+              <div className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-white mb-2">5+</div>
+                <div className="text-blue-200 font-medium">Years Experience</div>
               </div>
-              <div className="flex items-center">
-                <TrendingUp className="w-6 h-6 mr-3 text-yellow-400" />
-                24/7 SUPPORT AVAILABLE
+              <div className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                  <TrendingUp className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-white mb-2">24/7</div>
+                <div className="text-blue-200 font-medium">Premium Support</div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Enhanced Services Grid - With GIF Background */}
-      <section className="relative py-8 tech-bg-secondary overflow-hidden">
-        {/* GIF Background - Small Size */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-cover bg-logo-subtle bg-logo-2" />
+      {/* Premium Services Showcase - Ultra Modern Design */}
+      <section className="relative py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_rgba(120,119,198,0.05),transparent_50%)] opacity-100"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(255,255,255,0.08),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,_rgba(120,119,198,0.03),transparent_50%)]"></div>
+
+        {/* Animated Grid */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(120,119,198,0.15) 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }}></div>
         </div>
 
-        {/* Rich Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/90 via-blue-50/85 to-indigo-50/90"></div>
-        <div className="absolute inset-0 geometric-bg opacity-8"></div>
-        <div className="absolute inset-0 digital-grid opacity-15"></div>
-
-        {/* Floating Elements */}
-        <div className="absolute top-5 left-5 w-12 h-12 border border-blue-200/40 rounded-full animate-pulse opacity-60"></div>
-        <div className="absolute bottom-5 right-5 w-10 h-10 bg-gradient-to-br from-blue-100/50 to-indigo-100/50 rounded-lg blur-sm animate-pulse delay-500"></div>
+        {/* Floating Orbs */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-200/40 to-purple-200/40 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-br from-cyan-200/40 to-blue-200/40 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 right-10 w-24 h-24 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full blur-2xl animate-bounce delay-500"></div>
 
         <div className="container mx-auto px-4 relative z-10">
+          {/* Enhanced Section Header */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-8"
+            className="text-center mb-16"
           >
-            <h2 className="heading-h1 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent font-poppins-black">OUR SERVICE OFFERINGS</h2>
-            <p className="heading-h3 text-slate-700 max-w-4xl mx-auto font-inter-semibold">Professional solutions tailored to your business needs</p>
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-200/50 text-blue-700 px-6 py-3 rounded-full text-sm font-semibold mb-8">
+              <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
+              COMPREHENSIVE SERVICE PORTFOLIO
+            </div>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent">
+                SOLUTIONS THAT
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                DRIVE RESULTS
+              </span>
+            </h2>
+            <p className="text-xl md:text-2xl text-slate-600 max-w-5xl mx-auto font-light leading-relaxed">
+              From concept to deployment, we deliver end-to-end digital solutions that transform businesses and accelerate growth in the digital age.
+            </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Service Categories Grid - Enhanced Layout */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const iconMap: Record<string, typeof Globe> = {
                 Globe,
@@ -457,65 +499,107 @@ Potential Client
               return (
                 <motion.div
                   key={service.id}
-                  initial={{ opacity: 0, y: 20, scale: 0.9 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  whileHover={{ y: -10, scale: 1.02 }}
-                  className="group relative bg-white/95 backdrop-blur-sm rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 border border-white/30"
+                  initial={{ opacity: 0, y: 40, rotateX: -15 }}
+                  animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.15 }}
+                  whileHover={{
+                    y: -20,
+                    scale: 1.05,
+                    rotateX: 5,
+                    transition: { duration: 0.3 }
+                  }}
+                  className="group relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 border border-white/50 hover:border-blue-200/50 overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/8 to-indigo-600/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  {/* Card Background Effects */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white/50 to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-indigo-600/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                  {/* Animated Border */}
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-[1px]">
+                    <div className="w-full h-full bg-white/90 backdrop-blur-xl rounded-3xl"></div>
+                  </div>
+
                   <div className="relative z-10">
+                    {/* Enhanced Icon */}
                     <motion.div
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6 }}
-                      className="w-16 h-16 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 rounded-2xl flex items-center justify-center text-white mb-4 shadow-2xl group-hover:shadow-blue-500/40"
+                      whileHover={{
+                        rotate: 360,
+                        scale: 1.2,
+                        transition: { duration: 0.6 }
+                      }}
+                      className="w-20 h-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 rounded-3xl flex items-center justify-center text-white mb-6 shadow-2xl group-hover:shadow-blue-500/50 relative overflow-hidden"
                     >
-                      <IconComponent size={28} />
+                      <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                      <IconComponent size={32} className="relative z-10" />
                     </motion.div>
 
-                    <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300 service-title">
+                    {/* Service Title */}
+                    <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
                       {service.title}
                     </h3>
 
-                    <p className="text-slate-700 mb-4 leading-relaxed text-sm md:text-base font-medium service-description">
+                    {/* Service Description */}
+                    <p className="text-slate-600 mb-6 leading-relaxed text-base font-medium line-clamp-3">
                       {service.description}
                     </p>
 
-                    <ul className="space-y-2 mb-6">
-                      {service.features.map((feature, featureIndex) => (
-                        <motion.li
+                    {/* Enhanced Features List */}
+                    <div className="space-y-3 mb-8">
+                      {service.features.slice(0, 5).map((feature, featureIndex) => (
+                        <motion.div
                           key={feature}
-                          initial={{ opacity: 0, x: -10 }}
+                          initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.3, delay: index * 0.1 + featureIndex * 0.05 }}
-                          className="flex items-center text-xs md:text-sm text-slate-700 font-medium" style={{ fontFamily: '"Inter", "Poppins", sans-serif', fontWeight: '500' }}
+                          transition={{ duration: 0.4, delay: index * 0.1 + featureIndex * 0.1 }}
+                          className="flex items-start group/feature"
                         >
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                          {feature}
-                        </motion.li>
+                          <div className="w-5 h-5 bg-gradient-to-br from-green-400 to-emerald-400 rounded-full flex items-center justify-center mr-3 mt-0.5 shadow-sm group-hover/feature:shadow-green-400/50 transition-shadow duration-300">
+                            <CheckCircle className="w-3 h-3 text-white" />
+                          </div>
+                          <span className="text-sm text-slate-700 font-medium leading-relaxed group-hover/feature:text-slate-900 transition-colors duration-300">
+                            {feature}
+                          </span>
+                        </motion.div>
                       ))}
-                    </ul>
-
-                    <div className="flex items-center justify-between mb-4">
-                      <motion.span
-                        className="text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"
-                        whileHover={{ scale: 1.1 }}
-                        style={{ fontFamily: '"Poppins", "Inter", sans-serif', fontWeight: '900', letterSpacing: '-0.02em' }}
-                      >
-                        From {service.startingPrice}
-                      </motion.span>
-                      <span className="text-xs text-slate-600 bg-slate-200 px-2 py-1 rounded-full font-semibold service-price">One-time payment</span>
+                      {service.features.length > 5 && (
+                        <div className="text-sm text-blue-600 font-semibold">
+                          +{service.features.length - 5} more features
+                        </div>
+                      )}
                     </div>
 
+                    {/* Pricing Section */}
+                    <div className="flex items-center justify-between mb-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border border-slate-200/50">
+                      <div>
+                        <motion.span
+                          className="text-3xl md:text-4xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"
+                          whileHover={{ scale: 1.1 }}
+                        >
+                          {service.startingPrice}
+                        </motion.span>
+                        <div className="text-xs text-slate-500 font-medium">Starting price</div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-sm text-slate-600 bg-white px-3 py-1 rounded-full font-semibold border border-slate-200">
+                          One-time
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Enhanced CTA Button */}
                     <motion.button
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.02,
+                        y: -2,
+                        boxShadow: "0 20px 40px rgba(59, 130, 246, 0.4)"
+                      }}
+                      whileTap={{ scale: 0.98 }}
                       onClick={() => handleServiceInquiry(service)}
-                      className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-3 rounded-xl font-bold text-sm md:text-base transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl group-hover:shadow-blue-500/40"
-                      style={{ fontFamily: '"Poppins", "Inter", sans-serif', fontWeight: '800', letterSpacing: '-0.005em' }}
+                      className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 hover:from-blue-700 hover:via-purple-700 hover:to-indigo-700 text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 flex items-center justify-center shadow-xl group-hover:shadow-blue-500/40 relative overflow-hidden"
                     >
-                      {service.ctaText}
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                      <span className="relative z-10">{service.ctaText}</span>
+                      <ArrowRight className="w-5 h-5 ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
                     </motion.button>
                   </div>
                 </motion.div>
@@ -671,54 +755,166 @@ Potential Client
         </div>
       </section>
 
-      {/* Process Section - With GIF Background */}
-      <section className="py-8 tech-bg-primary relative">
-        {/* GIF Background - Medium Size */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0 bg-cover bg-logo-medium bg-logo-1" />
+      {/* Revolutionary Process Section - Ultra Modern Design */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,_rgba(120,119,198,0.1),transparent_70%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,_rgba(255,255,255,0.05),transparent_70%)]"></div>
+
+        {/* Animated Circuit Pattern */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.3) 1px, transparent 0)`,
+            backgroundSize: '60px 60px'
+          }}></div>
         </div>
-        <div className="absolute inset-0 circuit-bg opacity-40"></div>
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-3 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent"
-            >
-              OUR DEVELOPMENT PROCESS
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto font-semibold"
-            >
-              A proven methodology that ensures quality, efficiency, and successful project delivery
-            </motion.p>
+
+        {/* Connection Lines - Animated */}
+        <div className="absolute inset-0">
+          <svg className="w-full h-full opacity-10" viewBox="0 0 1200 400">
+            <path d="M100,200 Q300,100 500,200 T900,200 T1100,200" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none" strokeDasharray="5,5">
+              <animate attributeName="stroke-dashoffset" values="0;-20" dur="2s" repeatCount="indefinite"/>
+            </path>
+            <path d="M200,150 Q400,50 600,150 T1000,150" stroke="rgba(120,119,198,0.4)" strokeWidth="1" fill="none" strokeDasharray="3,3">
+              <animate attributeName="stroke-dashoffset" values="0;-12" dur="1.5s" repeatCount="indefinite"/>
+            </path>
+          </svg>
+        </div>
+
+        {/* Floating Nodes */}
+        <div className="absolute top-20 left-20 w-4 h-4 bg-cyan-400 rounded-full animate-pulse shadow-lg shadow-cyan-400/50"></div>
+        <div className="absolute top-40 right-32 w-3 h-3 bg-purple-400 rounded-full animate-pulse delay-300 shadow-lg shadow-purple-400/50"></div>
+        <div className="absolute bottom-32 left-1/3 w-5 h-5 bg-blue-400 rounded-full animate-pulse delay-700 shadow-lg shadow-blue-400/50"></div>
+        <div className="absolute bottom-20 right-20 w-4 h-4 bg-indigo-400 rounded-full animate-pulse delay-1000 shadow-lg shadow-indigo-400/50"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Enhanced Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-md border border-cyan-400/30 text-cyan-100 px-8 py-4 rounded-full text-sm font-semibold mb-8">
+              <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
+              STREAMLINED DEVELOPMENT METHODOLOGY
+            </div>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-white via-cyan-100 to-white bg-clip-text text-transparent">
+                OUR PROCESS
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                PERFECTION
+              </span>
+            </h2>
+            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto font-light leading-relaxed">
+              A meticulously crafted, battle-tested methodology that transforms ideas into exceptional digital experiences through systematic excellence.
+            </p>
+          </motion.div>
+
+          {/* Enhanced Process Flow */}
+          <div className="relative">
+            {/* Connection Line */}
+            <div className="hidden lg:block absolute top-24 left-1/2 transform -translate-x-1/2 w-full max-w-4xl">
+              <div className="flex justify-between items-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full animate-pulse"></div>
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-cyan-400/50 to-blue-400/50 mx-4"></div>
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse delay-300"></div>
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-purple-400/50 to-indigo-400/50 mx-4"></div>
+                <div className="w-8 h-8 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full animate-pulse delay-600"></div>
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-purple-400/50 to-pink-400/50 mx-4"></div>
+                <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-cyan-400 rounded-full animate-pulse delay-900"></div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {processSteps.map((step, index) => (
+                <motion.div
+                  key={step.step}
+                  initial={{ opacity: 0, y: 40, scale: 0.9 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.05,
+                    transition: { duration: 0.3 }
+                  }}
+                  className="group relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:border-cyan-400/50 transition-all duration-500 text-center overflow-hidden"
+                >
+                  {/* Card Background Effects */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                  {/* Animated Ring */}
+                  <div className="absolute inset-4 rounded-3xl border-2 border-cyan-400/20 group-hover:border-cyan-400/50 transition-all duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Enhanced Step Number */}
+                    <motion.div
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 360,
+                        transition: { duration: 0.6 }
+                      }}
+                      className="w-16 h-16 bg-gradient-to-br from-cyan-400 via-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-black text-xl mb-6 mx-auto shadow-2xl group-hover:shadow-cyan-400/50 relative overflow-hidden"
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                      <span className="relative z-10">{step.step}</span>
+                    </motion.div>
+
+                    {/* Step Title */}
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors duration-300">
+                      {step.title}
+                    </h3>
+
+                    {/* Step Description */}
+                    <p className="text-blue-100 text-base font-medium leading-relaxed group-hover:text-white transition-colors duration-300">
+                      {step.description}
+                    </p>
+
+                    {/* Progress Indicator */}
+                    <div className="mt-6 flex justify-center">
+                      <div className={`w-2 h-2 rounded-full animate-pulse ${
+                        index === 0 ? 'bg-cyan-400' :
+                        index === 1 ? 'bg-blue-400' :
+                        index === 2 ? 'bg-purple-400' : 'bg-pink-400'
+                      }`}></div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {processSteps.map((step, index) => (
+          {/* Process Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
+          >
+            {[
+              { number: "99%", label: "Project Success Rate" },
+              { number: "50+", label: "Happy Clients" },
+              { number: "24/7", label: "Support Available" },
+              { number: "5+", label: "Years Experience" }
+            ].map((stat, index) => (
               <motion.div
-                key={step.step}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20"
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 1 + index * 0.1 }}
+                className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-black text-lg mb-3 mx-auto shadow-lg">
-                  {step.step}
+                <div className="text-2xl md:text-3xl font-black bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2">
+                  {stat.number}
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-white mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-blue-100 text-sm md:text-base font-medium">
-                  {step.description}
-                </p>
+                <div className="text-blue-200 text-sm font-medium">
+                  {stat.label}
+                </div>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -826,13 +1022,27 @@ Potential Client
         </div>
       </section>
 
-      {/* CTA Section - With GIF Background */}
-      <section className="py-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative">
-        {/* GIF Background - Small Size */}
-        <div className="absolute inset-0 opacity-15">
-          <div className="absolute inset-0 bg-cover bg-logo-reverse bg-logo-1" />
+      {/* Revolutionary CTA Section - Ultra Modern Design */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(120,119,198,0.05),transparent_70%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,_rgba(120,119,198,0.03),transparent_50%)]"></div>
+
+        {/* Animated Grid Pattern */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(120,119,198,0.1) 1px, transparent 0)`,
+            backgroundSize: '50px 50px'
+          }}></div>
         </div>
-        <div className="container mx-auto px-4 text-center">
+
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-emerald-200/30 to-green-200/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-br from-blue-200/30 to-purple-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 right-10 w-24 h-24 bg-gradient-to-br from-orange-200/30 to-red-200/30 rounded-full blur-2xl animate-bounce delay-500"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -865,6 +1075,7 @@ Potential Client
               </motion.button>
             </div>
           </motion.div>
+          </div>
         </div>
       </section>
     </div>

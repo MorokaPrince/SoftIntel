@@ -73,25 +73,25 @@ Potential Client
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-primary-500/20"
+            ? "bg-background/90 backdrop-blur-xl shadow-2xl border-b border-primary-500/30"
             : "bg-transparent"
         }`}
       >
 
        {/* Main Navigation */}
-       <div className={`${isScrolled ? 'py-3' : 'py-4'} bg-background/95 backdrop-blur-md transition-all duration-300`}>
-       <div className="container mx-auto px-4">
+       <div className={`${isScrolled ? 'py-2' : 'py-3'} transition-all duration-500`}>
+         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
          <div className="flex justify-between items-center">
            {/* Logo */}
-           <Link href="/" className="flex items-center space-x-4 group">
+           <Link href="/" className="flex items-center space-x-3 group">
              <div className="relative">
                <motion.div
                  className={`${
                    isScrolled ? 'w-8 h-8' : 'w-10 h-10'
-                 } rounded-lg flex items-center justify-center bg-primary transition-all duration-300`}
-                 whileHover={{ scale: 1.05 }}
+                 } rounded-xl flex items-center justify-center bg-gradient-to-br from-primary-400 to-primary-600 transition-all duration-500 shadow-lg`}
+                 whileHover={{ scale: 1.05, rotate: 2 }}
                  transition={{ duration: 0.3 }}
                >
                  <Image
@@ -102,52 +102,72 @@ Potential Client
                    className="object-contain"
                  />
                </motion.div>
+               {/* Glow effect */}
+               <motion.div
+                 className="absolute inset-0 rounded-xl bg-primary-400/20 blur-lg"
+                 animate={{ opacity: [0.3, 0.6, 0.3] }}
+                 transition={{ duration: 2, repeat: Infinity }}
+               />
              </div>
 
              <div className={`text-left ${isScrolled && 'hidden md:block'} transition-all duration-300`}>
                <motion.h1
-                 className="text-xl md:text-2xl font-bold text-white leading-tight"
+                 className="text-xl md:text-2xl font-bold text-white leading-tight tracking-tight"
                  whileHover={{ scale: 1.02 }}
                  transition={{ duration: 0.2 }}
                >
                  NovaTek
                </motion.h1>
+               <motion.p
+                 className="text-xs text-primary-300 font-medium"
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: isScrolled ? 0 : 1 }}
+                 transition={{ duration: 0.3 }}
+               >
+                 Digital Innovation
+               </motion.p>
              </div>
            </Link>
 
            {/* Desktop Navigation */}
-           <nav className="hidden lg:flex items-center space-x-8">
+           <nav className="hidden lg:flex items-center space-x-1">
              {navigationItems.map((item) => (
                <Link
                  key={item.id}
                  href={item.href}
-                 className="text-white hover:text-primary-500 font-medium transition-colors relative group"
+                 className="relative px-4 py-2 text-white hover:text-primary-300 font-medium transition-all duration-300 group"
                >
                  {item.label}
-                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                 <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary-400 to-primary-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                </Link>
              ))}
            </nav>
 
            {/* CTA Button */}
-           <div className="hidden lg:flex items-center">
+           <div className="hidden lg:flex items-center space-x-4">
              <Link
                href="/contact"
-               className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium shadow-novatek"
+               className="relative bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-2.5 rounded-xl transition-all duration-300 font-semibold shadow-xl hover:shadow-primary-500/25 transform hover:-translate-y-0.5 overflow-hidden group"
              >
-               Contact Us
+               <span className="relative z-10">Contact Us</span>
+               <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
              </Link>
            </div>
 
-            {/* Clean Mobile Menu Button */}
-            <button
-              type="button"
-              onClick={toggleMenu}
-              className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors text-white focus:outline-none focus:ring-2 focus:ring-primary-500"
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+             {/* Modern Mobile Menu Button */}
+             <button
+               type="button"
+               onClick={toggleMenu}
+               className="lg:hidden relative p-2 rounded-xl hover:bg-white/10 transition-all duration-300 text-white focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-background"
+               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+             >
+               <motion.div
+                 animate={{ rotate: isMenuOpen ? 180 : 0 }}
+                 transition={{ duration: 0.3 }}
+               >
+                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+               </motion.div>
+             </button>
           </div>
         </div>
       </div>

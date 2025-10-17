@@ -1,0 +1,203 @@
+/* ================= COMPONENT STYLES ================= */
+
+/* Professional Button Styles */
+.btn-standard {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+  letter-spacing: 0.025em;
+}
+
+.btn-standard-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+}
+
+.btn-standard-primary:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-gradient-start) 100%);
+  box-shadow: 0 8px 25px 0 rgba(37, 99, 235, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-standard-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 8px 0 rgba(37, 99, 235, 0.1);
+}
+
+.btn-standard-secondary:hover {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 16px 0 rgba(37, 99, 235, 0.3);
+}
+
+/* Professional Card Styles */
+.card-standard {
+  background: var(--background-secondary);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--neutral-700);
+  transition: all 0.3s ease;
+}
+
+.card-standard:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+/* Professional Card Variants */
+.card-professional {
+  background: linear-gradient(145deg, var(--background-secondary), var(--background-tertiary));
+  border: 1px solid var(--neutral-700);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-professional:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* Glass Morphism Effect */
+.glass-advanced {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(15px) saturate(120%);
+  backdrop-filter: blur(15px) saturate(120%);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Professional Hover Effects */
+.hover-professional {
+  transition: all 0.3s ease;
+}
+
+.hover-professional:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 3D Effects */
+.transform-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.transform-3d-hover:hover {
+  transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+}
+
+/* Background Image Classes */
+.bg-tech-1 {
+  background-image: url('/ict-information-communications-technology-concept-server-room-background_161452-7815.jpg');
+}
+
+.bg-tech-2 {
+  background-image: url('/plexus-scifi-background_280538-7858.jpg');
+}
+
+.bg-tech-3 {
+  background-image: url('/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg');
+}
+
+/* Tech Backgrounds with Unsplash */
+.bg-neural-network {
+  background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.bg-circuit-board {
+  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.bg-data-center {
+  background-image: url('https://images.unsplash.com/photo-1558618666-fcd64c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.bg-ai-brain {
+  background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.bg-cyber-security {
+  background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.bg-cloud-computing {
+  background-image: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.bg-blockchain {
+  background-image: url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.bg-quantum-computing {
+  background-image: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+/* Background Patterns */
+.animated-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.digital-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(37, 99, 235, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.circuit-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%232563eb' stroke-width='0.5' opacity='0.1'%3E%3Cpath d='M10,10 L90,10 L90,90 L10,90 Z'/%3E%3Cpath d='M20,20 L80,20 L80,80 L20,80 Z'/%3E%3Cpath d='M30,30 L70,30 L70,70 L30,70 Z'/%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+.geometric-bg {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(30, 64, 175, 0.05) 100%);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563eb' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M0 20c10-10 20-10 30 0s20 10 30 0v20H0V20z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover, 40px 40px;
+}
+
+/* Gradient Mesh */
+.gradient-mesh {
+  background:
+    radial-gradient(at 40% 20%, rgba(37, 99, 235, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(30, 64, 175, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(99, 102, 241, 0.1) 0px, transparent 50%);
+}
+
+/* Logo Effects */
+.logo-professional {
+  transition: all 0.3s ease;
+}
+
+.logo-professional:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.logo-glow {
+  filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.3));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--primary-dark), var(--primary-gradient-start));
+}

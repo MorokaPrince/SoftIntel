@@ -3,169 +3,139 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-     Users,
-     Target,
-     Heart,
-     Award,
-     Globe,
-     Shield,
-     Zap,
-     CheckCircle,
-     MessageCircle,
-     ArrowRight,
-     Handshake,
-     Building,
-   } from "lucide-react";
+  Users,
+  Target,
+  Heart,
+  Award,
+  Globe,
+  Shield,
+  Zap,
+  CheckCircle,
+  MessageCircle,
+  ArrowRight,
+  Handshake,
+  Building,
+  TrendingUp,
+  Lightbulb,
+  Rocket,
+  Star,
+} from "lucide-react";
 import Image from "next/image";
 import { CompanyValue, TeamMember } from "@/types";
 import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 const companyValues: CompanyValue[] = [
   {
     id: "innovation",
     title: "Innovation",
-    description: "We embrace cutting-edge technologies to deliver future-ready solutions that drive business transformation.",
+    description: "Cutting-edge technologies for future-ready solutions",
     icon: "Zap",
   },
   {
     id: "integrity",
     title: "Integrity",
-    description: "We build trust through transparent practices, honest communication, and ethical business conduct.",
+    description: "Transparent practices and ethical business conduct",
     icon: "Shield",
   },
   {
     id: "excellence",
     title: "Excellence",
-    description: "We are committed to delivering exceptional quality in every project, exceeding expectations consistently.",
+    description: "Exceptional quality that exceeds expectations",
     icon: "Award",
   },
   {
     id: "collaboration",
     title: "Collaboration",
-    description: "We believe in the power of teamwork, fostering strong partnerships with our clients and within our team.",
+    description: "Strong partnerships with clients and team members",
     icon: "Users",
   },
 ];
 
 const teamMembers: TeamMember[] = [
-   {
-     id: "may-rakgama",
-     name: "May Rakgama",
-     role: "",
-     bio: "",
-     image: "/plexus-scifi-background_280538-7858.jpg",
-     socialLinks: {
-       linkedin: "#",
-       twitter: "#",
-     },
-   },
-   {
-     id: "bohosi-ramokoka",
-     name: "Bohosi Ramokoka",
-     role: "",
-     bio: "",
-     image: "/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg",
-     socialLinks: {
-       linkedin: "#",
-       github: "#",
-     },
-   },
-   {
-     id: "mpho-hamisi",
-     name: "Mpho Hamisi",
-     role: "",
-     bio: "",
-     image: "/plexus-scifi-background_280538-7858.jpg",
-     socialLinks: {
-       linkedin: "#",
-       twitter: "#",
-     },
-   },
-   {
-     id: "olwethu-ndlovu",
-     name: "Olwethu Ndlovu",
-     role: "",
-     bio: "",
-     image: "/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg",
-     socialLinks: {
-       linkedin: "#",
-       github: "#",
-     },
-   },
- ];
+  {
+    id: "may-rakgama",
+    name: "May Rakgama",
+    role: "Founder & CEO",
+    bio: "Visionary leader driving digital transformation across Africa",
+    image: "/SoftIntel1.png",
+    socialLinks: {
+      linkedin: "#",
+      twitter: "#",
+    },
+  },
+  {
+    id: "bohosi-ramokoka",
+    name: "Bohosi Ramokoka",
+    role: "CTO",
+    bio: "Technical architect specializing in scalable solutions",
+    image: "/SoftIntel2.jpeg",
+    socialLinks: {
+      linkedin: "#",
+      github: "#",
+    },
+  },
+  {
+    id: "mpho-hamisi",
+    name: "Mpho Hamisi",
+    role: "Head of Operations",
+    bio: "Operations expert ensuring seamless project delivery",
+    image: "/SoftIntel3.gif",
+    socialLinks: {
+      linkedin: "#",
+      twitter: "#",
+    },
+  },
+  {
+    id: "olwethu-ndlovu",
+    name: "Olwethu Ndlovu",
+    role: "Lead Developer",
+    bio: "Full-stack developer creating innovative applications",
+    image: "/SoftIntel4.mp4",
+    socialLinks: {
+      linkedin: "#",
+      github: "#",
+    },
+  },
+];
 
-const stats = [
-   { number: "9+", label: "Total Projects" },
-   { number: "5", label: "Completed Projects" },
-   { number: "4+", label: "In Development" },
-   { number: "2024", label: "Founded" },
- ];
-
-const stakeholders = [
-   {
-     id: "caiphus-olifant",
-     name: "Caiphus Olifant",
-     role: "Marketing Partner",
-     organization: "Strategic Marketing Solutions",
-     bio: "Expert marketing strategist specializing in digital campaigns and brand development for technology companies across South Africa.",
-     image: "/plexus-scifi-background_280538-7858.jpg",
-     type: "partner",
-   },
-   {
-     id: "lawrence-thipe",
-     name: "Lawrence Thipe",
-     role: "Business Development Consultant",
-     organization: "Thipe Consulting",
-     bio: "Seasoned business development consultant with extensive networks across African markets and deep understanding of ICT sector growth opportunities.",
-     image: "/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg",
-     type: "partner",
-   },
- ];
-
-const governmentPartners = [
-   {
-     name: "Department of Communications and Digital Technologies",
-     abbreviation: "DCDT",
-     focus: "Digital infrastructure and ICT policy",
-   },
-   {
-     name: "State Information Technology Agency",
-     abbreviation: "SITA",
-     focus: "Government ICT services and digital transformation",
-   },
-   {
-     name: "National Electronic Media Institute of South Africa",
-     abbreviation: "NEMISA",
-     focus: "Digital skills development and training",
-   },
-   {
-     name: "Independent Communications Authority of South Africa",
-     abbreviation: "ICASA",
-     focus: "Telecommunications and broadcasting regulation",
-   },
- ];
+const milestones = [
+  {
+    year: "2024",
+    title: "Foundation",
+    description: "NovaTek was established in Limpopo, South Africa",
+    icon: Rocket,
+  },
+  {
+    year: "2024",
+    title: "First Projects",
+    description: "Successfully delivered initial client solutions",
+    icon: TrendingUp,
+  },
+  {
+    year: "2025",
+    title: "Expansion",
+    description: "Growing team and expanding service offerings",
+    icon: Lightbulb,
+  },
+];
 
 export default function AboutPage() {
-
-   return (
+  return (
     <div className="min-h-screen">
-      {/* Enhanced Professional Hero Section - Responsive padding */}
-      <section className="relative bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-16 md:pt-20 pb-12 md:pb-16 overflow-hidden">
+      {/* Modern Hero Section */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 pt-20 pb-16 overflow-hidden">
         <AnimatedBackground
-           variant="hero"
-           theme="indigo"
-           backgroundImage="/ai-brain"
-           includeParticles={true}
-           includeLogos={true}
-           includeGrid={true}
-           includeGradient={true}
-         />
+          variant="hero"
+          theme="indigo"
+          includeParticles={true}
+          includeGrid={true}
+          includeGradient={true}
+        />
 
-
-        <div className="container-safe relative z-10">
-          <div className="text-center content-wrapper">
-            {/* Professional Badge - Identical to Home */}
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -173,34 +143,30 @@ export default function AboutPage() {
               className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8"
             >
               <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
-              PROFESSIONAL SOFTWARE SOLUTIONS
+              TRANSFORMING BUSINESSES ACROSS AFRICA
             </motion.div>
 
-            {/* Main Headline - Enhanced Typography */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="heading-hero text-white mb-6"
+              className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
             >
-              About NovaTek{" "}
-              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-                Technology Solutions
+              About{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                NovaTek
               </span>
             </motion.h1>
 
-            {/* Professional Subtitle - Enhanced Typography */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="body-large text-slate-300 mb-10 text-container"
+              className="text-xl text-slate-300 mb-8 leading-relaxed"
             >
-              Learn more about our company history, values, and the passionate team behind
-              NovaTek&apos;s innovative technology solutions for businesses across Africa.
+              Empowering African businesses with innovative technology solutions that drive growth, efficiency, and digital transformation across the continent.
             </motion.p>
 
-            {/* Professional CTA Buttons - Identical to Home */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -208,213 +174,124 @@ export default function AboutPage() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button
-                onClick={() => window.location.href = "/contact"}
-                className="btn-professional-primary"
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
               >
-                Get Free Consultation
+                Start Your Project
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button
                 variant="outline"
-                onClick={() => window.open("https://wa.me/27794484159", "_blank")}
-                className="btn-professional-secondary"
+                size="lg"
+                className="border-white/30 text-white hover:bg-white/10"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Chat
+                Get Consultation
               </Button>
             </motion.div>
-
-            {/* Professional Trust Indicators - Identical to Home */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/10"
-            >
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white mb-2">50+</div>
-                <div className="text-sm text-slate-400">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white mb-2">25+</div>
-                <div className="text-sm text-slate-400">Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white mb-2">98%</div>
-                <div className="text-sm text-slate-400">Satisfaction Rate</div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Enhanced Stats Section - Dark Theme */}
-      <section className="relative py-16 overflow-hidden bg-gradient-to-br from-background via-background-secondary to-background">
-        <AnimatedBackground
-          variant="section"
-          theme="dark"
-          backgroundImage="/plexus-scifi-background_280538-7858.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-12"
-          >
-            <motion.h2
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
-              animate={{ scale: [1, 1.02, 1] }}
-              transition={{ duration: 3, repeat: Infinity }}
-            >
-              📊 Our Impact in Numbers 📈
-            </motion.h2>
-            <motion.p
-              className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto font-medium"
-              animate={{ opacity: [0.7, 1, 0.7] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              Measurable results that speak to our commitment to excellence
-            </motion.p>
-          </motion.div>
-
-          {/* Horizontal Stats Layout */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20, scale: 0.8 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -5, scale: 1.05 }}
-                className="group relative text-center p-6 rounded-xl bg-neutral-900/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 border border-white/10 hover:border-blue-500/30"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-indigo-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative z-10">
-                  <motion.div
-                    className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-400 mb-3 group-hover:scale-110 transition-transform duration-300"
-                    animate={{
-                      textShadow: [
-                        "0 0 0px rgba(59, 130, 246, 0.5)",
-                        "0 0 10px rgba(59, 130, 246, 0.8)",
-                        "0 0 0px rgba(59, 130, 246, 0.5)"
-                      ]
-                    }}
-                    transition={{ duration: 2, repeat: Infinity, delay: index * 0.5 }}
-                  >
-                    {stat.number}
-                  </motion.div>
-                  <motion.div
-                    className="text-slate-300 font-semibold text-sm md:text-base"
-                    animate={{ opacity: [0.8, 1, 0.8] }}
-                    transition={{ duration: 1.5, repeat: Infinity, delay: index * 0.3 }}
-                  >
-                    {stat.label}
-                  </motion.div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Story Section - Dark Theme Horizontal Layout */}
-      <section className="py-16 bg-gradient-to-br from-background-secondary via-background-tertiary to-background-secondary relative">
-        <AnimatedBackground
-          variant="section"
-          theme="dark"
-          backgroundImage="/plexus-scifi-background_280538-7858.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-7xl mx-auto">
+      {/* Company Story Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl md:text-4xl font-heading font-bold text-white mb-12 text-center"
+              className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
-              Our Story
+              Our Journey
             </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="text-xl text-gray-600 max-w-2xl mx-auto"
+            >
+              From humble beginnings to becoming a trusted technology partner across Africa
+            </motion.p>
+          </div>
 
-            {/* Story Content in Horizontal Cards */}
-            <div className="grid md:grid-cols-3 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0 }}
-                className="bg-neutral-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/10 hover:border-blue-500/30 transition-all duration-300"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center text-white mb-6 mx-auto">
-                  <span className="font-bold text-xl">2024</span>
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-4 text-center">The Beginning</h3>
-                <p className="text-slate-300 text-sm leading-relaxed text-center">
-                  NovaTek was born from a vision to democratize access to world-class technology solutions across Africa.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-neutral-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/10 hover:border-blue-500/30 transition-all duration-300"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center text-white mb-6 mx-auto">
-                  <span className="font-bold text-xl">📈</span>
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-4 text-center">Growth Journey</h3>
-                <p className="text-slate-300 text-sm leading-relaxed text-center">
-                  Starting as a one-person operation in Limpopo, South Africa, NovaTek quickly grew into a trusted partner for digital transformation.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-neutral-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/10 hover:border-blue-500/30 transition-all duration-300"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white mb-6 mx-auto">
-                  <span className="font-bold text-xl">🌍</span>
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-4 text-center">Africa & Beyond</h3>
-                <p className="text-slate-300 text-sm leading-relaxed text-center">
-                  Today, we serve clients across the continent, crafting solutions with deep understanding of African business and global best practices.
-                </p>
-              </motion.div>
-            </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {milestones.map((milestone, index) => {
+              const IconComponent = milestone.icon;
+              return (
+                <motion.div
+                  key={milestone.year}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <Card variant="glass" className="text-center h-full">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-6 mx-auto">
+                      <IconComponent size={32} />
+                    </div>
+                    <div className="text-2xl font-bold text-gray-900 mb-2">{milestone.year}</div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">{milestone.title}</h3>
+                    <p className="text-gray-600">{milestone.description}</p>
+                  </Card>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Enhanced Values Section - Dark Theme */}
-      <section className="relative py-20 bg-gradient-to-br from-background via-background-secondary to-background overflow-hidden">
-        <AnimatedBackground
-          variant="intense"
-          theme="dark"
-          backgroundImage="/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
+      {/* Mission & Vision Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <Card variant="gradient" className="h-full">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white mr-4">
+                    <Target size={24} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
+                </div>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  To empower African businesses with accessible, professional digital solutions that simplify operations, ensure compliance, and drive sustainable growth across the continent.
+                </p>
+              </Card>
+            </motion.div>
 
-        <div className="container mx-auto px-4 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <Card variant="gradient" className="h-full">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center text-white mr-4">
+                    <Globe size={24} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
+                </div>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  To be Africa&apos;s trusted digital solutions provider, recognized globally for exceptional quality and commitment to empowering businesses across the continent.
+                </p>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-semibold mb-6"
+              className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-6"
             >
               <Heart className="w-4 h-4 mr-2" />
               Our Foundation
@@ -423,7 +300,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-3xl md:text-5xl font-heading font-bold text-white mb-6"
+              className="text-3xl md:text-4xl font-bold text-white mb-4"
             >
               Our Core Values
             </motion.h2>
@@ -431,13 +308,12 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl text-slate-300 max-w-3xl mx-auto"
             >
               The principles that guide everything we do and shape our commitment to excellence
             </motion.p>
           </div>
 
-          {/* Horizontal Values Layout */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {companyValues.map((value, index) => {
               const iconMap = {
@@ -451,28 +327,21 @@ export default function AboutPage() {
               return (
                 <motion.div
                   key={value.id}
-                  initial={{ opacity: 0, y: 20, scale: 0.8 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  whileHover={{ y: -15, scale: 1.05 }}
-                  className="group relative text-center p-8 rounded-2xl bg-neutral-900/50 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-blue-500/30"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-indigo-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="relative z-10">
+                  <Card variant="glass" className="text-center h-full hover:scale-105 transition-transform duration-300">
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.1 }}
                       transition={{ duration: 0.6 }}
-                      className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white mb-6 mx-auto shadow-2xl"
+                      className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center text-white mb-4 mx-auto"
                     >
-                      <IconComponent size={36} />
+                      <IconComponent size={28} />
                     </motion.div>
-                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-200 transition-colors duration-300">
-                      {value.title}
-                    </h3>
-                    <p className="text-slate-300 leading-relaxed text-sm">
-                      {value.description}
-                    </p>
-                  </div>
+                    <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
+                    <p className="text-slate-300 text-sm leading-relaxed">{value.description}</p>
+                  </Card>
                 </motion.div>
               );
             })}
@@ -480,240 +349,85 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section - Dark Theme Horizontal Layout */}
-      <section className="py-16 bg-gradient-to-br from-background-secondary via-background-tertiary to-background-secondary relative">
-        <AnimatedBackground
-          variant="section"
-          theme="dark"
-          backgroundImage="/plexus-scifi-background_280538-7858.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl md:text-4xl font-heading font-bold text-white mb-12 text-center"
-          >
-            Meet Our Team
-          </motion.h2>
+      {/* Team Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            >
+              Meet Our Team
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="text-xl text-gray-600 max-w-2xl mx-auto"
+            >
+              The passionate professionals behind NovaTek&apos;s innovative solutions
+            </motion.p>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.id}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="bg-neutral-800/50 backdrop-blur-sm rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/10 hover:border-blue-500/30"
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <div className="text-center">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={80}
-                    height={80}
-                    className="rounded-full object-cover mx-auto mb-4 border-2 border-blue-400"
-                  />
-                  <h3 className="text-xl font-semibold text-white mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-blue-400 font-medium mb-3 text-sm">
-                    {member.role}
-                  </p>
-                  <p className="text-slate-300 text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
-                </div>
+                <Card variant="glass" className="text-center h-full hover:shadow-xl transition-all duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-4 mx-auto overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
+                  <p className="text-blue-600 font-medium mb-3">{member.role}</p>
+                  <p className="text-gray-600 text-sm">{member.bio}</p>
+                </Card>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Stakeholders & Partners Section - Dark Theme Carousel */}
-      <section className="py-16 bg-gradient-to-br from-background-secondary via-background-tertiary to-background-secondary relative">
-        <AnimatedBackground
-          variant="section"
-          theme="dark"
-          backgroundImage="/plexus-scifi-background_280538-7858.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl md:text-4xl font-heading font-bold text-white mb-12 text-center"
-          >
-            Our Stakeholders & Partners
-          </motion.h2>
-
-          {/* Partners Carousel */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-white mb-8 text-center">
-              <Handshake className="w-6 h-6 inline mr-2" />
-              Strategic Partners
-            </h3>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {stakeholders.map((stakeholder, index) => (
-                <motion.div
-                  key={stakeholder.id}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className="bg-neutral-800/50 backdrop-blur-sm rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/10 hover:border-blue-500/30"
-                >
-                  <div className="text-center">
-                    <Image
-                      src={stakeholder.image}
-                      alt={stakeholder.name}
-                      width={80}
-                      height={80}
-                      className="rounded-full object-cover mx-auto mb-4 border-2 border-blue-400"
-                    />
-                    <h4 className="text-xl font-semibold text-white mb-2">
-                      {stakeholder.name}
-                    </h4>
-                    <p className="text-blue-400 font-medium mb-2 text-sm">
-                      {stakeholder.role}
-                    </p>
-                    <p className="text-slate-400 text-xs mb-3">
-                      {stakeholder.organization}
-                    </p>
-                    <p className="text-slate-300 text-sm leading-relaxed">
-                      {stakeholder.bio}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Government Partners */}
-          <div>
-            <h3 className="text-2xl font-semibold text-white mb-8 text-center">
-              <Building className="w-6 h-6 inline mr-2" />
-              Government ICT Partners
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {governmentPartners.map((partner, index) => (
-                <motion.div
-                  key={partner.abbreviation}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-neutral-800/30 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10 hover:border-green-500/30 transition-all duration-300"
-                >
-                  <h4 className="text-lg font-semibold text-white mb-2">
-                    {partner.abbreviation}
-                  </h4>
-                  <p className="text-slate-300 text-sm mb-2">
-                    {partner.name}
-                  </p>
-                  <p className="text-slate-400 text-xs">
-                    {partner.focus}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission & Vision - Dark Theme Horizontal Cards */}
-      <section className="py-16 bg-gradient-to-br from-background via-background-secondary to-background text-white relative">
-        <AnimatedBackground
-          variant="section"
-          theme="dark"
-          backgroundImage="/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:border-blue-500/30 transition-all duration-300"
-            >
-              <div className="flex items-center mb-4">
-                <Target className="w-8 h-8 mr-4 text-blue-400" />
-                <h3 className="text-2xl font-heading font-bold">Our Mission</h3>
-              </div>
-              <p className="text-slate-300 text-base leading-relaxed">
-                To empower African businesses with accessible, professional digital solutions
-                that simplify operations, ensure compliance, and drive sustainable growth across the continent.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:border-blue-500/30 transition-all duration-300"
-            >
-              <div className="flex items-center mb-4">
-                <Globe className="w-8 h-8 mr-4 text-green-400" />
-                <h3 className="text-2xl font-heading font-bold">Our Vision</h3>
-              </div>
-              <p className="text-slate-300 text-base leading-relaxed">
-                To be Africa&apos;s trusted digital solutions provider, recognized globally
-                for exceptional quality and commitment to empowering businesses across the continent.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Dark Theme */}
-      <section className="py-20 bg-gradient-to-br from-background-secondary via-background-tertiary to-background-secondary relative">
-        <AnimatedBackground
-          variant="intense"
-          theme="dark"
-          backgroundImage="/ict-information-communications-technology-concept-server-room-background_161452-7815.jpg"
-          includeParticles={true}
-          includeLogos={true}
-          includeGrid={true}
-          includeGradient={true}
-        />
-        <div className="container mx-auto px-4 text-center relative z-10">
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+        <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-              Join the growing number of African businesses that trust NovaTek
-              to deliver exceptional technology solutions.
+              Join the growing number of African businesses that trust NovaTek to deliver exceptional technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
               >
                 Start Your Project
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-blue-600 text-blue-400 hover:bg-blue-600/10 px-8 py-4 rounded-lg font-medium transition-all duration-300"
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white/30 text-white hover:bg-white/10"
               >
                 Schedule Consultation
-              </motion.button>
+              </Button>
             </div>
           </motion.div>
         </div>

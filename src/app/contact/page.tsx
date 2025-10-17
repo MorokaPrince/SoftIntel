@@ -319,6 +319,214 @@ Message: ${formData.message || "No additional message"}`;
         </div>
       </section>
 
+      {/* Enhanced Business Hours & Response Times */}
+      <section className="relative py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden">
+        <div className="absolute inset-0 geometric-bg opacity-5"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                Business Hours & Support
+              </h2>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                We're here when you need us most. Fast response times and flexible scheduling.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              {/* Business Hours Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200/50 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white mb-6 mx-auto shadow-md">
+                  <Clock size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 text-center">
+                  Business Hours
+                </h3>
+                <div className="space-y-3 text-center">
+                  <div className="flex justify-between items-center py-2 border-b border-slate-100">
+                    <span className="text-slate-600">Monday - Friday</span>
+                    <span className="font-semibold text-slate-900">8:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-slate-100">
+                    <span className="text-slate-600">Saturday</span>
+                    <span className="font-semibold text-slate-900">9:00 AM - 2:00 PM</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="text-slate-600">Sunday</span>
+                    <span className="font-semibold text-slate-900">Closed</span>
+                  </div>
+                  <div className="mt-4 p-3 bg-green-50 rounded-lg">
+                    <p className="text-green-700 text-sm font-medium">
+                      ⏰ Emergency support available 24/7
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Response Times Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200/50 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center text-white mb-6 mx-auto shadow-md">
+                  <MessageCircle size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 text-center">
+                  Response Times
+                </h3>
+                <div className="space-y-3 text-center">
+                  <div className="flex justify-between items-center py-2 border-b border-slate-100">
+                    <span className="text-slate-600">WhatsApp</span>
+                    <span className="font-semibold text-green-600">Instant</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-slate-100">
+                    <span className="text-slate-600">Email</span>
+                    <span className="font-semibold text-slate-900">< 2 hours</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-slate-100">
+                    <span className="text-slate-600">Phone</span>
+                    <span className="font-semibold text-slate-900">Immediate</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="text-slate-600">Contact Form</span>
+                    <span className="font-semibold text-slate-900">< 24 hours</span>
+                  </div>
+                  <div className="mt-4 p-3 bg-blue-50 rounded-lg">
+                    <p className="text-blue-700 text-sm font-medium">
+                      🚀 95% of inquiries responded to within 1 hour
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Support Types Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200/50 hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center text-white mb-6 mx-auto shadow-md">
+                  <Headphones size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 text-center">
+                  Support Types
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                    <span className="text-slate-700 text-sm">Technical Support</span>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
+                    <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                    <span className="text-slate-700 text-sm">Project Consultation</span>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-purple-50 rounded-lg">
+                    <CheckCircle className="w-5 h-5 text-purple-600 flex-shrink-0" />
+                    <span className="text-slate-700 text-sm">Emergency Assistance</span>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                    <CheckCircle className="w-5 h-5 text-orange-600 flex-shrink-0" />
+                    <span className="text-slate-700 text-sm">General Inquiries</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick FAQ Section */}
+      <section className="relative py-16 bg-white overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-slate-600">
+                Quick answers to common questions about our services and process.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="bg-slate-50 rounded-xl p-6"
+              >
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  How quickly can you start my project?
+                </h3>
+                <p className="text-slate-600">
+                  We can typically begin new projects within 1-2 weeks, depending on complexity and our current schedule. Urgent projects can often start sooner.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="bg-slate-50 rounded-xl p-6"
+              >
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  Do you work with international clients?
+                </h3>
+                <p className="text-slate-600">
+                  Absolutely! We work with clients across Africa and globally, offering remote collaboration tools and flexible communication schedules.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="bg-slate-50 rounded-xl p-6"
+              >
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  What information do you need to get started?
+                </h3>
+                <p className="text-slate-600">
+                  We need your project requirements, goals, target audience, and any existing branding guidelines. A discovery call helps us understand your vision better.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="bg-slate-50 rounded-xl p-6"
+              >
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  Do you provide ongoing support?
+                </h3>
+                <p className="text-slate-600">
+                  Yes! We offer comprehensive maintenance packages, regular updates, and ongoing support to ensure your solution continues to perform optimally.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Social Media Section - Coming Soon */}
       <section className="relative py-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden">
         <div className="absolute inset-0 geometric-bg opacity-5"></div>
@@ -713,6 +921,167 @@ Message: ${formData.message || "No additional message"}`;
                 </motion.button>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Map Section */}
+      <section className="relative py-16 bg-white overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            {/* Section Header */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
+                Visit Our Office
+              </h2>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                Located in the heart of Limpopo, South Africa. We welcome clients to visit our office for in-person consultations.
+              </p>
+            </motion.div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Location Information */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                className="space-y-8"
+              >
+                {/* Main Office Card */}
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+                  <div className="flex items-start space-x-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                      <Building2 size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        Head Office
+                      </h3>
+                      <p className="text-blue-600 font-medium mb-1">
+                        Limpopo, South Africa
+                      </p>
+                      <p className="text-slate-600 text-sm">
+                        Serving clients across Africa and globally
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Office Details */}
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <span className="text-slate-700">
+                        Polokwane, Limpopo Province, South Africa
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <span className="text-slate-700">+27 79 448 4159</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <span className="text-slate-700">info@novatek.co.za</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Service Areas */}
+                <div className="bg-slate-50 rounded-2xl p-8">
+                  <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                    <MapPin className="w-6 h-6 mr-3 text-blue-600" />
+                    Service Areas
+                  </h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <span className="text-slate-700">South Africa</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <span className="text-slate-700">Botswana</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <span className="text-slate-700">Namibia</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <span className="text-slate-700">Zimbabwe</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <span className="text-slate-700">Mozambique</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <span className="text-slate-700">Zambia</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <span className="text-slate-700">Malawi</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <span className="text-slate-700">Global Remote</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Get Directions CTA */}
+                <motion.button
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center"
+                >
+                  <MapPin className="w-5 h-5 mr-2" />
+                  Get Directions
+                </motion.button>
+              </motion.div>
+
+              {/* Map Placeholder/Integration */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="relative"
+              >
+                {/* Interactive Map Container */}
+                <div className="bg-slate-100 rounded-2xl p-8 h-[500px] flex items-center justify-center border border-slate-200">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
+                      <MapPin size={32} />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3">
+                      Interactive Map
+                    </h3>
+                    <p className="text-slate-600 mb-6 max-w-sm mx-auto">
+                      Click the button below to open our location in Google Maps for detailed directions and street view.
+                    </p>
+                    <button
+                      onClick={() => window.open('https://maps.google.com/maps?q=Polokwane,+Limpopo,+South+Africa', '_blank')}
+                      className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto"
+                    >
+                      <MapPin className="w-5 h-5 mr-2" />
+                      Open in Google Maps
+                    </button>
+                  </div>
+                </div>
+
+                {/* Map Decorative Elements */}
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-200 rounded-full opacity-60"></div>
+                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-indigo-200 rounded-full opacity-60"></div>
+                <div className="absolute top-1/2 -right-8 w-4 h-4 bg-purple-200 rounded-full opacity-40"></div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

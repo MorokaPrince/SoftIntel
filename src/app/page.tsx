@@ -30,24 +30,61 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* NovaTek Hero Section - Dark Professional Theme */}
-      <section className="relative bg-gradient-to-br from-background via-background-secondary to-background pt-24 md:pt-32 pb-20 md:pb-28 overflow-hidden">
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-20 md:pt-24 pb-16 md:pb-20 overflow-hidden">
         <div className="container-safe relative z-10">
-          <div className="text-center max-w-5xl mx-auto">
-            {/* Main Headline - NovaTek Style */}
+          <div className="text-center max-w-6xl mx-auto">
+            {/* Badge/Announcement */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-300 text-sm font-medium mb-8"
+            >
+              <span className="w-2 h-2 bg-primary-400 rounded-full mr-2 animate-pulse"></span>
+              Transforming Businesses Through Technology
+            </motion.div>
+
+            {/* Main Headline - Enhanced NovaTek Style */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
+              className="text-5xl md:text-6xl lg:text-8xl font-black text-white mb-8 leading-tight tracking-tight"
             >
               Building{" "}
-              <span className="text-primary-400 relative">
-                Smart Digital
-                <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 100 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 6C20 2, 40 2, 58 6C76 10, 96 10, 98 6" stroke="#00E6FF" strokeWidth="3" strokeLinecap="round"/>
-                </svg>
+              <span className="relative inline-block">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500">
+                  Smart Digital
+                </span>
+                <motion.svg
+                  className="absolute -bottom-3 left-0 w-full h-4"
+                  viewBox="0 0 100 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  animate={{ pathLength: 1, opacity: 1 }}
+                  transition={{ duration: 1.5, delay: 0.5 }}
+                >
+                  <motion.path
+                    d="M2 8C20 4, 40 4, 58 8C76 12, 96 12, 98 8"
+                    stroke="url(#gradient)"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    fill="none"
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: 1 }}
+                    transition={{ duration: 2, delay: 0.8 }}
+                  />
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#00E6FF" />
+                      <stop offset="50%" stopColor="#00C4FF" />
+                      <stop offset="100%" stopColor="#00E6FF" />
+                    </linearGradient>
+                  </defs>
+                </motion.svg>
               </span>{" "}
-              Experiences
+              <span className="text-slate-100">Solutions</span>
             </motion.h1>
 
             {/* NovaTek Subtitle */}
@@ -55,7 +92,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-4xl mx-auto"
+              className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-12 leading-relaxed max-w-5xl mx-auto font-light"
             >
               NovaTek is a forward-thinking digital transformation company that helps clients harness the power of technology. We design, develop, and integrate digital platforms that connect people, data, and ideas for the modern enterprise.
             </motion.p>
@@ -65,31 +102,60 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
               <Button
                 onClick={handleGetQuote}
-                className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 transform hover:-translate-y-0.5"
+                className="group relative bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:from-primary-600 hover:via-primary-700 hover:to-primary-800 text-white px-10 py-5 text-lg font-bold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/30 transform hover:-translate-y-1 overflow-hidden"
               >
-                Get Free Consultation
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <span className="relative z-10 flex items-center">
+                  Get Free Consultation
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
               <Button
                 variant="outline"
                 onClick={handleWhatsAppClick}
-                className="border-2 border-primary-600 text-primary-700 hover:bg-primary-600 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                className="group border-2 border-primary-400 text-primary-300 hover:bg-primary-500 hover:text-white hover:border-primary-500 px-10 py-5 text-lg font-bold rounded-2xl transition-all duration-300 backdrop-blur-sm bg-white/5"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
+                <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Let&apos;s Talk
               </Button>
+            </motion.div>
+
+            {/* Trust Indicators */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
+            >
+              {[
+                { number: "500+", label: "Projects Completed" },
+                { number: "50+", label: "Happy Clients" },
+                { number: "99%", label: "Success Rate" },
+                { number: "24/7", label: "Support" }
+              ].map((stat, index) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 1 + index * 0.1 }}
+                  className="text-center"
+                >
+                  <div className="text-2xl md:text-3xl font-bold text-primary-400 mb-2">{stat.number}</div>
+                  <div className="text-sm text-slate-400 font-medium">{stat.label}</div>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </div>
 
-        {/* Warm Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-100 via-accent-100 to-primary-50"></div>
-        </div>
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/10 via-transparent to-accent-900/10" />
+        <div className="absolute top-1/4 -right-64 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 -left-64 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl animate-pulse" />
       </section>
 
       {/* Clean Services Section - NovaTek Dark Style */}
@@ -183,6 +249,21 @@ export default function Home() {
             </Link>
           </motion.div>
         </div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          <div className="w-6 h-10 border-2 border-primary-400 rounded-full flex justify-center">
+            <motion.div
+              className="w-1 h-3 bg-primary-400 rounded-full mt-2"
+              animate={{ y: [0, 12, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            />
+          </div>
+        </motion.div>
       </section>
 
       {/* Client Trust Indicators & Testimonials */}
