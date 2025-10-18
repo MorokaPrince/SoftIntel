@@ -89,7 +89,7 @@ const ParticleBackground: React.FC<ParticleBackgroundProps> = ({
     }
 
     setParticles(newParticles);
-  }, [particleCount, intensity]);
+  }, [particleCount, intensity, intensitySettings]);
 
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>

@@ -1,7 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const nodemailer = require('nodemailer');
-require('dotenv').config();
+import express from 'express';
+import cors from 'cors';
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3005;
@@ -101,4 +103,4 @@ app.listen(PORT, () => {
   console.log(`🌐 Frontend should be running on port 3004`);
 });
 
-module.exports = app;
+export default app;
