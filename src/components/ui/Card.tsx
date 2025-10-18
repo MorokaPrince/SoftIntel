@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ({
   };
 
   const hoverClasses = hover
-    ? "hover:shadow-xl hover:-translate-y-1 hover:border-primary-400/30 hover:bg-background-secondary/70"
+    ? "hover:shadow-xl hover:-translate-y-1 hover:border-primary-400/30 hover:bg-background-secondary/70 hover-effect-lift"
     : "";
 
   return (

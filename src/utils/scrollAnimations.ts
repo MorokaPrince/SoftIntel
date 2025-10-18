@@ -245,10 +245,126 @@ export const scrollAnimations = {
   },
 };
 
+// Exit animation observer for sections
+export class ExitAnimationObserver {
+  private observer: IntersectionObserver;
+  private animatedElements: Set<Element> = new Set();
+
+  constructor() {
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const element = entry.target;
+          const exitConfig = this.getExitConfig(element);
+
+          if (!entry.isIntersecting && this.isElementAboveViewport(element)) {
+            // Element is above viewport (user scrolled past it)
+            this.animateExit(element, exitConfig);
+          } else if (entry.isIntersecting && this.animatedElements.has(element)) {
+            // Element came back into view, reset exit animation
+            this.resetExit(element);
+          }
+        });
+      },
+      {
+        threshold: 0,
+        rootMargin: '0px 0px -10% 0px',
+      }
+    );
+  }
+
+  private getExitConfig(element: Element): AnimationConfig {
+    const configStr = (element as HTMLElement).dataset.exitConfig;
+    if (configStr) {
+      return JSON.parse(configStr);
+    }
+    return { exitEffect: 'fadeOut' };
+  }
+
+  private isElementAboveViewport(element: Element): boolean {
+    const rect = element.getBoundingClientRect();
+    return rect.bottom < 0;
+  }
+
+  private animateExit(element: Element, config: AnimationConfig) {
+    if (this.animatedElements.has(element)) return;
+
+    // Apply exit animation classes
+    if (config.exitEffect === 'fadeOut') {
+      element.classList.add('animate-fade-out');
+    } else if (config.exitEffect === 'slideOut') {
+      element.classList.add('animate-slide-out-up');
+    } else if (config.exitEffect === 'scaleOut') {
+      element.classList.add('animate-scale-out');
+    }
+
+    this.animatedElements.add(element);
+  }
+
+  private resetExit(element: Element) {
+    const config = this.getExitConfig(element);
+
+    // Remove exit animation classes
+    if (config.exitEffect === 'fadeOut') {
+      element.classList.remove('animate-fade-out');
+    } else if (config.exitEffect === 'slideOut') {
+      element.classList.remove('animate-slide-out-up');
+    } else if (config.exitEffect === 'scaleOut') {
+      element.classList.remove('animate-scale-out');
+    }
+
+    this.animatedElements.delete(element);
+  }
+
+  observe(element: Element, config: AnimationConfig = { exitEffect: 'fadeOut' }) {
+    (element as HTMLElement).dataset.exitConfig = JSON.stringify(config);
+    this.observer.observe(element);
+  }
+
+  disconnect() {
+    this.observer.disconnect();
+  }
+}
+
+// Enhanced scroll animations with exit effects
+export const enhancedScrollAnimations = {
+  init: (options?: ScrollAnimationOptions) => {
+    const entryObserver = new ScrollAnimationObserver(options);
+    const exitObserver = new ExitAnimationObserver();
+
+    // Observe sections for entry animations
+    document.querySelectorAll('section').forEach((section, index) => {
+      entryObserver.observe(section, animationPresets.fadeInUp);
+      exitObserver.observe(section, { exitEffect: 'slideOut' });
+    });
+
+    // Observe cards with stagger effect for entry
+    document.querySelectorAll('.card, [class*="card"]').forEach((card, index) => {
+      entryObserver.observe(card, {
+        ...animationPresets.fadeInUp,
+        delay: index * 50,
+      });
+      exitObserver.observe(card, { exitEffect: 'scaleOut' });
+    });
+
+    // Observe headings for entry
+    document.querySelectorAll('h1, h2, h3').forEach(heading => {
+      entryObserver.observe(heading, animationPresets.fadeInUp);
+      exitObserver.observe(heading, { exitEffect: 'fadeOut' });
+    });
+
+    return { entryObserver, exitObserver };
+  },
+
+  initHoverEffects: () => {
+    HoverAnimationManager.addInteractiveEffects();
+  },
+};
+
 // Auto-initialize when DOM is ready
 if (typeof window !== 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
-    scrollAnimations.init();
-    scrollAnimations.initHoverEffects();
+    enhancedScrollAnimations.init();
+    enhancedScrollAnimations.initHoverEffects();
   });
 }

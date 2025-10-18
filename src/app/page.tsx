@@ -14,7 +14,7 @@ import {
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
-import { scrollAnimations } from "@/utils/scrollAnimations";
+import { enhancedScrollAnimations } from "@/utils/scrollAnimations";
 
 export default function Home() {
   const handleWhatsAppClick = () => {
@@ -30,15 +30,18 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // Initialize scroll animations
-    const observer = scrollAnimations.init({
+    // Initialize enhanced scroll animations with exit effects
+    const { entryObserver, exitObserver } = enhancedScrollAnimations.init({
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px',
       once: true,
     });
 
-    // Cleanup observer on unmount
-    return () => observer.disconnect();
+    // Cleanup observers on unmount
+    return () => {
+      entryObserver.disconnect();
+      exitObserver.disconnect();
+    };
   }, []);
 
   return (

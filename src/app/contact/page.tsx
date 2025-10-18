@@ -1,31 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import {
-   Phone,
-   Mail,
-   MapPin,
-   MessageCircle,
-   Clock,
-   Send,
-   CheckCircle,
-   ArrowRight,
-   Calendar,
-   Users,
-   Building2,
-   Award,
-   Shield,
-   Headphones,
-   Twitter,
-   Linkedin,
-   Instagram,
-   Facebook,
- } from "lucide-react";
-import { useState } from "react";
+    Phone,
+    Mail,
+    MapPin,
+    MessageCircle,
+    Clock,
+    Send,
+    CheckCircle,
+    ArrowRight,
+    Calendar,
+    Users,
+    Building2,
+    Award,
+    Shield,
+    Headphones,
+    Twitter,
+    Linkedin,
+    Instagram,
+    Facebook,
+  } from "lucide-react";
 import { ContactFormData } from "@/types";
 import { validateContactForm, generateWhatsAppURL } from "@/utils";
 import toast from "react-hot-toast";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
+import { enhancedScrollAnimations } from "@/utils/scrollAnimations";
 
 const contactInfo = [
    {
@@ -93,6 +94,21 @@ export default function ContactPage() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    // Initialize enhanced scroll animations with exit effects
+    const { entryObserver, exitObserver } = enhancedScrollAnimations.init({
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+      once: true,
+    });
+
+    // Cleanup observers on unmount
+    return () => {
+      entryObserver.disconnect();
+      exitObserver.disconnect();
+    };
+  }, []);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
