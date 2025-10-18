@@ -247,6 +247,10 @@ Potential Client
       {/* Enhanced Featured Insights - With GIF Background */}
       <section className="relative py-8 tech-bg-secondary overflow-hidden">
         {/* GIF Background - Small Size */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-5"
+          style={{ backgroundImage: "url('/images/circuit-board.jpg')" }}
+        ></div>
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-cover bg-logo-subtle bg-logo-2" />
         </div>
@@ -341,6 +345,10 @@ Potential Client
       {/* Enhanced Blog Posts Grid - Compact */}
       <section className="relative py-16 tech-bg-primary overflow-hidden">
         {/* Rich Background Elements */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/code-editor-dark.jpg')" }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-indigo-900/90 to-purple-900/95"></div>
         <div className="absolute inset-0 digital-grid opacity-20"></div>
         <div className="absolute inset-0 circuit-bg opacity-15"></div>
@@ -432,6 +440,10 @@ Potential Client
 
       {/* Newsletter Signup - Compact */}
       <section className="py-10 tech-bg-accent text-white relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/programming-workspace.jpg')" }}
+        ></div>
         <div className="absolute inset-0 digital-grid opacity-20"></div>
         <div className="container mx-auto px-4 text-center">
           <motion.div

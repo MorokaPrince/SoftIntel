@@ -506,7 +506,11 @@ Message: ${formData.message || "No additional message"}`;
 
       {/* Quick FAQ Section */}
       <section className="relative py-16 bg-white overflow-hidden">
-        <div className="container mx-auto px-6">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-5"
+          style={{ backgroundImage: "url('/images/ai-technology.jpg')" }}
+        ></div>
+        <div className="container mx-auto px-6 relative">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
