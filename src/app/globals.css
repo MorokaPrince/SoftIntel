@@ -1,3 +1,9 @@
+/* ================= TAILWIND CSS DIRECTIVES ================= */
+/* Must be at the top for proper processing */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ================= MODULAR CSS ARCHITECTURE ================= */
 /* Import modular CSS files for better maintainability and performance */
 
@@ -15,11 +21,6 @@
 
 /* Utility Classes & Responsive Design */
 @import '../styles/utilities.css';
-
-/* Tailwind CSS (keep for component library compatibility) */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* ================= ADDITIONAL GLOBAL STYLES ================= */
 /* Only styles that don't fit into modular structure go here */
