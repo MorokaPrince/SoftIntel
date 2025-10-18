@@ -149,7 +149,7 @@ export default function ContactPage() {
   };
 
   const handleWhatsAppClick = () => {
-    const message = `Hi! I'm interested in SoftIntel services.
+    const message = `Hi! I'm interested in NovaTek services.
 
 Name: ${formData.name || "Not specified"}
 Company: ${formData.company || "Not specified"}
@@ -850,7 +850,7 @@ Message: ${formData.message || "No additional message"}`;
             >
               <div className="bg-slate-50 rounded-2xl p-8">
                 <h3 className="text-2xl font-heading font-bold text-slate-900 mb-4">
-                  Why Choose SoftIntel?
+                  Why Choose NovaTek?
                 </h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
                   We&apos;re committed to delivering intelligent software solutions that drive real business results globally.

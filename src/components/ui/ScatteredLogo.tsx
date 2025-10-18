@@ -26,16 +26,16 @@ const ScatteredLogo: React.FC<ScatteredLogoProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Array of available images/GIFs/Videos for variety - prioritizing new SoftIntel3.gif
+  // Array of available images/GIFs/Videos for variety - prioritizing new NovaTek3.gif
    const logoVariations = [
-     "/SoftIntel3.gif", // New primary animated logo
-     "/SoftIntel1.png",
-     "/SoftIntel2.jpeg",
-     "/SoftIntel4.mp4",
-     "/SoftIntel5.mp4",
-     "/SoftIntel Logo 1.gif",
-     "/SoftIntel Logo 2.gif",
-     "/SoftIntel Logo 4.gif",
+     "/NovaTek3.gif", // New primary animated logo
+     "/NovaTek1.png",
+     "/NovaTek2.jpeg",
+     "/NovaTek4.mp4",
+     "/NovaTek5.mp4",
+     "/NovaTek Logo 1.gif",
+     "/NovaTek Logo 2.gif",
+     "/NovaTek Logo 4.gif",
      "/logo.png",
      "/images/Sleek Blue and Silver Company Logo.png",
      "/images/3d8ea488ac7be1f83dec39cbf8edc6f3.gif",
@@ -202,7 +202,7 @@ const ScatteredLogo: React.FC<ScatteredLogoProps> = ({
           ) : (
             <Image
               src={logoVariations[currentImageIndex]}
-              alt="SoftIntel Logo"
+              alt="NovaTek Logo"
               width={size === 'sm' ? 24 : size === 'md' ? 32 : size === 'lg' ? 48 : 64}
               height={size === 'sm' ? 24 : size === 'md' ? 32 : size === 'lg' ? 48 : 64}
               className="object-contain drop-shadow-lg"

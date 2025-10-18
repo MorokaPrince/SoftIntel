@@ -34,9 +34,9 @@
 }
 
 /* Enhanced Logo Background Classes for AnimatedBackground Component */
-.bg-logo-1 { background-image: url('/SoftIntel Logo 1.gif'); }
-.bg-logo-2 { background-image: url('/SoftIntel Logo 2.gif'); }
-.bg-logo-4 { background-image: url('/SoftIntel Logo 4.gif'); }
+.bg-logo-1 { background-image: url('/NovaTek Logo 1.gif'); }
+.bg-logo-2 { background-image: url('/NovaTek Logo 2.gif'); }
+.bg-logo-4 { background-image: url('/NovaTek Logo 4.gif'); }
 .bg-server-room { background-image: url('/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg'); }
 .bg-plexus { background-image: url('/plexus-scifi-background_280538-7858.jpg'); }
 
@@ -1148,15 +1148,15 @@ img, video {
 
 /* Complete Background Image Classes for ALL Pages */
 .bg-logo-1 {
-  background-image: url('/SoftIntel Logo 1.gif');
+  background-image: url('/NovaTek Logo 1.gif');
 }
 
 .bg-logo-2 {
-  background-image: url('/SoftIntel Logo 2.gif');
+  background-image: url('/NovaTek Logo 2.gif');
 }
 
 .bg-logo-4 {
-  background-image: url('/SoftIntel Logo 4.gif');
+  background-image: url('/NovaTek Logo 4.gif');
 }
 
 .bg-server-room {

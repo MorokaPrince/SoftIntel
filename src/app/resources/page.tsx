@@ -131,7 +131,7 @@ const featuredInsights = [
 
 export default function ResourcesPage() {
   const handleWhatsAppConsultation = () => {
-    const message = `📅 Hi! I'd like to SCHEDULE A CONSULTATION with SoftIntel.
+    const message = `📅 Hi! I'd like to SCHEDULE A CONSULTATION with NovaTek.
 
 📋 Consultation Type: [General/Specific service]
 💼 Company: [Your company name]
@@ -140,13 +140,13 @@ export default function ResourcesPage() {
 🎯 Focus Area: [What you'd like to discuss]
 ⏰ Preferred Time: [Your availability]
 
-💬 I'm looking forward to discussing how SoftIntel can help my business!
+💬 I'm looking forward to discussing how NovaTek can help my business!
 
 ---
 Best regards,
 Potential Client
 
-💬 This inquiry was sent from the SoftIntel Resources page`;
+💬 This inquiry was sent from the NovaTek Resources page`;
 
     window.open(
       `https://wa.me/27794484159?text=${encodeURIComponent(message)}`,
@@ -155,7 +155,7 @@ Potential Client
   };
 
   const handleWhatsAppContact = () => {
-    const message = `💬 Hi! I'd like to CONTACT SoftIntel for more information.
+    const message = `💬 Hi! I'd like to CONTACT NovaTek for more information.
 
 📋 Inquiry Type: [General inquiry/Specific question]
 💼 Company: [Your company name]
@@ -163,13 +163,13 @@ Potential Client
 📱 Phone: [Your phone number]
 🎯 Subject: [What you'd like to know about]
 
-💬 I'm interested in learning more about SoftIntel services!
+💬 I'm interested in learning more about NovaTek services!
 
 ---
 Best regards,
 Potential Client
 
-💬 This inquiry was sent from the SoftIntel Resources page`;
+💬 This inquiry was sent from the NovaTek Resources page`;
 
     window.open(
       `https://wa.me/27794484159?text=${encodeURIComponent(message)}`,

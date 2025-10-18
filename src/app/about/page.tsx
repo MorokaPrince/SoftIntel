@@ -56,7 +56,7 @@ const teamMembers: TeamMember[] = [
     name: "May Rakgama",
     role: "Founder & CEO",
     bio: "Visionary leader driving digital transformation across Africa",
-    image: "/SoftIntel1.png",
+    image: "/NovaTek1.png",
     socialLinks: {
       linkedin: "#",
       twitter: "#",
@@ -67,7 +67,7 @@ const teamMembers: TeamMember[] = [
     name: "Bohosi Ramokoka",
     role: "CTO",
     bio: "Technical architect specializing in scalable solutions",
-    image: "/SoftIntel2.jpeg",
+    image: "/NovaTek2.jpeg",
     socialLinks: {
       linkedin: "#",
       github: "#",
@@ -78,7 +78,7 @@ const teamMembers: TeamMember[] = [
     name: "Mpho Hamisi",
     role: "Head of Operations",
     bio: "Operations expert ensuring seamless project delivery",
-    image: "/SoftIntel3.gif",
+    image: "/NovaTek3.gif",
     socialLinks: {
       linkedin: "#",
       twitter: "#",
@@ -89,7 +89,7 @@ const teamMembers: TeamMember[] = [
     name: "Olwethu Ndlovu",
     role: "Lead Developer",
     bio: "Full-stack developer creating innovative applications",
-    image: "/SoftIntel4.mp4",
+    image: "/NovaTek4.mp4",
     socialLinks: {
       linkedin: "#",
       github: "#",

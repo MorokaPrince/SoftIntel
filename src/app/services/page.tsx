@@ -308,7 +308,7 @@ ${service.features.slice(0, 4).map(feature => `• ${feature}`).join('\n')}
 Best regards,
 Potential Client
 
-💬 This inquiry was sent from the SoftIntel Services page`;
+💬 This inquiry was sent from the NovaTek Services page`;
 
     window.open(
       `https://wa.me/27794484159?text=${encodeURIComponent(message)}`,
@@ -629,7 +629,7 @@ Potential Client
               OUR PROJECT PORTFOLIO
             </h2>
             <p className="heading-h3 text-blue-100 max-w-4xl mx-auto font-inter-semibold mb-6">
-              Real solutions for real businesses - SoftIntel delivers intelligent software solutions with proven results
+              Real solutions for real businesses - NovaTek delivers intelligent software solutions with proven results
             </p>
             <div className="flex justify-center items-center gap-8 text-blue-200">
               <div className="text-center">

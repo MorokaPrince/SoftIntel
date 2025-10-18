@@ -24,13 +24,13 @@ const EnhancedLogo: React.FC<EnhancedLogoProps> = ({
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  // Array of available logo variations including new SoftIntel logo
+  // Array of available logo variations including new NovaTek logo
    const logoVariations = [
-     "/SoftIntel3.gif", // Primary animated logo
-     "/SoftIntel1.png",
-     "/SoftIntel2.jpeg",
-     "/SoftIntel4.mp4",
-     "/SoftIntel5.mp4",
+     "/NovaTek3.gif", // Primary animated logo
+     "/NovaTek1.png",
+     "/NovaTek2.jpeg",
+     "/NovaTek4.mp4",
+     "/NovaTek5.mp4",
      "/logo.png",
      "/images/Sleek Blue and Silver Company Logo.png",
      "/images/3d8ea488ac7be1f83dec39cbf8edc6f3.gif",
@@ -148,7 +148,7 @@ const EnhancedLogo: React.FC<EnhancedLogoProps> = ({
       >
         <Image
            src={logoVariations[currentImageIndex]}
-           alt="SoftIntel Logo"
+           alt="NovaTek Logo"
            width={size === 'sm' ? 32 : size === 'md' ? 48 : size === 'lg' ? 80 : size === 'xl' ? 120 : 160}
            height={size === 'sm' ? 32 : size === 'md' ? 48 : size === 'lg' ? 80 : size === 'xl' ? 120 : 160}
            className="object-contain drop-shadow-lg"
@@ -204,7 +204,7 @@ const EnhancedLogo: React.FC<EnhancedLogoProps> = ({
           }}
           className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-800 bg-clip-text text-transparent bg-300%"
         >
-          SoftIntel
+          NovaTek
         </motion.span>
       </motion.h1>
       <motion.span
