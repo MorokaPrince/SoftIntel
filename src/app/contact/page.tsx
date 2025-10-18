@@ -317,8 +317,7 @@ Message: ${formData.message || "No additional message"}`;
       <section className="relative py-8 tech-bg-secondary overflow-hidden">
         {/* Background Elements */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-5"
-          style={{ backgroundImage: "url('/images/modern-tech-workspace.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-5 bg-modern-tech-workspace"
         ></div>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50/95 via-blue-50/90 to-indigo-50/95"></div>
         <div className="absolute inset-0 geometric-bg opacity-5"></div>
@@ -506,8 +505,7 @@ Message: ${formData.message || "No additional message"}`;
       {/* Quick FAQ Section */}
       <section className="relative py-16 bg-white overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-5"
-          style={{ backgroundImage: "url('/images/ai-technology.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-5 bg-ai-technology"
         ></div>
         <div className="container mx-auto px-6 relative">
           <div className="max-w-4xl mx-auto">

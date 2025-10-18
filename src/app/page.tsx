@@ -179,8 +179,7 @@ export default function Home() {
       <section className="py-12 md:py-16 bg-background-secondary relative">
         <div className="absolute inset-0 bg-novatek-gradient opacity-30"></div>
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('/images/software-development.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-10 bg-software-development"
         ></div>
         <div className="container-safe relative z-10">
           <div className="text-center mb-12">
