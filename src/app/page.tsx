@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import {
   ArrowRight,
   Globe,
@@ -13,6 +14,7 @@ import {
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
+import { scrollAnimations } from "@/utils/scrollAnimations";
 
 export default function Home() {
   const handleWhatsAppClick = () => {
@@ -26,6 +28,18 @@ export default function Home() {
   const handleGetQuote = () => {
     window.location.href = "/contact";
   };
+
+  useEffect(() => {
+    // Initialize scroll animations
+    const observer = scrollAnimations.init({
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+      once: true,
+    });
+
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -163,28 +177,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-novatek-gradient opacity-30"></div>
         <div className="container-safe relative z-10">
           <div className="text-center mb-12">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-white mb-4"
-            >
+            <h2 className="animate-fade-in-initial text-3xl md:text-4xl font-bold text-white mb-4">
               What We Do
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed"
-            >
+            </h2>
+            <p className="animate-fade-in-initial text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
               We partner with South African businesses to solve complex challenges through intelligent digital solutions that drive measurable results.
-            </motion.p>
+            </p>
           </div>
 
           {/* Clean Services Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="stagger-container grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
                 icon: <Settings className="w-8 h-8" />,
@@ -205,13 +207,9 @@ export default function Home() {
                 features: ["Cloud Migration Strategy", "Infrastructure Management", "24/7 Monitoring", "Disaster Recovery"],
               },
             ].map((service, index) => (
-              <motion.div
+              <div
                 key={service.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-background/50 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-novatek transition-all duration-300 border border-primary-500/20 group hover:border-primary-500/40"
+                className="bg-background/50 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-novatek transition-all duration-300 border border-primary-500/20 group hover:border-primary-500/40 hover-effect-lift"
               >
                 <div className="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center text-primary-400 mb-4 group-hover:bg-primary-500/30 transition-colors">
                   {service.icon}
@@ -230,24 +228,18 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
+          <div className="animate-fade-in-initial text-center mt-12">
             <Link href="/services">
-              <Button className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-novatek">
+              <Button className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-novatek hover-effect-scale">
                 View All Services
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
-          </motion.div>
+          </div>
         </div>
 
         {/* Scroll Indicator */}

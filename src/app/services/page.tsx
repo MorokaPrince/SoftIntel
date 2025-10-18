@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import {
     Globe,
     Smartphone,
@@ -15,6 +16,7 @@ import {
   } from "lucide-react";
 import { Service } from "@/types";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
+import { scrollAnimations } from "@/utils/scrollAnimations";
 
 const services: Service[] = [
   {
@@ -241,6 +243,18 @@ export default function ServicesPage() {
     return `progress-${percentage}`;
   };
 
+  useEffect(() => {
+    // Initialize scroll animations
+    const observer = scrollAnimations.init({
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+      once: true,
+    });
+
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
+  }, []);
+
   const handleWhatsAppQuote = () => {
     const message = `🚀 Hi! I'm interested in getting a FREE QUOTE from NovaTek.
 
@@ -434,6 +448,38 @@ Potential Client
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
+        <div className="container mx-auto px-4 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto"
+          >
+            {[
+              { number: "500+", label: "Projects Completed" },
+              { number: "50+", label: "Happy Clients" },
+              { number: "99%", label: "Success Rate" },
+              { number: "24/7", label: "Support" }
+            ].map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="text-2xl md:text-3xl font-bold text-primary-400 mb-2">{stat.number}</div>
+                <div className="text-sm text-slate-400 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 

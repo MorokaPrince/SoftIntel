@@ -262,6 +262,38 @@ Message: ${formData.message || "No additional message"}`;
         </div>
       </section>
 
+      {/* Statistics Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
+        <div className="container mx-auto px-6 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto"
+          >
+            {[
+              { number: "500+", label: "Projects Completed" },
+              { number: "50+", label: "Happy Clients" },
+              { number: "99%", label: "Success Rate" },
+              { number: "24/7", label: "Support" }
+            ].map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="text-2xl md:text-3xl font-bold text-primary-400 mb-2">{stat.number}</div>
+                <div className="text-sm text-slate-400 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Professional Contact Info Cards */}
       <section className="relative py-8 tech-bg-secondary overflow-hidden">
         {/* Background Elements */}

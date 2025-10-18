@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   Users,
@@ -22,6 +22,7 @@ import { CompanyValue, TeamMember } from "@/types";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
+import { scrollAnimations } from "@/utils/scrollAnimations";
 
 const companyValues: CompanyValue[] = [
   {
@@ -119,6 +120,18 @@ const milestones = [
 ];
 
 export default function AboutPage() {
+  useEffect(() => {
+    // Initialize scroll animations
+    const observer = scrollAnimations.init({
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+      once: true,
+    });
+
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Modern Hero Section */}
@@ -194,33 +207,21 @@ export default function AboutPage() {
       <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-2xl md:text-3xl font-bold text-gray-900 mb-3"
-            >
+            <h2 className="animate-fade-in-initial text-2xl md:text-3xl font-bold text-gray-900 mb-3">
               Our Journey
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-lg text-gray-600 max-w-xl mx-auto"
-            >
+            </h2>
+            <p className="animate-fade-in-initial text-lg text-gray-600 max-w-xl mx-auto">
               From humble beginnings to becoming a trusted technology partner across Africa
-            </motion.p>
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="stagger-container grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {milestones.map((milestone, index) => {
               const IconComponent = milestone.icon;
               return (
-                <motion.div
+                <div
                   key={milestone.year}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="hover-effect-lift"
                 >
                   <Card variant="glass" className="text-center h-full p-6">
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-4 mx-auto">
@@ -230,10 +231,42 @@ export default function AboutPage() {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">{milestone.title}</h3>
                     <p className="text-gray-600">{milestone.description}</p>
                   </Card>
-                </motion.div>
+                </div>
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
+        <div className="container mx-auto px-4 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto"
+          >
+            {[
+              { number: "500+", label: "Projects Completed" },
+              { number: "50+", label: "Happy Clients" },
+              { number: "99%", label: "Success Rate" },
+              { number: "24/7", label: "Support" }
+            ].map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="text-2xl md:text-3xl font-bold text-primary-400 mb-2">{stat.number}</div>
+                <div className="text-sm text-slate-400 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
