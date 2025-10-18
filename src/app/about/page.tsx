@@ -122,7 +122,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Modern Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 pt-20 pb-16 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 pt-16 pb-12 overflow-hidden">
         <AnimatedBackground
           variant="hero"
           theme="indigo"
@@ -147,7 +147,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight"
             >
               About{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -159,7 +159,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl text-slate-300 mb-8 leading-relaxed"
+              className="text-lg text-slate-300 mb-6 leading-relaxed"
             >
               Empowering African businesses with innovative technology solutions that drive growth, efficiency, and digital transformation across the continent.
             </motion.p>
@@ -191,14 +191,14 @@ export default function AboutPage() {
       </section>
 
       {/* Company Story Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+              className="text-2xl md:text-3xl font-bold text-gray-900 mb-3"
             >
               Our Journey
             </motion.h2>
@@ -206,7 +206,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-xl text-gray-600 max-w-2xl mx-auto"
+              className="text-lg text-gray-600 max-w-xl mx-auto"
             >
               From humble beginnings to becoming a trusted technology partner across Africa
             </motion.p>
@@ -222,12 +222,12 @@ export default function AboutPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <Card variant="glass" className="text-center h-full">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-6 mx-auto">
+                  <Card variant="glass" className="text-center h-full p-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-4 mx-auto">
                       <IconComponent size={32} />
                     </div>
-                    <div className="text-2xl font-bold text-gray-900 mb-2">{milestone.year}</div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">{milestone.title}</h3>
+                    <div className="text-xl font-bold text-gray-900 mb-2">{milestone.year}</div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{milestone.title}</h3>
                     <p className="text-gray-600">{milestone.description}</p>
                   </Card>
                 </motion.div>
@@ -238,7 +238,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <motion.div
@@ -246,14 +246,14 @@ export default function AboutPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <Card variant="gradient" className="h-full">
+              <Card variant="gradient" className="h-full p-6">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white mr-4">
-                    <Target size={24} />
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white mr-3">
+                    <Target size={20} />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Our Mission</h3>
                 </div>
-                <p className="text-gray-700 text-lg leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   To empower African businesses with accessible, professional digital solutions that simplify operations, ensure compliance, and drive sustainable growth across the continent.
                 </p>
               </Card>
@@ -264,12 +264,12 @@ export default function AboutPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <Card variant="gradient" className="h-full">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center text-white mr-4">
-                    <Globe size={24} />
+              <Card variant="gradient" className="h-full p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center text-white mr-3">
+                    <Globe size={20} />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Our Vision</h3>
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   To be Africa&apos;s trusted digital solutions provider, recognized globally for exceptional quality and commitment to empowering businesses across the continent.
@@ -281,9 +281,9 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -297,7 +297,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-3xl md:text-4xl font-bold text-white mb-4"
+              className="text-2xl md:text-3xl font-bold text-white mb-3"
             >
               Our Core Values
             </motion.h2>
@@ -305,7 +305,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-slate-300 max-w-3xl mx-auto"
+              className="text-lg text-slate-300 max-w-2xl mx-auto"
             >
               The principles that guide everything we do and shape our commitment to excellence
             </motion.p>
@@ -328,16 +328,16 @@ export default function AboutPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <Card variant="glass" className="text-center h-full hover:scale-105 transition-transform duration-300">
+                  <Card variant="glass" className="text-center h-full hover:scale-105 transition-transform duration-300 p-6">
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.1 }}
                       transition={{ duration: 0.6 }}
-                      className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center text-white mb-4 mx-auto"
+                      className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white mb-3 mx-auto"
                     >
                       <IconComponent size={28} />
                     </motion.div>
-                    <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
-                    <p className="text-slate-300 text-sm leading-relaxed">{value.description}</p>
+                    <h3 className="text-lg font-bold text-white mb-2">{value.title}</h3>
+                    <p className="text-slate-300 text-xs leading-relaxed">{value.description}</p>
                   </Card>
                 </motion.div>
               );
@@ -347,14 +347,14 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-12 md:py-16 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+              className="text-2xl md:text-3xl font-bold text-gray-900 mb-3"
             >
               Meet Our Team
             </motion.h2>
@@ -362,7 +362,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-xl text-gray-600 max-w-2xl mx-auto"
+              className="text-lg text-gray-600 max-w-xl mx-auto"
             >
               The passionate professionals behind NovaTek&apos;s innovative solutions
             </motion.p>
@@ -376,8 +376,8 @@ export default function AboutPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card variant="glass" className="text-center h-full hover:shadow-xl transition-all duration-300">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-4 mx-auto overflow-hidden">
+                <Card variant="glass" className="text-center h-full hover:shadow-xl transition-all duration-300 p-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-3 mx-auto overflow-hidden">
                     <Image
                       src={member.image}
                       alt={member.name}
@@ -386,8 +386,8 @@ export default function AboutPage() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-3">{member.role}</p>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                  <p className="text-blue-600 font-medium mb-2 text-sm">{member.role}</p>
                   <p className="text-gray-600 text-sm">{member.bio}</p>
                 </Card>
               </motion.div>
@@ -397,17 +397,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Ready to Transform Your Business?
             </h2>
-            <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 mb-8 max-w-xl mx-auto">
               Join the growing number of African businesses that trust NovaTek to deliver exceptional technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

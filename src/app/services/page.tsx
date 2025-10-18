@@ -319,7 +319,7 @@ Potential Client
   return (
     <div className="min-h-screen">
       {/* Modern Hero Section - Enhanced Design */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 pt-24 pb-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 pt-20 pb-16 overflow-hidden">
         <AnimatedBackground
           variant="hero"
           theme="dark"
@@ -353,7 +353,7 @@ Potential Client
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[0.85] tracking-tight"
+              className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight tracking-tight"
             >
               TRANSFORM YOUR{" "}
               <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
@@ -369,7 +369,7 @@ Potential Client
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl md:text-2xl lg:text-3xl text-blue-100 mb-12 leading-relaxed max-w-5xl mx-auto font-light"
+              className="text-lg md:text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed max-w-4xl mx-auto font-light"
             >
               Cutting-edge digital solutions that propel businesses into the future with{" "}
               <span className="font-semibold text-white">AI-powered innovation</span>,{" "}
@@ -382,7 +382,7 @@ Potential Client
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
             >
               <motion.button
                 whileHover={{ scale: 1.05, y: -5, rotateX: 5 }}
