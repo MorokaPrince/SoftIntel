@@ -165,7 +165,7 @@ Message: ${formData.message || "No additional message"}`;
   return (
     <div className="min-h-screen bg-black">
       {/* Enhanced Professional Hero Section - Black Theme */}
-      <section className="relative pt-16 pb-8 overflow-hidden bg-black">
+      <section className="relative pt-12 pb-6 overflow-hidden bg-black">
         <AnimatedBackground
           variant="hero"
           theme="dark"
@@ -194,7 +194,7 @@ Message: ${formData.message || "No additional message"}`;
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="heading-hero text-white mb-8 leading-[1.1]"
+              className="text-3xl md:text-4xl text-white mb-6 leading-tight"
             >
               Let&apos;s Transform Your{" "}
               <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-400 bg-clip-text text-transparent">
@@ -207,7 +207,7 @@ Message: ${formData.message || "No additional message"}`;
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl text-blue-100 mb-10 leading-relaxed max-w-4xl mx-auto font-medium"
+              className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed max-w-3xl mx-auto font-medium"
             >
               Partner with our expert team to build innovative solutions that drive growth and scale your business.
             </motion.p>
@@ -217,13 +217,13 @@ Message: ${formData.message || "No additional message"}`;
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-3 justify-center items-center"
             >
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={handleWhatsAppClick}
-                className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center min-w-[200px]"
+                className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center min-w-[180px] text-sm"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Start WhatsApp Chat
@@ -231,7 +231,7 @@ Message: ${formData.message || "No additional message"}`;
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center min-w-[200px]"
+                className="bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center min-w-[180px] text-sm"
               >
                 <Calendar className="w-5 h-5 mr-2" />
                 Schedule Consultation
@@ -243,7 +243,7 @@ Message: ${formData.message || "No additional message"}`;
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm text-slate-500"
+              className="mt-12 flex flex-wrap justify-center items-center gap-6 text-sm text-slate-500"
             >
               <div className="flex items-center">
                 <Shield className="w-4 h-4 mr-2 text-green-600" />

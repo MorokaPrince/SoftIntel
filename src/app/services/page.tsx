@@ -387,7 +387,7 @@ Potential Client
               <motion.button
                 whileHover={{ scale: 1.05, y: -5, rotateX: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white px-16 py-8 rounded-2xl font-bold text-2xl transition-all duration-500 shadow-2xl hover:shadow-emerald-500/50 flex items-center justify-center min-w-[320px] overflow-hidden"
+                className="group relative bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white px-12 py-6 rounded-xl font-bold text-lg transition-all duration-500 shadow-xl hover:shadow-emerald-500/50 flex items-center justify-center min-w-[280px] overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                 <MessageCircle className="w-8 h-8 mr-4" />
@@ -396,7 +396,7 @@ Potential Client
               <motion.button
                 whileHover={{ scale: 1.05, y: -5, rotateX: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white px-16 py-8 rounded-2xl font-bold text-2xl transition-all duration-500 shadow-2xl hover:shadow-orange-500/50 flex items-center justify-center min-w-[320px] overflow-hidden"
+                className="group relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white px-12 py-6 rounded-xl font-bold text-lg transition-all duration-500 shadow-xl hover:shadow-orange-500/50 flex items-center justify-center min-w-[280px] overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                 <ArrowRight className="w-8 h-8 mr-4" />
@@ -409,7 +409,7 @@ Potential Client
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+              className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto"
             >
               <div className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-400 rounded-full flex items-center justify-center mb-4 shadow-lg">
@@ -438,7 +438,7 @@ Potential Client
       </section>
 
       {/* Premium Services Showcase - Ultra Modern Design */}
-      <section className="relative py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+      <section className="relative py-12 md:py-16 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
         {/* Enhanced Background Elements */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_rgba(120,119,198,0.05),transparent_50%)] opacity-100"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(255,255,255,0.08),transparent_50%)]"></div>
@@ -460,13 +460,13 @@ Potential Client
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
             <div className="inline-flex items-center bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-200/50 text-blue-700 px-6 py-3 rounded-full text-sm font-semibold mb-8">
               <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
               COMPREHENSIVE SERVICE PORTFOLIO
             </div>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6 leading-tight">
               <span className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent">
                 SOLUTIONS THAT
               </span>
@@ -475,7 +475,7 @@ Potential Client
                 DRIVE RESULTS
               </span>
             </h2>
-            <p className="text-xl md:text-2xl text-slate-600 max-w-5xl mx-auto font-light leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto font-light leading-relaxed">
               From concept to deployment, we deliver end-to-end digital solutions that transform businesses and accelerate growth in the digital age.
             </p>
           </motion.div>
@@ -505,7 +505,7 @@ Potential Client
                     rotateX: 5,
                     transition: { duration: 0.3 }
                   }}
-                  className="group relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 border border-white/50 hover:border-blue-200/50 overflow-hidden"
+                  className="group relative bg-white/80 backdrop-blur-xl rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 border border-white/50 hover:border-blue-200/50 overflow-hidden"
                 >
                   {/* Card Background Effects */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white/50 to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -524,19 +524,19 @@ Potential Client
                         scale: 1.2,
                         transition: { duration: 0.6 }
                       }}
-                      className="w-20 h-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 rounded-3xl flex items-center justify-center text-white mb-6 shadow-2xl group-hover:shadow-blue-500/50 relative overflow-hidden"
+                      className="w-16 h-16 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 rounded-2xl flex items-center justify-center text-white mb-4 shadow-xl group-hover:shadow-blue-500/50 relative overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                       <IconComponent size={32} className="relative z-10" />
                     </motion.div>
 
                     {/* Service Title */}
-                    <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
+                    <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
                       {service.title}
                     </h3>
 
                     {/* Service Description */}
-                    <p className="text-slate-600 mb-6 leading-relaxed text-base font-medium line-clamp-3">
+                    <p className="text-slate-600 mb-4 leading-relaxed text-sm font-medium line-clamp-3">
                       {service.description}
                     </p>
 
@@ -566,10 +566,10 @@ Potential Client
                     </div>
 
                     {/* Pricing Section */}
-                    <div className="flex items-center justify-between mb-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border border-slate-200/50">
+                    <div className="flex items-center justify-between mb-4 p-3 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl border border-slate-200/50">
                       <div>
                         <motion.span
-                          className="text-3xl md:text-4xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"
+                          className="text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"
                           whileHover={{ scale: 1.1 }}
                         >
                           {service.startingPrice}
@@ -592,7 +592,7 @@ Potential Client
                       }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => handleServiceInquiry(service)}
-                      className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 hover:from-blue-700 hover:via-purple-700 hover:to-indigo-700 text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 flex items-center justify-center shadow-xl group-hover:shadow-blue-500/40 relative overflow-hidden"
+                      className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 hover:from-blue-700 hover:via-purple-700 hover:to-indigo-700 text-white py-3 rounded-xl font-semibold text-base transition-all duration-300 flex items-center justify-center shadow-lg group-hover:shadow-blue-500/40 relative overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                       <span className="relative z-10">{service.ctaText}</span>
