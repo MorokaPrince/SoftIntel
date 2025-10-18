@@ -334,7 +334,7 @@ Message: ${formData.message || "No additional message"}`;
                 Business Hours & Support
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                We're here when you need us most. Fast response times and flexible scheduling.
+                We&apos;re here when you need us most. Fast response times and flexible scheduling.
               </p>
             </motion.div>
 
