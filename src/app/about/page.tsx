@@ -274,8 +274,12 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-12 md:py-16 bg-white relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/modern-tech-workspace.jpg')" }}
+        ></div>
+        <div className="container mx-auto px-4 relative">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -317,8 +321,12 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
-        <div className="container mx-auto px-4">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/ai-technology.jpg')" }}
+        ></div>
+        <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -433,8 +441,12 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/developer-workstation.jpg')" }}
+        ></div>
+        <div className="container mx-auto px-4 text-center relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

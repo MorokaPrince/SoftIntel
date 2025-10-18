@@ -178,6 +178,10 @@ export default function Home() {
       {/* Clean Services Section - NovaTek Dark Style */}
       <section className="py-12 md:py-16 bg-background-secondary relative">
         <div className="absolute inset-0 bg-novatek-gradient opacity-30"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/software-development.jpg')" }}
+        ></div>
         <div className="container-safe relative z-10">
           <div className="text-center mb-12">
             <h2 className="animate-fade-in-initial text-3xl md:text-4xl font-bold text-white mb-4">
@@ -359,6 +363,10 @@ export default function Home() {
 
       {/* How We Work - Process Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-background-secondary via-background to-background-secondary relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/circuit-board.jpg')" }}
+        ></div>
         <div className="container mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -464,6 +472,10 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="section-professional bg-gradient-to-br from-background via-background-secondary to-background relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-15"
+          style={{ backgroundImage: "url('/images/data-visualization.jpg')" }}
+        ></div>
         <AnimatedBackground
           variant="intense"
           theme="dark"

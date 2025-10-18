@@ -280,6 +280,10 @@ Message: ${formData.message || "No additional message"}`;
 
       {/* Statistics Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/data-visualization.jpg')" }}
+        ></div>
         <div className="container mx-auto px-6 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -313,6 +317,10 @@ Message: ${formData.message || "No additional message"}`;
       {/* Professional Contact Info Cards */}
       <section className="relative py-8 tech-bg-secondary overflow-hidden">
         {/* Background Elements */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-5"
+          style={{ backgroundImage: "url('/images/modern-tech-workspace.jpg')" }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50/95 via-blue-50/90 to-indigo-50/95"></div>
         <div className="absolute inset-0 geometric-bg opacity-5"></div>
         <div className="container mx-auto px-6 relative z-10">

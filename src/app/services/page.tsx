@@ -456,6 +456,10 @@ Potential Client
 
       {/* Statistics Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/programming-team.jpg')" }}
+        ></div>
         <div className="container mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -489,6 +493,10 @@ Potential Client
       {/* Premium Services Showcase - Ultra Modern Design */}
       <section className="relative py-12 md:py-16 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
         {/* Enhanced Background Elements */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-5"
+          style={{ backgroundImage: "url('/images/code-editor-dark.jpg')" }}
+        ></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_rgba(120,119,198,0.05),transparent_50%)] opacity-100"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(255,255,255,0.08),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,_rgba(120,119,198,0.03),transparent_50%)]"></div>
@@ -1068,6 +1076,10 @@ Potential Client
       {/* Revolutionary CTA Section - Ultra Modern Design */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
         {/* Enhanced Background Elements */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-5"
+          style={{ backgroundImage: "url('/images/programming-workspace.jpg')" }}
+        ></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(120,119,198,0.05),transparent_70%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.1),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,_rgba(120,119,198,0.03),transparent_50%)]"></div>
