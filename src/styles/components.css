@@ -107,6 +107,42 @@
   background-image: url('/ict-information-communications-technology-modern-server-room-background-virtual-screen_161452-3091.jpg');
 }
 
+.bg-modern-tech-workspace {
+  background-image: url('/images/modern-tech-workspace.jpg');
+}
+
+.bg-ai-technology {
+  background-image: url('/images/ai-technology.jpg');
+}
+
+.bg-developer-workstation {
+  background-image: url('/images/developer-workstation.jpg');
+}
+
+.bg-data-visualization {
+  background-image: url('/images/data-visualization.jpg');
+}
+
+.bg-software-development {
+  background-image: url('/images/software-development.jpg');
+}
+
+.bg-circuit-board {
+  background-image: url('/images/circuit-board.jpg');
+}
+
+.bg-code-editor-dark {
+  background-image: url('/images/code-editor-dark.jpg');
+}
+
+.bg-programming-workspace {
+  background-image: url('/images/programming-workspace.jpg');
+}
+
+.bg-programming-team {
+  background-image: url('/images/programming-team.jpg');
+}
+
 /* Tech Backgrounds with Unsplash */
 .bg-neural-network {
   background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');

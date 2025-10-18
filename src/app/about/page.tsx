@@ -276,8 +276,7 @@ export default function AboutPage() {
       {/* Mission & Vision Section */}
       <section className="py-12 md:py-16 bg-white relative">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('/images/modern-tech-workspace.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-10 bg-modern-tech-workspace"
         ></div>
         <div className="container mx-auto px-4 relative">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -323,8 +322,7 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('/images/ai-technology.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-10 bg-ai-technology"
         ></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12">
@@ -443,8 +441,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('/images/developer-workstation.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-10 bg-developer-workstation"
         ></div>
         <div className="container mx-auto px-4 text-center relative">
           <motion.div

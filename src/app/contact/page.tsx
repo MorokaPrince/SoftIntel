@@ -281,8 +281,7 @@ Message: ${formData.message || "No additional message"}`;
       {/* Statistics Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('/images/data-visualization.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-10 bg-data-visualization"
         ></div>
         <div className="container mx-auto px-6 relative">
           <motion.div
