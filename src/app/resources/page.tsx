@@ -248,8 +248,7 @@ Potential Client
       <section className="relative py-8 tech-bg-secondary overflow-hidden">
         {/* GIF Background - Small Size */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-5"
-          style={{ backgroundImage: "url('/images/circuit-board.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-5 bg-circuit-board"
         ></div>
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-cover bg-logo-subtle bg-logo-2" />

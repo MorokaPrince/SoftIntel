@@ -363,8 +363,7 @@ export default function Home() {
       {/* How We Work - Process Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-background-secondary via-background to-background-secondary relative">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('/images/circuit-board.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-10 bg-circuit-board"
         ></div>
         <div className="container mx-auto px-4 relative">
           <motion.div
@@ -472,8 +471,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="section-professional bg-gradient-to-br from-background via-background-secondary to-background relative overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-15"
-          style={{ backgroundImage: "url('/images/data-visualization.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-15 bg-data-visualization"
         ></div>
         <AnimatedBackground
           variant="intense"
