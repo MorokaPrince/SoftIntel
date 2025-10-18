@@ -219,7 +219,7 @@ export default function AboutPage() {
           </div>
 
           <div className="stagger-container grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {milestones.map((milestone, index) => {
+            {milestones.map((milestone) => {
               const IconComponent = milestone.icon;
               return (
                 <div

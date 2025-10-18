@@ -214,7 +214,7 @@ export const scrollAnimations = {
     const observer = new ScrollAnimationObserver(options);
 
     // Observe sections
-    document.querySelectorAll('section').forEach((section, index) => {
+    document.querySelectorAll('section').forEach((section) => {
       observer.observe(section, animationPresets.fadeInUp);
     });
 
@@ -333,7 +333,7 @@ export const enhancedScrollAnimations = {
     const exitObserver = new ExitAnimationObserver();
 
     // Observe sections for entry animations
-    document.querySelectorAll('section').forEach((section, index) => {
+    document.querySelectorAll('section').forEach((section) => {
       entryObserver.observe(section, animationPresets.fadeInUp);
       exitObserver.observe(section, { exitEffect: 'slideOut' });
     });

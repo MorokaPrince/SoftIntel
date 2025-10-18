@@ -213,7 +213,7 @@ export default function Home() {
                 description: "Modernize your IT foundation with scalable cloud solutions that ensure reliability, security, and cost-effectiveness.",
                 features: ["Cloud Migration Strategy", "Infrastructure Management", "24/7 Monitoring", "Disaster Recovery"],
               },
-            ].map((service, index) => (
+            ].map((service) => (
               <div
                 key={service.title}
                 className="bg-background/50 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-novatek transition-all duration-300 border border-primary-500/20 group hover:border-primary-500/40 hover-effect-lift"
