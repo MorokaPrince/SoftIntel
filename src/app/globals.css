@@ -246,7 +246,7 @@ body {
 
 .btn-standard-primary:hover {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-gradient-start) 100%);
-  box-shadow: 0 8px 25px 0 rgba(37, 99, 235, 0.5);
+  box-shadow: 0 8px 25px 0 rgba(26, 32, 44, 0.2);
   transform: translateY(-1px);
 }
 
@@ -254,13 +254,13 @@ body {
   background: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
-  box-shadow: 0 2px 8px 0 rgba(37, 99, 235, 0.1);
+  box-shadow: 0 2px 8px 0 rgba(26, 32, 44, 0.1);
 }
 
 .btn-standard-secondary:hover {
   background: var(--primary);
   color: white;
-  box-shadow: 0 4px 16px 0 rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 16px 0 rgba(26, 32, 44, 0.15);
 }
 
 /* Professional Custom Scrollbar */
@@ -429,13 +429,13 @@ html {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 15px rgba(26, 32, 44, 0.15);
 }
 
 .btn-professional-primary:hover {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-gradient-start) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 25px rgba(26, 32, 44, 0.2);
 }
 
 .btn-professional-secondary {
@@ -450,7 +450,7 @@ html {
   border-radius: 0.75rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 4px 15px rgba(26, 32, 44, 0.1);
 }
 
 .btn-professional-secondary:hover {
@@ -473,7 +473,7 @@ html {
 .card-professional:hover {
   transform: translateY(-4px);
   border-color: var(--primary);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 25px rgba(26, 32, 44, 0.15);
 }
 
 /* Professional Section Spacing */
