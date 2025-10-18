@@ -457,8 +457,7 @@ Potential Client
       {/* Statistics Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('/images/programming-team.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-10 bg-programming-team"
         ></div>
         <div className="container mx-auto px-4 relative">
           <motion.div
