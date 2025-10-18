@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* NovaTek Hero Section - Dark Professional Theme */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-20 md:pt-24 pb-16 md:pb-20 overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-background via-background-secondary to-background-tertiary pt-16 md:pt-20 pb-12 md:pb-16 overflow-hidden">
         <div className="container-safe relative z-10">
           <div className="text-center max-w-6xl mx-auto">
             {/* Badge/Announcement */}
@@ -49,7 +49,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-6xl lg:text-8xl font-black text-white mb-8 leading-tight tracking-tight"
+              className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight tracking-tight"
             >
               Building{" "}
               <span className="relative inline-block">
@@ -92,7 +92,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-12 leading-relaxed max-w-5xl mx-auto font-light"
+              className="text-lg md:text-xl lg:text-2xl text-slate-300 mb-8 leading-relaxed max-w-4xl mx-auto font-light"
             >
               NovaTek is a forward-thinking digital transformation company that helps clients harness the power of technology. We design, develop, and integrate digital platforms that connect people, data, and ideas for the modern enterprise.
             </motion.p>
@@ -102,11 +102,11 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <Button
                 onClick={handleGetQuote}
-                className="group relative bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:from-primary-600 hover:via-primary-700 hover:to-primary-800 text-white px-10 py-5 text-lg font-bold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/30 transform hover:-translate-y-1 overflow-hidden"
+                className="group relative bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:from-primary-600 hover:via-primary-700 hover:to-primary-800 text-white px-8 py-4 text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 transform hover:-translate-y-1 overflow-hidden"
               >
                 <span className="relative z-10 flex items-center">
                   Get Free Consultation
@@ -117,7 +117,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 onClick={handleWhatsAppClick}
-                className="group border-2 border-primary-400 text-primary-300 hover:bg-primary-500 hover:text-white hover:border-primary-500 px-10 py-5 text-lg font-bold rounded-2xl transition-all duration-300 backdrop-blur-sm bg-white/5"
+                className="group border-2 border-primary-400 text-primary-300 hover:bg-primary-500 hover:text-white hover:border-primary-500 px-8 py-4 text-base font-semibold rounded-xl transition-all duration-300 backdrop-blur-sm bg-white/5"
               >
                 <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Let&apos;s Talk
@@ -129,7 +129,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
+              className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto"
             >
               {[
                 { number: "500+", label: "Projects Completed" },
@@ -159,16 +159,16 @@ export default function Home() {
       </section>
 
       {/* Clean Services Section - NovaTek Dark Style */}
-      <section className="py-20 md:py-28 bg-background-secondary relative">
+      <section className="py-12 md:py-16 bg-background-secondary relative">
         <div className="absolute inset-0 bg-novatek-gradient opacity-30"></div>
         <div className="container-safe relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-5xl font-bold text-white mb-6"
+              className="text-3xl md:text-4xl font-bold text-white mb-4"
             >
               What We Do
             </motion.h2>
@@ -177,7 +177,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed"
             >
               We partner with South African businesses to solve complex challenges through intelligent digital solutions that drive measurable results.
             </motion.p>
@@ -211,15 +211,15 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-background/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-novatek transition-all duration-300 border border-primary-500/20 group hover:border-primary-500/40"
+                className="bg-background/50 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-novatek transition-all duration-300 border border-primary-500/20 group hover:border-primary-500/40"
               >
-                <div className="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center text-primary-400 mb-6 group-hover:bg-primary-500/30 transition-colors">
+                <div className="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center text-primary-400 mb-4 group-hover:bg-primary-500/30 transition-colors">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-xl font-bold text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-slate-300 leading-relaxed mb-6">
+                <p className="text-slate-300 leading-relaxed mb-4">
                   {service.description}
                 </p>
                 <ul className="space-y-3">
@@ -239,7 +239,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-center mt-16"
+            className="text-center mt-12"
           >
             <Link href="/services">
               <Button className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-novatek">
@@ -267,25 +267,25 @@ export default function Home() {
       </section>
 
       {/* Client Trust Indicators & Testimonials */}
-      <section className="py-20 bg-gradient-to-br from-background via-background-secondary to-background relative">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background-secondary to-background relative">
         <div className="container mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
               Trusted by South African Businesses
             </h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-xl mx-auto">
               See how we&apos;ve helped businesses across South Africa achieve their digital transformation goals
             </p>
           </motion.div>
 
           {/* Client Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center max-w-6xl mx-auto mb-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center max-w-5xl mx-auto mb-12">
             {[
               { name: "AfriTech Solutions", industry: "Technology" },
               { name: "Limpopo Logistics", industry: "Logistics" },
@@ -300,7 +300,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-neutral-800/30 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-neutral-700/30 transition-all duration-300 hover:border-primary-500/30"
+                className="bg-neutral-800/30 backdrop-blur-sm border border-white/10 rounded-lg p-4 hover:bg-neutral-700/30 transition-all duration-300 hover:border-primary-500/30"
               >
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg mx-auto mb-3 flex items-center justify-center">
@@ -339,7 +339,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="bg-neutral-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-neutral-800/50 transition-all duration-300 hover:border-primary-500/30"
+                className="bg-neutral-900/50 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-neutral-800/50 transition-all duration-300 hover:border-primary-500/30"
               >
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
@@ -363,19 +363,19 @@ export default function Home() {
       </section>
 
       {/* How We Work - Process Section */}
-      <section className="py-20 bg-gradient-to-br from-background-secondary via-background to-background-secondary relative">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-background-secondary via-background to-background-secondary relative">
         <div className="container mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
               Our Proven Process
             </h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-xl mx-auto">
               We follow a structured approach to ensure every project delivers exceptional results
             </p>
           </motion.div>
@@ -420,21 +420,21 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="bg-neutral-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-neutral-800/50 transition-all duration-300 hover:border-primary-500/30 h-full">
+                <div className="bg-neutral-900/50 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-neutral-800/50 transition-all duration-300 hover:border-primary-500/30 h-full">
                   {/* Step Number */}
-                  <div className={`w-16 h-16 bg-gradient-to-br ${process.color} rounded-2xl flex items-center justify-center text-white font-bold text-xl mb-6 mx-auto`}>
+                  <div className={`w-12 h-12 bg-gradient-to-br ${process.color} rounded-xl flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto`}>
                     {process.step}
                   </div>
 
                   {/* Icon */}
-                  <div className={`w-12 h-12 bg-gradient-to-br ${process.color} rounded-xl flex items-center justify-center text-white mb-4 mx-auto`}>
+                  <div className={`w-10 h-10 bg-gradient-to-br ${process.color} rounded-lg flex items-center justify-center text-white mb-3 mx-auto`}>
                     {process.icon}
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-4 text-center">
+                  <h3 className="text-lg font-bold text-white mb-3 text-center">
                     {process.title}
                   </h3>
-                  <p className="text-slate-300 leading-relaxed text-center">
+                  <p className="text-slate-300 leading-relaxed text-center text-sm">
                     {process.description}
                   </p>
                 </div>
@@ -453,9 +453,9 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-center mt-16"
+            className="text-center mt-12"
           >
-            <div className="bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 rounded-2xl p-8 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 rounded-xl p-6 max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold text-white mb-4">Ready to Start Your Digital Journey?</h3>
               <p className="text-slate-300 mb-6">Every successful project begins with a conversation. Let&apos;s discuss how we can transform your business.</p>
               <Button className="bg-gradient-to-r from-primary-600 to-accent-600 hover:from-primary-700 hover:to-accent-700 text-white px-8 py-3 rounded-lg transition-all duration-300">
