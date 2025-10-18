@@ -861,7 +861,7 @@ html {
 }
 
 .logo-glow {
-  filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.3));
+  filter: drop-shadow(0 0 10px rgba(26, 32, 44, 0.3));
 }
 
 /* Simplified Professional Color Classes */
@@ -1416,13 +1416,13 @@ img, video {
 /* Enhanced Logo Animations */
 @keyframes logo-glow-pulse {
   0% {
-    filter: drop-shadow(0 0 5px rgba(37, 99, 235, 0.3)) brightness(1);
+    filter: drop-shadow(0 0 5px rgba(26, 32, 44, 0.3)) brightness(1);
   }
   50% {
-    filter: drop-shadow(0 0 20px rgba(37, 99, 235, 0.6)) brightness(1.2);
+    filter: drop-shadow(0 0 20px rgba(26, 32, 44, 0.6)) brightness(1.2);
   }
   100% {
-    filter: drop-shadow(0 0 5px rgba(37, 99, 235, 0.3)) brightness(1);
+    filter: drop-shadow(0 0 5px rgba(26, 32, 44, 0.3)) brightness(1);
   }
 }
 
@@ -1468,13 +1468,13 @@ img, video {
 
 @keyframes cyberpunk-border {
   0% {
-    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 0 5px rgba(26, 32, 44, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.6), 0 0 30px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 20px rgba(26, 32, 44, 0.6), 0 0 30px rgba(26, 32, 44, 0.4);
   }
   100% {
-    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 0 5px rgba(26, 32, 44, 0.3);
   }
 }
 
@@ -1531,8 +1531,8 @@ img, video {
 }
 
 .card-hover-glow:hover {
-  box-shadow: 0 0 30px rgba(37, 99, 235, 0.3);
-  border-color: rgba(37, 99, 235, 0.5);
+  box-shadow: 0 0 30px rgba(26, 32, 44, 0.3);
+  border-color: rgba(26, 32, 44, 0.5);
 }
 
 /* Enhanced Button Effects */
@@ -1549,7 +1549,7 @@ img, video {
 }
 
 .btn-hover-glow:hover {
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 0 20px rgba(26, 32, 44, 0.4);
 }
 
 /* Reduced Motion Support */
