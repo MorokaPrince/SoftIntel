@@ -54,67 +54,6 @@
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
 }
 
-:root {
-     /* NovaTek Dark Theme - SoInteractive Inspired */
-     --background: #0A0A0A;
-     --background-secondary: #1C1C1C;
-     --background-tertiary: #2A2A2A;
-     --foreground: #FFFFFF;
-
-     /* NovaTek Brand Colors - Electric Cyan */
-     --primary: #00E6FF;
-     --primary-light: #33EFFF;
-     --primary-dark: #00C4FF;
-     --primary-gradient-start: #00C4FF;
-     --primary-gradient-end: #00E6FF;
-
-     /* NovaTek Accent Colors - Dark Charcoal */
-     --accent: #666666;
-     --accent-light: #999999;
-     --accent-dark: #333333;
-
-  /* NovaTek Utility Colors */
-  --success: #10B981;
-  --warning: #F59E0B;
-  --error: #EF4444;
-
-  /* Professional Typography */
-  --font-inter: 'Inter', sans-serif;
-  --font-playfair: 'Playfair Display', serif;
-  --font-montserrat: 'Montserrat', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
-
-  /* Professional Shadows for Dark Theme */
-  --shadow-sm: 0 1px 2px 0 rgb(255 255 255 / 0.05);
-  --shadow: 0 1px 3px 0 rgb(255 255 255 / 0.1), 0 1px 2px -1px rgb(255 255 255 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(255 255 255 / 0.1), 0 4px 6px -4px rgb(255 255 255 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(255 255 255 / 0.1), 0 8px 10px -6px rgb(255 255 255 / 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgb(255 255 255 / 0.25);
-
-  /* Professional Border Radius */
-  --radius-sm: 0.375rem;
-  --radius: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
-  --radius-2xl: 2rem;
-
-
-  --theme-primary-light-alt: #FF8C66;
-  --theme-primary-dark-alt: #E55A2B;
-  --theme-accent-alt: #4ECDC4;
-  --theme-accent-light-alt: #7EDDD6;
-  --theme-accent-dark-alt: #35B5AB;
-
-  /* Shared Colors */
-  --theme-success: #10b981;
-  --theme-warning: #f59e0b;
-  --theme-error: #ef4444;
-  --theme-silver: #64748b;
-  --theme-silver-light: #94a3b8;
-  --theme-silver-dark: #475569;
-}
 
 body {
   background: var(--background);
@@ -302,7 +241,7 @@ body {
 .btn-standard-primary {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: white;
-  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+  box-shadow: 0 4px 14px 0 rgba(26, 32, 44, 0.15);
 }
 
 .btn-standard-primary:hover {
