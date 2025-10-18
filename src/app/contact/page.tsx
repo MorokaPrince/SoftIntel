@@ -393,7 +393,7 @@ Message: ${formData.message || "No additional message"}`;
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-slate-100">
                     <span className="text-slate-600">Email</span>
-                    <span className="font-semibold text-slate-900">< 2 hours</span>
+                    <span className="font-semibold text-slate-900">&lt; 2 hours</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-slate-100">
                     <span className="text-slate-600">Phone</span>
@@ -401,7 +401,7 @@ Message: ${formData.message || "No additional message"}`;
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-slate-600">Contact Form</span>
-                    <span className="font-semibold text-slate-900">< 24 hours</span>
+                    <span className="font-semibold text-slate-900">&lt; 24 hours</span>
                   </div>
                   <div className="mt-4 p-3 bg-blue-50 rounded-lg">
                     <p className="text-blue-700 text-sm font-medium">
