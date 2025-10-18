@@ -493,8 +493,7 @@ Potential Client
       <section className="relative py-12 md:py-16 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
         {/* Enhanced Background Elements */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-5"
-          style={{ backgroundImage: "url('/images/code-editor-dark.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-5 bg-code-editor-dark"
         ></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_rgba(120,119,198,0.05),transparent_50%)] opacity-100"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(255,255,255,0.08),transparent_50%)]"></div>
@@ -1076,8 +1075,7 @@ Potential Client
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
         {/* Enhanced Background Elements */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-5"
-          style={{ backgroundImage: "url('/images/programming-workspace.jpg')" }}
+          className="absolute inset-0 bg-cover bg-center opacity-5 bg-programming-workspace"
         ></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(120,119,198,0.05),transparent_70%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.1),transparent_50%)]"></div>
