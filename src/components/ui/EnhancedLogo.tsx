@@ -67,7 +67,7 @@ const EnhancedLogo: React.FC<EnhancedLogoProps> = ({
       }, 3000);
       return () => clearInterval(interval);
     }
-  }, [animated, variant]);
+  }, [animated, variant, logoVariations.length]);
 
   const getVariantStyles = () => {
     switch (variant) {
