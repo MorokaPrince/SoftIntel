@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 interface Particle {
   id: number;
@@ -38,11 +38,11 @@ const ParticleBackground: React.FC<ParticleBackgroundProps> = ({
     slate: "bg-slate-400/20",
   };
 
-  const intensitySettings = {
+  const intensitySettings = useMemo(() => ({
     low: { opacity: 0.1, sizeRange: [2, 6] },
     medium: { opacity: 0.2, sizeRange: [3, 8] },
     high: { opacity: 0.3, sizeRange: [4, 12] },
-  };
+  }), []);
 
   const animationVariants = {
     float: {
