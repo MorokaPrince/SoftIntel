@@ -380,11 +380,13 @@ Potential Client
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+                role="article"
+                aria-label={`Blog post: ${post.title}`}
               >
                 <div className="relative">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={`Cover image for: ${post.title}`}
                     width={400}
                     height={250}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
