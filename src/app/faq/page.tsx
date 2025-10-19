@@ -127,7 +127,7 @@ export default function FAQPage() {
             className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/30 rounded-lg p-8 text-center"
           >
             <h2 className="text-2xl font-bold text-white mb-4">
-              Didn't find your answer?
+              Didn&apos;t find your answer?
             </h2>
             <p className="text-slate-300 mb-6">
               Contact our team directly for personalized assistance.
