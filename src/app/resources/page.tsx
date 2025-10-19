@@ -31,7 +31,7 @@ const blogPosts: BlogPost[] = [
      date: "2024-09-15",
      readTime: "3 min read",
      tags: ["Compliance", "Digital Tools", "South Africa"],
-     image: "/plexus-scifi-background_280538-7858.jpg",
+     image: "https://images.unsplash.com/photo-1682098305902-86c593467930?w=1200&h=630&fit=crop",
      slug: "digital-compliance-tools-south-africa",
    },
    {
@@ -43,7 +43,7 @@ const blogPosts: BlogPost[] = [
      date: "2024-09-10",
      readTime: "4 min read",
      tags: ["Cloud", "Migration", "SMEs"],
-     image: "/plexus-scifi-background_280538-7858.jpg",
+     image: "https://images.unsplash.com/photo-1661379254754-f94a10df9888?w=1200&h=630&fit=crop",
      slug: "cloud-migration-guide-african-smes",
    },
    {
@@ -55,7 +55,7 @@ const blogPosts: BlogPost[] = [
      date: "2024-09-05",
      readTime: "3 min read",
      tags: ["Cybersecurity", "Trends", "Protection"],
-     image: "/plexus-scifi-background_280538-7858.jpg",
+     image: "https://images.unsplash.com/photo-1726138383736-3c848a2c7769?w=1200&h=630&fit=crop",
      slug: "cybersecurity-trends-2024",
    },
    {
@@ -67,7 +67,7 @@ const blogPosts: BlogPost[] = [
      date: "2024-08-28",
      readTime: "4 min read",
      tags: ["Mobile", "Development", "Best Practices"],
-     image: "/plexus-scifi-background_280538-7858.jpg",
+     image: "https://images.unsplash.com/photo-1726138406359-673f93a70e46?w=1200&h=630&fit=crop",
      slug: "building-scalable-mobile-apps",
    },
    {
@@ -79,7 +79,7 @@ const blogPosts: BlogPost[] = [
      date: "2024-08-20",
      readTime: "5 min read",
      tags: ["Digital Transformation", "Case Studies", "Africa"],
-     image: "/plexus-scifi-background_280538-7858.jpg",
+     image: "https://images.unsplash.com/photo-1661419877533-c2ac41dc8d5a?w=1200&h=630&fit=crop",
      slug: "digital-transformation-success-stories",
    },
    {
@@ -91,7 +91,7 @@ const blogPosts: BlogPost[] = [
      date: "2024-08-15",
      readTime: "3 min read",
      tags: ["Web Development", "Trends", "Technology"],
-     image: "/ict-information-communications-technology-concept-server-room-background_161452-7815.jpg",
+     image: "https://images.unsplash.com/photo-1726064855757-ac8720008fe0?w=1200&h=630&fit=crop",
      slug: "web-development-trends-2024",
    },
  ];

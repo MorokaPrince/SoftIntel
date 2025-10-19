@@ -502,85 +502,25 @@ Message: ${formData.message || "No additional message"}`;
         </div>
       </section>
 
-      {/* Quick FAQ Section */}
-      <section className="relative py-16 bg-white overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-5 bg-ai-technology"
-        ></div>
+      {/* FAQ Link Section */}
+      <section className="relative py-12 bg-white overflow-hidden">
         <div className="container mx-auto px-6 relative">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <p className="text-lg text-slate-600 mb-4">
+              Have more questions?
+            </p>
+            <a
+              href="/faq"
+              className="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-slate-600">
-                Quick answers to common questions about our services and process.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-slate-50 rounded-xl p-6"
-              >
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
-                  How quickly can you start my project?
-                </h3>
-                <p className="text-slate-600">
-                  We can typically begin new projects within 1-2 weeks, depending on complexity and our current schedule. Urgent projects can often start sooner.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-slate-50 rounded-xl p-6"
-              >
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
-                  Do you work with international clients?
-                </h3>
-                <p className="text-slate-600">
-                  Absolutely! We work with clients across Africa and globally, offering remote collaboration tools and flexible communication schedules.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-slate-50 rounded-xl p-6"
-              >
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
-                  What information do you need to get started?
-                </h3>
-                <p className="text-slate-600">
-                  We need your project requirements, goals, target audience, and any existing branding guidelines. A discovery call helps us understand your vision better.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-slate-50 rounded-xl p-6"
-              >
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
-                  Do you provide ongoing support?
-                </h3>
-                <p className="text-slate-600">
-                  Yes! We offer comprehensive maintenance packages, regular updates, and ongoing support to ensure your solution continues to perform optimally.
-                </p>
-              </motion.div>
-            </div>
-          </div>
+              View All FAQs
+            </a>
+          </motion.div>
         </div>
       </section>
 

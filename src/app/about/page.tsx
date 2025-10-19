@@ -418,20 +418,22 @@ export default function AboutPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card variant="glass" className="text-center h-full hover:shadow-xl transition-all duration-300 p-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-3 mx-auto overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={80}
-                      height={80}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-2 text-sm">{member.role}</p>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
-                </Card>
+                <div role="article" aria-label={`${member.name}, ${member.role}`}>
+                  <Card variant="glass" className="text-center h-full hover:shadow-xl transition-all duration-300 p-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mb-3 mx-auto overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={`${member.name} - ${member.role}`}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                    <p className="text-blue-600 font-medium mb-2 text-sm">{member.role}</p>
+                    <p className="text-gray-600 text-sm">{member.bio}</p>
+                  </Card>
+                </div>
               </motion.div>
             ))}
           </div>
