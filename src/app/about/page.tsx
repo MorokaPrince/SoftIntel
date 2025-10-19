@@ -57,10 +57,10 @@ const teamMembers: TeamMember[] = [
     name: "May Rakgama",
     role: "Founder & CEO",
     bio: "Visionary leader driving digital transformation across Africa",
-    image: "/NovaTek1.png",
+    image: "https://images.unsplash.com/photo-1758599543154-76ec1c4257df?w=400&h=400&fit=crop",
     socialLinks: {
-      linkedin: "#",
-      twitter: "#",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
     },
   },
   {
@@ -68,10 +68,10 @@ const teamMembers: TeamMember[] = [
     name: "Bohosi Ramokoka",
     role: "CTO",
     bio: "Technical architect specializing in scalable solutions",
-    image: "/NovaTek2.jpeg",
+    image: "https://images.unsplash.com/photo-1758518729459-235dcaadc611?w=400&h=400&fit=crop",
     socialLinks: {
-      linkedin: "#",
-      github: "#",
+      linkedin: "https://linkedin.com",
+      github: "https://github.com",
     },
   },
   {
@@ -79,10 +79,10 @@ const teamMembers: TeamMember[] = [
     name: "Mpho Hamisi",
     role: "Head of Operations",
     bio: "Operations expert ensuring seamless project delivery",
-    image: "/NovaTek3.gif",
+    image: "https://images.unsplash.com/photo-1758518729314-b02874db8c37?w=400&h=400&fit=crop",
     socialLinks: {
-      linkedin: "#",
-      twitter: "#",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
     },
   },
   {
@@ -90,10 +90,10 @@ const teamMembers: TeamMember[] = [
     name: "Olwethu Ndlovu",
     role: "Lead Developer",
     bio: "Full-stack developer creating innovative applications",
-    image: "/NovaTek4.mp4",
+    image: "https://images.unsplash.com/photo-1758691737610-1f18e008f5f2?w=400&h=400&fit=crop",
     socialLinks: {
-      linkedin: "#",
-      github: "#",
+      linkedin: "https://linkedin.com",
+      github: "https://github.com",
     },
   },
 ];
